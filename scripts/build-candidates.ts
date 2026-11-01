@@ -1,46 +1,39 @@
 /**
- * Catalogue builder: turns licence-cleared field recordings into the app's ready-to-use masteran
- * library (public/catalog/). For every species in content/species.json it:
+ * Step 1 of 3 — CANDIDATES (not the product).
  *
- *   1. finds candidates on xeno-canto (API v3, needs XC_API_KEY) and Wikimedia Commons,
- *   2. keeps only allowed licences (commercial policy: CC0 / CC BY / CC BY-SA; beta adds NC; ND never,
- *      because trimming and loudness-normalising is a derivative work),
- *   3. ranks them (quality, no background species, region, sound type, length),
- *   4. downloads, picks the most song-dense window, high-passes, normalises loudness, fades, encodes
- *      64 kbps mono MP3,
- *   5. runs automatic QC with the app's own analyser (SNR, singing density, phrase count),
- *   6. pre-marks the most frequent phrase types as isian so "Cek Isian" works out of the box,
- *   7. writes catalog.json (tracks + packs) and ATTRIBUTION.md.
+ * Finds licence-cleared field recordings for every species in content/species.json (xeno-canto API v3
+ * with XC_API_KEY, plus Wikimedia Commons), processes the best few per species, measures them against
+ * the content standard (scripts/standard.ts) and writes them to review/candidates/ for expert review.
  *
- * Usage:
- *   XC_API_KEY=... npx vite-node scripts/build-catalog.ts [--policy commercial|beta] [--only id,id]
+ *   Step 2: npm run review           — expert listens and signs off in the review tool → content/curation.json
+ *   Step 3: npm run catalog:publish  — only approved, standard-compliant tracks go to public/catalog/
  *
- * Human curation (content/curation.json) can exclude or pin recordings and approve tracks.
+ * Usage: XC_API_KEY=... npm run catalog:candidates [-- --only cililin,ciblek] [-- --per-species 3]
  */
 import { execFileSync } from 'node:child_process';
 import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { analyzeRecording, phraseTypes } from '../src/dsp/analyze';
+import { autoChecks, STANDARD_VERSION } from './standard';
+import type { Candidate as CandidateTrack, CandidateFile } from './candidate-types';
 import { logMel, SR, HOP_SEC } from '../src/dsp/spectrogram';
 import { segment } from '../src/dsp/segment';
-import type { Catalog, CatalogPack, CatalogTrack } from '../src/catalog/types';
 import { classifyLicense as classifyLicenseFor } from './license';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const OUT = join(ROOT, 'public', 'catalog');
+const OUT = join(ROOT, 'review', 'candidates');
 const AUDIO = join(OUT, 'audio');
 const CACHE = join(ROOT, '.cache', 'catalog');
 const UA = 'KicauCoachCatalogBot/0.1 (https://github.com/sandmanz26/birdsong)';
 
 interface SpeciesDef { id: string; sci: string; nameId: string; nameEn: string; roles: ('master' | 'isian')[]; types: string[]; country: string[] }
-interface PackDef { id: string; target: string[]; nameId: string; nameEn: string; descId: string; descEn: string; species: string[]; preset: CatalogPack['preset'] }
 interface ManualIsian { startSec: number; endSec: number; nameId: string; nameEn: string }
 interface Curation { exclude: string[]; pin: Record<string, string>; approved: string[]; isianNames: Record<string, { nameId: string; nameEn: string }>; isianManual?: Record<string, ManualIsian[]> }
 
 interface Candidate {
   key: string; // 'xc:123' | 'commons:File:...'
-  source: CatalogTrack['source'];
+  source: CandidateTrack['source'];
   downloadUrl: string;
   sourceUrl: string;
   recordist: string;
@@ -58,15 +51,17 @@ const arg = (name: string) => {
   const i = args.indexOf(`--${name}`);
   return i >= 0 ? args[i + 1] : undefined;
 };
-const POLICY = (arg('policy') ?? 'commercial') as Catalog['licensePolicy'];
+// The product standard requires commercial-compatible licences (L1); there is no looser mode.
+const POLICY = 'commercial' as const;
+const PER_SPECIES = Number(arg('per-species') ?? 3);
 const ONLY = arg('only')?.split(',');
 const XC_KEY = process.env.XC_API_KEY;
 const TARGET_SEC = 90;
 
 const readJson = <T,>(p: string): T => JSON.parse(readFileSync(join(ROOT, p), 'utf8')) as T;
 const species = readJson<{ species: SpeciesDef[] }>('content/species.json').species;
-const packDefs = readJson<{ packs: PackDef[] }>('content/packs.json').packs;
 const curation = readJson<Curation>('content/curation.json');
+void curation.pin;
 
 // ---------------------------------------------------------------------------------------------------
 // Licences
@@ -209,46 +204,72 @@ async function download(c: Candidate): Promise<string> {
   return path;
 }
 
-interface Processed { file: string; bytes: number; durationSec: number; qc: CatalogTrack['qc']; isian: CatalogTrack['isian'] }
+/** Integrated loudness and true peak (ITU-R BS.1770 via ffmpeg ebur128). */
+function measureLoudness(path: string): { lufs: number; truePeak: number } {
+  // ffmpeg writes the ebur128 summary to stderr; spawnSync-like capture via execFileSync + 2>&1.
+  const out = execFileSync('sh', ['-c', `ffmpeg -hide_banner -nostats -i "${path}" -af ebur128=peak=true -f null - 2>&1`], { encoding: 'utf8', maxBuffer: 1 << 26 });
+  const summary = out.slice(out.lastIndexOf('Summary:'));
+  const lufs = Number(/I:\s+(-?[\d.]+) LUFS/.exec(summary)?.[1]);
+  const truePeak = Number(/Peak:\s+(-?[\d.]+) dBFS/.exec(summary)?.[1]);
+  return { lufs, truePeak };
+}
 
-const QC = { minSnrDb: 18, minKerjaPct: 12, minPhrases: 5 };
+function sourceStats(raw: string): { sampleRate: number; clippedFraction: number } {
+  const sampleRate = Number(execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'a:0', '-show_entries', 'stream=sample_rate', '-of', 'csv=p=0', raw], { encoding: 'utf8' }).trim());
+  const buf = execFileSync('ffmpeg', ['-v', 'error', '-i', raw, '-ac', '1', '-f', 'f32le', '-'], { maxBuffer: 1 << 30 });
+  const x = new Float32Array(buf.buffer, buf.byteOffset, buf.byteLength / 4);
+  let clipped = 0;
+  for (let i = 0; i < x.length; i++) if (Math.abs(x[i]) >= 0.999) clipped++;
+  return { sampleRate, clippedFraction: x.length ? clipped / x.length : 0 };
+}
 
-function processTrack(raw: string, id: string, sp: SpeciesDef): Processed | { reject: string } {
+function processCandidate(raw: string, id: string, sp: SpeciesDef, c: Candidate): CandidateTrack {
   const full = decode(raw);
   const total = full.length / SR;
-  if (total < 8) return { reject: `too short (${total.toFixed(1)} s)` };
   const len = Math.min(TARGET_SEC, total);
   const start = bestWindow(full, len);
   mkdirSync(AUDIO, { recursive: true });
   const outFile = join(AUDIO, `${id}.mp3`);
   const fadeOut = Math.max(0, len - 1.5);
-  execFileSync('ffmpeg', [
-    '-v', 'error', '-y', '-ss', start.toFixed(2), '-t', len.toFixed(2), '-i', raw,
-    '-af', `highpass=f=400,loudnorm=I=-20:TP=-2:LRA=11,afade=t=in:d=0.8,afade=t=out:st=${fadeOut.toFixed(2)}:d=1.5`,
-    '-ac', '1', '-ar', '44100', '-b:a', '64k', outFile,
-  ]);
-  // QC + isian markers are computed on the final file so times match what the app plays.
+  // Gentle processing only: high-pass (rumble), loudness normalisation (BS.1770), fades. No denoising,
+  // pitch or time changes — the bird's song itself is never altered.
+  // Two-pass loudnorm: measure, then apply a linear gain to hit the target exactly; a true-peak limiter
+  // only engages if linear gain alone would exceed the ceiling.
+  const pre = `highpass=f=400,afade=t=in:d=0.8,afade=t=out:st=${fadeOut.toFixed(2)}:d=1.5`;
+  const cut = ['-ss', start.toFixed(2), '-t', len.toFixed(2), '-i', raw];
+  const meas = execFileSync('sh', ['-c', `ffmpeg -hide_banner -nostats ${cut.map((x) => `"${x}"`).join(' ')} -af "${pre},loudnorm=I=-20:TP=-2:LRA=20:print_format=json" -f null - 2>&1`], { encoding: 'utf8', maxBuffer: 1 << 26 });
+  const j = JSON.parse(meas.slice(meas.lastIndexOf('{'), meas.lastIndexOf('}') + 1)) as Record<string, string>;
+  const second = `loudnorm=I=-20:TP=-2:LRA=20:measured_I=${j.input_i}:measured_TP=${j.input_tp}:measured_LRA=${j.input_lra}:measured_thresh=${j.input_thresh}:offset=${j.target_offset}:linear=true`;
+  execFileSync('ffmpeg', ['-v', 'error', '-y', ...cut, '-af', `${pre},${second},alimiter=limit=0.7:level=false`, '-ac', '1', '-ar', '44100', '-b:a', '96k', outFile]);
   const final = decode(outFile);
   const r = analyzeRecording(final, []);
-  const qc = { snrDb: r.metrics.loudnessDb, kerjaPct: r.metrics.kerjaPct, phrases: r.metrics.phraseCount, variasi: r.metrics.variasi };
-  if (qc.snrDb < QC.minSnrDb) return { reject: `low SNR ${qc.snrDb} dB` };
-  if (qc.kerjaPct < QC.minKerjaPct) return { reject: `sparse singing ${qc.kerjaPct}%` };
-  if (qc.phrases < QC.minPhrases) return { reject: `few phrases ${qc.phrases}` };
-  const types = phraseTypes(final).filter((p) => p.count >= 2).slice(0, 2);
-  const isian = types.map((p, i) => {
-    const iid = `${id}-i${i + 1}`;
-    const names = curation.isianNames[iid];
-    return {
-      id: iid,
-      nameId: names?.nameId ?? `${sp.nameId} – frasa ${i + 1}`,
-      nameEn: names?.nameEn ?? `${sp.nameEn} – phrase ${i + 1}`,
-      startSec: p.startSec,
-      endSec: p.endSec,
-    };
-  });
-  // Expert-marked isian (e.g. short calls like gereja tarung that auto-marking skips) are appended.
-  for (const [k, m] of (curation.isianManual?.[id] ?? []).entries()) isian.push({ id: `${id}-m${k + 1}`, ...m });
-  return { file: `audio/${id}.mp3`, bytes: statSync(outFile).size, durationSec: +(final.length / SR).toFixed(2), qc, isian };
+  const { lufs, truePeak } = measureLoudness(outFile);
+  const src = sourceStats(raw);
+  const types = phraseTypes(final).filter((p) => p.count >= 2).slice(0, 3);
+  const isian = types.map((p, i) => ({ id: `${id}-i${i + 1}`, nameId: '', nameEn: '', startSec: p.startSec, endSec: p.endSec, repeats: p.count }));
+  const measurements = {
+    licenseAllowed: classifyLicense(c.license).allowed,
+    attribution: { title: c.key.replace(/^commons:File:/, '').replace(/^xc:/, 'XC'), author: c.recordist, sourceUrl: c.sourceUrl, licenseUrl: c.licenseUrl },
+    durationSec: +(final.length / SR).toFixed(2),
+    integratedLufs: lufs,
+    truePeakDbtp: truePeak,
+    snrDb: r.metrics.loudnessDb,
+    kerjaPct: r.metrics.kerjaPct,
+    clippedFraction: src.clippedFraction,
+    sourceSampleRate: src.sampleRate,
+    sourceGrade: c.quality,
+    backgroundSpecies: c.source === 'xeno-canto' ? c.background : null,
+    country: c.country,
+    preferredCountries: sp.country,
+    isianCount: isian.length,
+  };
+  return {
+    id, key: c.key, species: sp.id, role: sp.roles[0], nameId: sp.nameId, nameEn: sp.nameEn, sci: sp.sci,
+    file: `audio/${id}.mp3`, bytes: statSync(outFile).size, durationSec: measurements.durationSec,
+    license: c.license, licenseUrl: c.licenseUrl, recordist: c.recordist, source: c.source, sourceUrl: c.sourceUrl,
+    title: measurements.attribution.title, country: c.country || undefined, sourceWindow: { startSec: +start.toFixed(2), lengthSec: +len.toFixed(2) },
+    measurements, auto: autoChecks(measurements), isian,
+  };
 }
 
 // ---------------------------------------------------------------------------------------------------
@@ -256,80 +277,49 @@ function processTrack(raw: string, id: string, sp: SpeciesDef): Processed | { re
 // ---------------------------------------------------------------------------------------------------
 
 async function main() {
-  console.log(`Policy: ${POLICY} · xeno-canto: ${XC_KEY ? 'on' : 'OFF (set XC_API_KEY)'} · Commons: on`);
-  const existing: Catalog | null = existsSync(join(OUT, 'catalog.json')) ? JSON.parse(readFileSync(join(OUT, 'catalog.json'), 'utf8')) : null;
-  const tracks: CatalogTrack[] = existing ? existing.tracks.filter((t) => !ONLY || !ONLY.includes(t.species)) : [];
+  console.log(`Standard v${STANDARD_VERSION} · xeno-canto: ${XC_KEY ? 'on' : 'OFF (set XC_API_KEY)'} · Commons: on`);
+  const prev: CandidateFile | null = existsSync(join(OUT, 'candidates.json')) ? JSON.parse(readFileSync(join(OUT, 'candidates.json'), 'utf8')) : null;
+  const candidates: CandidateTrack[] = prev ? prev.candidates.filter((t) => ONLY && !ONLY.includes(t.species)) : [];
   const report: string[] = [];
-
   for (const sp of species) {
     if (ONLY && !ONLY.includes(sp.id)) continue;
-    if (tracks.some((t) => t.species === sp.id)) {
-      report.push(`= ${sp.id}: kept existing`);
-      continue;
-    }
-    let candidates: Candidate[] = [];
+    let found: Candidate[] = [];
     try {
-      candidates = [...(await xenoCanto(sp)), ...(await commons(sp))];
+      found = [...(await xenoCanto(sp)), ...(await commons(sp))];
     } catch (e) {
       report.push(`! ${sp.id}: source error ${(e as Error).message}`);
     }
-    const pinned = curation.pin[sp.id];
-    const usable = candidates
-      .filter((c) => !curation.exclude.includes(c.key))
-      .filter((c) => classifyLicense(c.license).allowed)
-      .sort((a, b) => (b.key === pinned ? 1e6 : rank(sp, b)) - (a.key === pinned ? 1e6 : rank(sp, a)));
-    const lic = candidates.length - usable.length;
-    let done = false;
-    for (const c of usable.slice(0, 6)) {
+    const usable = found.filter((c) => !curation.exclude.includes(c.key) && classifyLicense(c.license).allowed).sort((a, b) => rank(sp, b) - rank(sp, a));
+    let kept = 0;
+    for (const c of usable.slice(0, PER_SPECIES * 2)) {
+      if (kept >= PER_SPECIES) break;
       const id = `${sp.id}-${c.key.startsWith('xc:') ? 'xc' + c.key.slice(3) : 'wc' + Math.abs(hash(c.key))}`;
       try {
-        const raw = await download(c);
-        const p = processTrack(raw, id, sp);
-        if ('reject' in p) {
-          report.push(`  ${sp.id}: ${c.key} rejected – ${p.reject}`);
-          continue;
-        }
-        tracks.push({
-          id, species: sp.id, role: sp.roles[0], nameId: sp.nameId, nameEn: sp.nameEn, sci: sp.sci,
-          file: p.file, bytes: p.bytes, durationSec: p.durationSec, license: c.license, licenseUrl: c.licenseUrl,
-          recordist: c.recordist, source: c.source, sourceUrl: c.sourceUrl, country: c.country || undefined,
-          review: curation.approved.includes(id) ? 'approved' : 'auto', qc: p.qc, isian: p.isian,
-        });
-        report.push(`✓ ${sp.id}: ${c.key} (${c.license}, q${c.quality}, ${c.country || '?'}) snr ${p.qc.snrDb} dB, kerja ${p.qc.kerjaPct}%, ${p.isian.length} isian`);
-        done = true;
-        break;
+        const cand = processCandidate(await download(c), id, sp, c);
+        candidates.push(cand);
+        kept++;
+        const fails = Object.entries(cand.auto).filter(([, v]) => v.status === 'fail').map(([k]) => k);
+        const human = Object.entries(cand.auto).filter(([, v]) => v.status === 'human').map(([k]) => k);
+        report.push(`${fails.length ? '✗' : '•'} ${sp.id}: ${c.key} (${c.license}, ${c.country || '?'}) ${fails.length ? 'FAILS ' + fails.map((f) => `${f}=${cand.auto[f].value}`).join(', ') : 'passes auto checks'}${human.length ? ' · needs expert: ' + human.join(',') : ''}`);
       } catch (e) {
         report.push(`  ${sp.id}: ${c.key} failed – ${(e as Error).message}`);
       }
     }
-    if (!done) report.push(`✗ ${sp.id}: no usable recording (${candidates.length} candidates, ${lic} excluded by licence/curation)`);
+    if (kept === 0) report.push(`– ${sp.id}: no licence-cleared candidate (${found.length} found)`);
     await new Promise((r) => setTimeout(r, 3000));
   }
-
-  const packs: CatalogPack[] = packDefs.map((p) => {
-    const trackIds = p.species.map((s) => tracks.find((t) => t.species === s)?.id).filter((x): x is string => !!x);
-    return {
-      id: p.id, target: p.target, nameId: p.nameId, nameEn: p.nameEn, descId: p.descId, descEn: p.descEn, preset: p.preset,
-      trackIds, missingSpecies: p.species.filter((s) => !tracks.some((t) => t.species === s)),
-    };
-  });
-  const catalog: Catalog = { version: 1, generatedAt: new Date().toISOString(), licensePolicy: POLICY, tracks, packs };
+  const file: CandidateFile = { standardVersion: STANDARD_VERSION, generatedAt: new Date().toISOString(), candidates };
   mkdirSync(OUT, { recursive: true });
-  writeFileSync(join(OUT, 'catalog.json'), JSON.stringify(catalog, null, 1));
-  writeFileSync(join(OUT, 'ATTRIBUTION.md'), attribution(catalog));
+  writeFileSync(join(OUT, 'candidates.json'), JSON.stringify(file, null, 1));
+  writeFileSync(join(OUT, 'REPORT.md'), `# Candidate report\n\nGenerated ${file.generatedAt} · standard v${STANDARD_VERSION}\n\n\`\`\`\n${report.join('\n')}\n\`\`\`\n`);
   console.log(report.join('\n'));
-  console.log(`\n${tracks.length} tracks · ${(tracks.reduce((n, t) => n + t.bytes, 0) / 1e6).toFixed(1)} MB · packs: ${packs.map((p) => `${p.id}(${p.trackIds.length}/${p.trackIds.length + p.missingSpecies.length})`).join(' ')}`);
+  console.log(`\n${candidates.length} candidates written to review/candidates/ — none are published until approved (npm run review → npm run catalog:publish).`);
 }
 
 function hash(s: string) {
   let h = 0;
   for (const c of s) h = (h * 31 + c.charCodeAt(0)) | 0;
   return h;
-}
-
-function attribution(c: Catalog): string {
-  const rows = c.tracks.map((t) => `| ${t.nameEn} (*${t.sci}*) | ${t.recordist} | [${t.license}](${t.licenseUrl}) | [${t.source}](${t.sourceUrl}) |`);
-  return `# Recording credits\n\nAll masteran recordings in this catalogue are used under the licences below. They were trimmed, high-pass filtered, loudness-normalised and re-encoded for training use; share-alike tracks are redistributed under the same licence.\n\n| Species | Recordist | Licence | Source |\n|---|---|---|---|\n${rows.join('\n')}\n`;
 }
 
 main().catch((e) => {

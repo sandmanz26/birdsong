@@ -81,7 +81,6 @@ export function TrackEditor({ id }: { id: string }) {
     <div className="stack">
       <h2 className="title">{track.name}</h2>
       <p className="muted small">{fmtDuration(track.durationSec)}{phrases ? ` · ${t('phrasesFound', { n: phrases.length })}` : ''}</p>
-      {track.source === 'demo' && <p className="notice small">{t('demoTrackNote')}</p>}
       {track.license && (
         <p className="muted small">
           {t('recordedBy')}: {track.attribution?.split(' · ')[0]} · {t('license')}:{' '}

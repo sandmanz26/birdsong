@@ -3,7 +3,7 @@
  * loop (research R8): shuffled order without back-to-back repeats, natural silent gaps, slight level
  * variation, random entry points into long tracks. Pure + seeded so it is testable and reproducible.
  */
-import { mulberry32 } from '../dsp/synth';
+import { mulberry32 } from './random';
 
 export interface PlanTrack {
   id: string;

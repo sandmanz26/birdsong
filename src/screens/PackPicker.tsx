@@ -47,13 +47,14 @@ export function PackPicker({ birdId }: { birdId: string }) {
       <h2 className="title">{t('packsTitle')}</h2>
       <p className="muted small">{t('packsHint')}</p>
       {failed && <p className="warn small" role="alert">{t('catalogError')}</p>}
+      {catalog.packs.length === 0 && <p className="notice">{t('noPacksYet')}</p>}
       {recommended.length > 0 && (
         <>
           <h3>{t('recommendedFor', { species: t(`sp_${bird.species}` as TKey) })}</h3>
           {recommended.map(card)}
         </>
       )}
-      <h3>{t('otherPacks')}</h3>
+      {others.length > 0 && <h3>{t('otherPacks')}</h3>}
       {others.map(card)}
       <button className="btn ghost" onClick={() => nav({ name: 'bird', id: birdId, tab: 'masteran' })}>{t('skipForNow')}</button>
     </div>

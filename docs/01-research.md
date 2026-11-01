@@ -76,7 +76,7 @@ The question was whether to build a **song generator** or use **existing recordi
 | Physics-based synthesis | Wild rufous-collared sparrows responded to synthetic songs as strongly as to real ones. ([Physics World](https://physicsworld.com/a/wild-songbirds-respond-to-mathematically-synthesized-song/); [Frontiers 2021](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8287859/)) | ⏸️ Promising but needs per-species modelling. Revisit for research partnerships. |
 | **Real recordings + generated program** | Hobbyists already own and value authentic isian (cililin, ciblek, cucak jenggot). xeno-canto offers CC-licensed recordings via API v3 (key required since Oct 2025; **licence varies per recording**, and *ND* licences forbid trimming). ([xeno-canto terms](https://xeno-canto.org/about/terms)) | ✅ **MVP choice.** Users import their own masteran files. The app *generates* each session: order, natural gaps, level variation, fades and rotation. v2 adds a licence-checked xeno-canto catalogue. |
 
-The repo contains a small **synthetic chirp generator**, but it is used *only* for automated tests and the in-app "demo data" so testers can try Feature 2 without a bird. It is clearly labelled and never offered as training material.
+The repo contains a small **synthetic chirp generator** used *only* as a unit-test fixture (`tests/fixtures/`). The product ships no synthetic or sample media (see [06-curation-standard.md](06-curation-standard.md)).
 
 ---
 

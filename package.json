@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "test": "vitest run",
     "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.scripts.json",
-    "catalog": "vite-node scripts/build-catalog.ts --"
+    "catalog:candidates": "vite-node scripts/build-candidates.ts --",
+    "review": "vite --open /review.html",
+    "catalog:publish": "vite-node scripts/publish-catalog.ts --"
   },
   "dependencies": {
     "react": "^18.3.1",

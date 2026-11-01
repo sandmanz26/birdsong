@@ -1,7 +1,9 @@
-/** Curated masteran catalogue: produced by scripts/build-catalog.ts, consumed by the app. */
+/** Published masteran catalogue: produced by scripts/publish-catalog.ts, consumed by the app.
+ * Every track here passed the content standard and was approved by a named expert. */
 
 export interface CatalogIsian {
   id: string;
+  /** Community name given by the curator. */
   nameId: string;
   nameEn: string;
   startSec: number;
@@ -20,15 +22,17 @@ export interface CatalogTrack {
   file: string;
   bytes: number;
   durationSec: number;
-  license: string;
-  licenseUrl: string;
+  /** TASL attribution. */
+  title: string;
   recordist: string;
   source: 'xeno-canto' | 'wikimedia-commons';
   sourceUrl: string;
+  license: string;
+  licenseUrl: string;
   country?: string;
-  /** 'auto' = passed automatic QC; 'approved' = also approved by an expert listener. */
-  review: 'auto' | 'approved';
-  qc: { snrDb: number; kerjaPct: number; phrases: number; variasi: number };
+  /** Modification notice (CC best practice). */
+  modified: string;
+  curation: { curator: string; role: string; date: string; standardVersion: number; notes?: string };
   isian: CatalogIsian[];
 }
 
@@ -42,14 +46,14 @@ export interface CatalogPack {
   descEn: string;
   preset: 'pagi' | 'malam' | 'pagiMalam';
   trackIds: string[];
-  /** Species in the pack definition that have no cleared track yet. */
+  /** Species in the pack definition still awaiting approved material. */
   missingSpecies: string[];
 }
 
 export interface Catalog {
   version: number;
+  standardVersion: number;
   generatedAt: string;
-  licensePolicy: 'commercial' | 'beta';
   tracks: CatalogTrack[];
   packs: CatalogPack[];
 }

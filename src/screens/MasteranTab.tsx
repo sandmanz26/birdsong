@@ -112,7 +112,7 @@ export function MasteranTab({ bird }: { bird: Bird }) {
             <div className="row between wrap">
               <span>
                 <span className="muted small block">{t('currentPack')}</span>
-                <strong>{data.pack ? (lang === 'id' ? data.pack.nameId : data.pack.nameEn) : t('demoBadge')}</strong>
+                <strong>{data.pack ? (lang === 'id' ? data.pack.nameId : data.pack.nameEn) : '—'}</strong>
               </span>
               <button className="btn small" onClick={() => nav({ name: 'packs', birdId: bird.id })}>{t('changePack')}</button>
             </div>
@@ -124,7 +124,7 @@ export function MasteranTab({ bird }: { bird: Bird }) {
                     <input type="checkbox" checked={program.trackIds.includes(tr.id)} onChange={() => toggleTrack(tr.id)} />
                     <span className="grow">
                       {tr.species === bird.species ? '★ ' : ''}
-                      {tr.name} {tr.source === 'demo' && <span className="badge">{t('demoBadge')}</span>}
+                      {tr.name}
                     </span>
                     <span className="muted small">{fmtDuration(tr.durationSec)}</span>
                   </label>

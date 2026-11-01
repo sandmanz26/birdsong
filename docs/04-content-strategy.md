@@ -71,4 +71,6 @@ See the build report in `public/catalog/catalog.json` (`packs[].missingSpecies`)
 
 * No user music uploads, so there's no copyright risk from shared compilations.
 * The owner can still **record their bird** (or upload a recording of it) for Cek Isian. That's the bird's own voice, not training material.
-* Synthetic audio stays demo-only and is never used as training material (research §5).
+* No synthetic, sample or dummy media anywhere in the product; synthetic signals exist only as unit-test fixtures.
+
+> **Update (v0.3):** publishing is now gated by the content standard and named expert approval — see [06-curation-standard.md](06-curation-standard.md). The auto-selected tracks from the first build were withdrawn.

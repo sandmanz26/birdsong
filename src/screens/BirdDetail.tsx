@@ -20,7 +20,7 @@ export function BirdDetail({ id, tab, checkId }: { id: string; tab: BirdTab; che
     <div className="stack">
       <div className="row between">
         <div>
-          <h2 className="title">{bird.name} {bird.demo && <span className="badge">{t('demoBadge')}</span>}</h2>
+          <h2 className="title">{bird.name}</h2>
           <p className="muted small">
             {t(`sp_${bird.species}` as TKey)} · {t(`ph_${bird.phase}` as TKey)} · {t(`or_${bird.origin}` as TKey)}
             {bird.ring ? ` · ${bird.ring}` : ''}

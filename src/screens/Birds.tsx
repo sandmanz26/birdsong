@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { createDemo, playedTodaySec, getProgram } from '../actions';
+import { playedTodaySec, getProgram } from '../actions';
 import { db } from '../db';
 import { useI18n, type TKey } from '../i18n';
 import { useLoad, useNav } from '../nav';
@@ -8,7 +7,6 @@ import { StatusChips } from './CheckResult';
 export function BirdsScreen() {
   const { t } = useI18n();
   const nav = useNav();
-  const [busy, setBusy] = useState(false);
   const { data } = useLoad(async () => {
     const birds = (await db.all('birds')).sort((a, b) => b.createdAt - a.createdAt);
     return Promise.all(
@@ -18,22 +16,6 @@ export function BirdsScreen() {
       }),
     );
   }, []);
-
-  const demo = async () => {
-    setBusy(true);
-    try {
-      const bird = await createDemo({
-        bird: 'Demo – Murai',
-        track: 'Demo tutor (sintetis)',
-        isian: ['Isian A – siulan naik', 'Isian B – trill turun', 'Isian C – getar panjang'],
-      });
-      nav({ name: 'bird', id: bird.id, tab: 'check' });
-    } catch (e) {
-      console.error(e);
-      alert(t('errorGeneric'));
-      setBusy(false);
-    }
-  };
 
   if (!data) return <p className="muted pad">{t('loading')}</p>;
 
@@ -46,7 +28,6 @@ export function BirdsScreen() {
         <h2>{t('birdsEmptyTitle')}</h2>
         <p className="muted">{t('birdsEmptyBody')}</p>
         <button className="btn primary" onClick={() => nav({ name: 'birdForm' })}>{t('addBird')}</button>
-        <button className="btn" onClick={demo} disabled={busy}>{busy ? t('demoCreating') : t('tryDemo')}</button>
       </div>
     );
 
@@ -55,7 +36,7 @@ export function BirdsScreen() {
       {data.map(({ bird, playedMin, program, last }) => (
         <button key={bird.id} className="card bird-card" onClick={() => nav({ name: 'bird', id: bird.id, tab: 'masteran' })}>
           <div className="row between">
-            <h3>{bird.name} {bird.demo && <span className="badge">{t('demoBadge')}</span>}</h3>
+            <h3>{bird.name}</h3>
             <span className="chip">{t(`ph_${bird.phase}` as TKey)}</span>
           </div>
           <p className="muted small">{t(`sp_${bird.species}` as TKey)}</p>
@@ -71,9 +52,6 @@ export function BirdsScreen() {
         </button>
       ))}
       <button className="btn primary" onClick={() => nav({ name: 'birdForm' })}>+ {t('addBird')}</button>
-      {!data.some((d) => d.bird.demo) && (
-        <button className="btn ghost" onClick={demo} disabled={busy}>{busy ? t('demoCreating') : t('tryDemo')}</button>
-      )}
     </div>
   );
 }

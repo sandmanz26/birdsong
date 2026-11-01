@@ -299,3 +299,4 @@ input[type='checkbox'] { width: 22px; height: 22px; accent-color: var(--primary)
 .qc.approved { border-color: var(--accent); color: var(--text); }
 .track-main:disabled { opacity: 1; cursor: default; color: inherit; }
 a { color: var(--primary); }
+.curated { color: var(--good-ink); font-weight: 600; }

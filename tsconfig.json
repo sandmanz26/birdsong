@@ -27,6 +27,7 @@
     "vite.config.ts"
   ],
   "exclude": [
-    "scripts/build-catalog.ts"
+    "scripts/build-candidates.ts",
+    "scripts/publish-catalog.ts"
   ]
 }

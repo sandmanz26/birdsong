@@ -1,8 +1,5 @@
 {
-  "$comment": "Human curation overrides. 'exclude': recording keys never to use (e.g. 'xc:123456', 'commons:File:X.ogg'). 'pin': species -> recording key to force. 'approved': track ids an expert listener has approved (review = 'approved'). 'isianNames': isian id -> {nameId, nameEn}. 'isianManual': track id -> [{startSec, endSec, nameId, nameEn}] for isian the expert marks by hand (times in the processed catalogue file).",
+  "$comment": "Expert curation (content standard v1, docs/06-curation-standard.md). 'approvals' is written by the review tool (npm run review): candidate id -> {decision, curator, role, date, checks{H1..H6}, isian{id:{nameId,nameEn}}, notes}. 'exclude': source keys never to use again (e.g. 'xc:123456').",
   "exclude": [],
-  "pin": {},
-  "approved": [],
-  "isianNames": {},
-  "isianManual": {}
+  "approvals": {}
 }

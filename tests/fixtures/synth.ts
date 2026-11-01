@@ -1,22 +1,11 @@
 /**
- * Synthetic chirp generator.
- *
- * IMPORTANT (product decision, research §5): this is NOT a masteran generator. Synthetic audio is used
- * only for automated tests and clearly-labelled demo data so testers can try "Cek Isian" without a bird.
- * Training material must be real recordings.
+ * TEST FIXTURE ONLY. Synthetic chirps with known ground truth for the analyser's unit tests.
+ * Lives under tests/ so it can never be bundled into the product: the app ships no synthetic or dummy
+ * audio (content standard, docs/06-curation-standard.md).
  */
-import { SR } from './spectrogram';
-
-export function mulberry32(seed: number): () => number {
-  let a = seed >>> 0;
-  return () => {
-    a = (a + 0x6d2b79f5) >>> 0;
-    let t = a;
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
+import { SR } from '../../src/dsp/spectrogram';
+import { mulberry32 } from '../../src/audio/random';
+export { mulberry32 };
 
 export interface Syllable {
   /** Start and end frequency of the sweep (Hz). */
@@ -35,7 +24,7 @@ export interface Syllable {
 
 export type PhraseSpec = Syllable[];
 
-/** A few distinct phrase "types" used by tests and the demo. */
+/** A few distinct phrase "types" used by the tests. */
 export const PHRASES: Record<string, PhraseSpec> = {
   // Rising whistles
   A: [
@@ -127,7 +116,7 @@ export function renderScene(durationSec: number, placements: Placement[], noise 
   return out;
 }
 
-/** Demo "tutor" track: phrase types A, B and C repeated with natural gaps (≈24 s). */
+/** Fixture "tutor" track: phrase types A, B and C repeated with natural gaps (≈24 s). */
 export function demoTutorTrack(sr = SR): Float32Array {
   const placements: Placement[] = [];
   const order = ['A', 'B', 'C', 'A', 'C', 'B', 'A', 'B', 'C'];
@@ -141,7 +130,7 @@ export function demoTutorTrack(sr = SR): Float32Array {
 }
 
 /**
- * Demo "bird" recording (≈30 s): has learned A (slightly higher and slower), is part-way on C
+ * Fixture "bird" recording (≈30 s): has learned A (slightly higher and slower), is part-way on C
  * (distorted), has not learned B, and sings its own phrases D and E.
  */
 export function demoBirdRecording(sr = SR): Float32Array {

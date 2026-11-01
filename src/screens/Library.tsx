@@ -15,7 +15,7 @@ export function LibraryScreen() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const { data, error, reload } = useLoad(async () => {
     const [catalog, local] = await Promise.all([loadCatalog(), db.all('tracks')]);
-    return { catalog, installed: new Set(local.map((x) => x.id)), demo: local.filter((x) => x.source === 'demo') };
+    return { catalog, installed: new Set(local.map((x) => x.id)) };
   }, []);
 
   if (error) return <CatalogError onRetry={reload} />;
@@ -41,6 +41,7 @@ export function LibraryScreen() {
       <h2 className="title">{t('catalogTitle')}</h2>
       <p className="muted small">{t('catalogHint')}</p>
       {data.catalog.tracks.length === 0 && <p className="notice">{t('catalogEmpty')}</p>}
+      <p className="muted small">{t('standardNote', { v: data.catalog.standardVersion })}</p>
       {groups.map(([role, label]) => {
         const list = data.catalog.tracks.filter((x) => x.role === role).sort((a, b) => a.nameId.localeCompare(b.nameId));
         if (list.length === 0) return null;
@@ -65,25 +66,17 @@ export function LibraryScreen() {
                       {fmtDuration(tr.durationSec)} · {t('isianCount', { n: tr.isian.length })} · {tr.license}
                       {isInstalled && <> · ✓ {t('installed')}</>}
                     </span>
-                    <span className="muted small block">{t('recordedBy')}: {tr.recordist}</span>
+                    <span className="muted small block">{t('recordedBy')}: {tr.recordist}{tr.country ? ` · ${tr.country}` : ''}</span>
+                    <span className="curated small block">
+                      ✓ {t('curatedBy', { name: tr.curation.curator, role: tr.curation.role, date: tr.curation.date })}
+                    </span>
                   </button>
-                  <span className={'qc ' + tr.review} title={tr.review === 'approved' ? t('qcApproved') : t('qcAuto')}>
-                    {tr.review === 'approved' ? '★' : 'QC'}
-                  </span>
                 </div>
               );
             })}
           </section>
         );
       })}
-      {data.demo.map((tr) => (
-        <button key={tr.id} className="card track-row" onClick={() => nav({ name: 'track', id: tr.id })}>
-          <span className="grow">
-            <strong>{tr.name}</strong> <span className="badge">{t('demoBadge')}</span>
-            <span className="muted small block">{t('demoTrackNote')}</span>
-          </span>
-        </button>
-      ))}
     </div>
   );
 }

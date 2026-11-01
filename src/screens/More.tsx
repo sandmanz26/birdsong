@@ -63,8 +63,10 @@ export function MoreScreen() {
             {catalog.tracks.map((tr) => (
               <li key={tr.id}>
                 <span>
-                  {lang === 'id' ? tr.nameId : tr.nameEn} <em className="muted">{tr.sci}</em>
-                  <span className="muted small block">{tr.recordist}</span>
+                  “{tr.title}” — {lang === 'id' ? tr.nameId : tr.nameEn} <em className="muted">{tr.sci}</em>
+                  <span className="muted small block">{tr.recordist}{tr.country ? ` · ${tr.country}` : ''}</span>
+                  <span className="muted small block">{tr.modified}</span>
+                  <span className="curated small block">✓ {t('curatedBy', { name: tr.curation.curator, role: tr.curation.role, date: tr.curation.date })}</span>
                 </span>
                 <span className="small">
                   <a href={tr.licenseUrl} target="_blank" rel="noreferrer">{tr.license}</a> ·{' '}

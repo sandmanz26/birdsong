@@ -1,6 +1,6 @@
 # PRD: Kicau Coach MVP (two testable features)
 
-*Status: v0.2 — curated catalogue replaces user uploads (see [04-content-strategy.md](04-content-strategy.md)). MVP built and ready for user testing. Owner: Product/Eng. Research basis: [01-research.md](01-research.md), referenced below as R1–R14.*
+*Status: v0.3 — curated catalogue gated by the content standard and expert approval ([06-curation-standard.md](06-curation-standard.md)); no dummy data. v0.2 replaced user uploads ([04-content-strategy.md](04-content-strategy.md)). MVP built and ready for user testing. Owner: Product/Eng. Research basis: [01-research.md](01-research.md), referenced below as R1–R14.*
 
 ## Problem
 
@@ -79,7 +79,7 @@ The primary user is the **Contestant** (the beachhead), with **Breeders** (multi
 | F2.1 | The pipeline is pure TypeScript with no native dependencies, and is unit-tested with synthetic signals: identical, noisy, pitch-shifted, time-stretched and different phrases. |
 | F2.2 | Analysing a 120 s recording against 10 targets finishes in under 5 s on a mid-range Android phone, and the UI stays responsive (Web Worker). |
 | F2.3 | Results are stored with the recording, so they can be re-analysed if the algorithm improves (the version is stored). |
-| F2.4 | **Demo data.** One tap generates a synthetic "tutor" and a "bird" recording so testers can try the flow without a bird. It is labelled *Demo*. |
+| F2.4 | **No dummy data.** The product ships no demo, sample or synthetic media or records. The catalogue contains only expert-approved tracks that meet the content standard ([06-curation-standard.md](06-curation-standard.md)); when none qualify, the app shows an honest "being curated" state. |
 
 ---
 

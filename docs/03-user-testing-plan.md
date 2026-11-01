@@ -22,7 +22,7 @@ Tasks, measured by success, time and errors:
 3. Start a 15-minute session now, then put the phone in Stand-by.
 4. Open a tutor track, mark one phrase as isian, and select it as a target.
 5. Record your bird for 60 s and read the result back to the moderator: *"Which isian has entered? Which hasn't?"*
-6. Try the demo, if steps 4–5 weren't possible on the day.
+6. If the bird won't sing on the day, schedule a second visit rather than simulating it — the product has no demo data.
 
 After the session: **SUS** questionnaire, plus three open questions: *"What would you change?"*, *"Would you trust this score at a contest?"*, *"What would you pay for this?"*
 
@@ -74,7 +74,6 @@ After the session: **SUS** questionnaire, plus three open questions: *"What woul
 | `session_skipped_cap` | — |
 | `check_completed` | source, durationSec, targets, ms (analysis time), statuses |
 | `verdict_feedback` | vote, status, similarity |
-| `demo_created` | — |
 
 The export removes bird and track names (free text) and contains **no audio**.
 

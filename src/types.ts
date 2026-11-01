@@ -14,7 +14,6 @@ export interface Bird {
   origin: Origin;
   ring?: string;
   hatchDate?: string;
-  demo?: boolean;
   createdAt: number;
 }
 
@@ -24,8 +23,8 @@ export interface Track {
   durationSec: number;
   mime: string;
   size: number;
-  /** 'catalog' = curated library (the default); 'demo' = synthetic demo data; 'import' = legacy/dev only. */
-  source: 'catalog' | 'demo' | 'import';
+  /** Masteran material only ever comes from the curated catalogue (no uploads, no synthetic audio). */
+  source: 'catalog';
   catalogId?: string;
   species?: string;
   role?: 'master' | 'isian';
@@ -82,7 +81,7 @@ export interface Check {
   id: string;
   birdId: string;
   createdAt: number;
-  source: 'record' | 'upload' | 'demo';
+  source: 'record' | 'upload';
   durationSec: number;
   result: AnalysisResult;
   /** Snapshot of isian names at analysis time. */

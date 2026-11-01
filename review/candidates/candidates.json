@@ -1,0 +1,1833 @@
+{
+ "standardVersion": 1,
+ "generatedAt": "2026-11-01T17:03:03.913Z",
+ "candidates": [
+  {
+   "id": "murai_batu-wc1718367996",
+   "key": "commons:File:ShamaJavadi.ogg",
+   "species": "murai_batu",
+   "role": "master",
+   "nameId": "Murai batu",
+   "nameEn": "White-rumped shama",
+   "sci": "Copsychus malabaricus",
+   "file": "audio/murai_batu-wc1718367996.mp3",
+   "bytes": 151450,
+   "durationSec": 12.56,
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "recordist": "L. Shyamal",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:ShamaJavadi.ogg",
+   "title": "ShamaJavadi.ogg",
+   "sourceWindow": {
+    "startSec": 0,
+    "lengthSec": 12.56
+   },
+   "measurements": {
+    "licenseAllowed": true,
+    "attribution": {
+     "title": "ShamaJavadi.ogg",
+     "author": "L. Shyamal",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:ShamaJavadi.ogg",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "durationSec": 12.56,
+    "integratedLufs": -20.9,
+    "truePeakDbtp": -3.7,
+    "snrDb": 40,
+    "kerjaPct": 38,
+    "clippedFraction": 0,
+    "sourceSampleRate": 8000,
+    "sourceGrade": "?",
+    "backgroundSpecies": null,
+    "country": "",
+    "preferredCountries": [
+     "Indonesia",
+     "Malaysia",
+     "Thailand",
+     "Brunei",
+     "Singapore"
+    ],
+    "isianCount": 2
+   },
+   "auto": {
+    "L1": {
+     "status": "pass",
+     "value": "allowed"
+    },
+    "L2": {
+     "status": "pass",
+     "value": "L. Shyamal · source · licence"
+    },
+    "A1": {
+     "status": "fail",
+     "value": "12.6 s"
+    },
+    "A2": {
+     "status": "pass",
+     "value": "-20.9 LUFS · -3.7 dBTP"
+    },
+    "A3": {
+     "status": "pass",
+     "value": "40 dB"
+    },
+    "A4": {
+     "status": "pass",
+     "value": "38%"
+    },
+    "A5": {
+     "status": "pass",
+     "value": "0.000%"
+    },
+    "A6": {
+     "status": "fail",
+     "value": "8000 Hz"
+    },
+    "M1": {
+     "status": "human",
+     "value": "no archive grade"
+    },
+    "M2": {
+     "status": "human",
+     "value": "not recorded"
+    },
+    "M3": {
+     "status": "human",
+     "value": "unknown"
+    }
+   },
+   "isian": [
+    {
+     "id": "murai_batu-wc1718367996-i1",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 9.903,
+     "endSec": 10.623,
+     "repeats": 3
+    },
+    {
+     "id": "murai_batu-wc1718367996-i2",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 1.045,
+     "endSec": 2.45,
+     "repeats": 2
+    }
+   ]
+  },
+  {
+   "id": "kacer-wc1853934452",
+   "key": "commons:File:Copsychus saularis - Oriental Magpie-Robin XC126472.ogg",
+   "species": "kacer",
+   "role": "master",
+   "nameId": "Kacer",
+   "nameEn": "Oriental magpie-robin",
+   "sci": "Copsychus saularis",
+   "file": "audio/kacer-wc1853934452.mp3",
+   "bytes": 1080887,
+   "durationSec": 90,
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "recordist": "Sudipto Roy",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Copsychus_saularis_-_Oriental_Magpie-Robin_XC126472.ogg",
+   "title": "Copsychus saularis - Oriental Magpie-Robin XC126472.ogg",
+   "sourceWindow": {
+    "startSec": 3.69,
+    "lengthSec": 90
+   },
+   "measurements": {
+    "licenseAllowed": true,
+    "attribution": {
+     "title": "Copsychus saularis - Oriental Magpie-Robin XC126472.ogg",
+     "author": "Sudipto Roy",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Copsychus_saularis_-_Oriental_Magpie-Robin_XC126472.ogg",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "durationSec": 90,
+    "integratedLufs": -20.3,
+    "truePeakDbtp": -0.3,
+    "snrDb": 38,
+    "kerjaPct": 53,
+    "clippedFraction": 0,
+    "sourceSampleRate": 44100,
+    "sourceGrade": "?",
+    "backgroundSpecies": null,
+    "country": "",
+    "preferredCountries": [
+     "Indonesia",
+     "Malaysia",
+     "Thailand",
+     "Singapore"
+    ],
+    "isianCount": 3
+   },
+   "auto": {
+    "L1": {
+     "status": "pass",
+     "value": "allowed"
+    },
+    "L2": {
+     "status": "pass",
+     "value": "Sudipto Roy · source · licence"
+    },
+    "A1": {
+     "status": "pass",
+     "value": "90.0 s"
+    },
+    "A2": {
+     "status": "fail",
+     "value": "-20.3 LUFS · -0.3 dBTP"
+    },
+    "A3": {
+     "status": "pass",
+     "value": "38 dB"
+    },
+    "A4": {
+     "status": "pass",
+     "value": "53%"
+    },
+    "A5": {
+     "status": "pass",
+     "value": "0.000%"
+    },
+    "A6": {
+     "status": "pass",
+     "value": "44100 Hz"
+    },
+    "M1": {
+     "status": "human",
+     "value": "no archive grade"
+    },
+    "M2": {
+     "status": "human",
+     "value": "not recorded"
+    },
+    "M3": {
+     "status": "human",
+     "value": "unknown"
+    }
+   },
+   "isian": [
+    {
+     "id": "kacer-wc1853934452-i1",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 88.491,
+     "endSec": 89.037,
+     "repeats": 12
+    },
+    {
+     "id": "kacer-wc1853934452-i2",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 56.332,
+     "endSec": 58.538,
+     "repeats": 5
+    },
+    {
+     "id": "kacer-wc1853934452-i3",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 31.359,
+     "endSec": 33.901,
+     "repeats": 4
+    }
+   ]
+  },
+  {
+   "id": "kacer-wc1588831376",
+   "key": "commons:File:Magpie robin.ogg",
+   "species": "kacer",
+   "role": "master",
+   "nameId": "Kacer",
+   "nameEn": "Oriental magpie-robin",
+   "sci": "Copsychus saularis",
+   "file": "audio/kacer-wc1588831376.mp3",
+   "bytes": 970859,
+   "durationSec": 80.83,
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "recordist": "Shajiarikkad",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Magpie_robin.ogg",
+   "title": "Magpie robin.ogg",
+   "sourceWindow": {
+    "startSec": 0,
+    "lengthSec": 80.83
+   },
+   "measurements": {
+    "licenseAllowed": true,
+    "attribution": {
+     "title": "Magpie robin.ogg",
+     "author": "Shajiarikkad",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Magpie_robin.ogg",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "durationSec": 80.83,
+    "integratedLufs": -20.7,
+    "truePeakDbtp": -3.5,
+    "snrDb": 48,
+    "kerjaPct": 31,
+    "clippedFraction": 8.415770480619041e-7,
+    "sourceSampleRate": 44100,
+    "sourceGrade": "?",
+    "backgroundSpecies": null,
+    "country": "",
+    "preferredCountries": [
+     "Indonesia",
+     "Malaysia",
+     "Thailand",
+     "Singapore"
+    ],
+    "isianCount": 3
+   },
+   "auto": {
+    "L1": {
+     "status": "pass",
+     "value": "allowed"
+    },
+    "L2": {
+     "status": "pass",
+     "value": "Shajiarikkad · source · licence"
+    },
+    "A1": {
+     "status": "pass",
+     "value": "80.8 s"
+    },
+    "A2": {
+     "status": "pass",
+     "value": "-20.7 LUFS · -3.5 dBTP"
+    },
+    "A3": {
+     "status": "pass",
+     "value": "48 dB"
+    },
+    "A4": {
+     "status": "pass",
+     "value": "31%"
+    },
+    "A5": {
+     "status": "pass",
+     "value": "0.000%"
+    },
+    "A6": {
+     "status": "pass",
+     "value": "44100 Hz"
+    },
+    "M1": {
+     "status": "human",
+     "value": "no archive grade"
+    },
+    "M2": {
+     "status": "human",
+     "value": "not recorded"
+    },
+    "M3": {
+     "status": "human",
+     "value": "unknown"
+    }
+   },
+   "isian": [
+    {
+     "id": "kacer-wc1588831376-i1",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 77.81,
+     "endSec": 78.483,
+     "repeats": 11
+    },
+    {
+     "id": "kacer-wc1588831376-i2",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 40.496,
+     "endSec": 41.552,
+     "repeats": 9
+    },
+    {
+     "id": "kacer-wc1588831376-i3",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 34.482,
+     "endSec": 35.178,
+     "repeats": 3
+    }
+   ]
+  },
+  {
+   "id": "kacer-wc749900001",
+   "key": "commons:File:XC126472-OriginalOrientalmagpierobinMarch222013.Cropped.ogg",
+   "species": "kacer",
+   "role": "master",
+   "nameId": "Kacer",
+   "nameEn": "Oriental magpie-robin",
+   "sci": "Copsychus saularis",
+   "file": "audio/kacer-wc749900001.mp3",
+   "bytes": 654255,
+   "durationSec": 54.44,
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "recordist": "Sudipto Roy",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:XC126472-OriginalOrientalmagpierobinMarch222013.Cropped.ogg",
+   "title": "XC126472-OriginalOrientalmagpierobinMarch222013.Cropped.ogg",
+   "sourceWindow": {
+    "startSec": 0,
+    "lengthSec": 54.44
+   },
+   "measurements": {
+    "licenseAllowed": true,
+    "attribution": {
+     "title": "XC126472-OriginalOrientalmagpierobinMarch222013.Cropped.ogg",
+     "author": "Sudipto Roy",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:XC126472-OriginalOrientalmagpierobinMarch222013.Cropped.ogg",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "durationSec": 54.44,
+    "integratedLufs": -20.3,
+    "truePeakDbtp": -2.5,
+    "snrDb": 39,
+    "kerjaPct": 57,
+    "clippedFraction": 0.000008746413970272188,
+    "sourceSampleRate": 44100,
+    "sourceGrade": "?",
+    "backgroundSpecies": null,
+    "country": "",
+    "preferredCountries": [
+     "Indonesia",
+     "Malaysia",
+     "Thailand",
+     "Singapore"
+    ],
+    "isianCount": 3
+   },
+   "auto": {
+    "L1": {
+     "status": "pass",
+     "value": "allowed"
+    },
+    "L2": {
+     "status": "pass",
+     "value": "Sudipto Roy · source · licence"
+    },
+    "A1": {
+     "status": "pass",
+     "value": "54.4 s"
+    },
+    "A2": {
+     "status": "pass",
+     "value": "-20.3 LUFS · -2.5 dBTP"
+    },
+    "A3": {
+     "status": "pass",
+     "value": "39 dB"
+    },
+    "A4": {
+     "status": "pass",
+     "value": "57%"
+    },
+    "A5": {
+     "status": "pass",
+     "value": "0.001%"
+    },
+    "A6": {
+     "status": "pass",
+     "value": "44100 Hz"
+    },
+    "M1": {
+     "status": "human",
+     "value": "no archive grade"
+    },
+    "M2": {
+     "status": "human",
+     "value": "not recorded"
+    },
+    "M3": {
+     "status": "human",
+     "value": "unknown"
+    }
+   },
+   "isian": [
+    {
+     "id": "kacer-wc749900001-i1",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 11.401,
+     "endSec": 11.935,
+     "repeats": 8
+    },
+    {
+     "id": "kacer-wc749900001-i2",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 7.721,
+     "endSec": 10.437,
+     "repeats": 5
+    },
+    {
+     "id": "kacer-wc749900001-i3",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 22.036,
+     "endSec": 24.822,
+     "repeats": 2
+    }
+   ]
+  },
+  {
+   "id": "kenari-wc411699834",
+   "key": "commons:File:Serinus canaria forma domestica - audio 01 ies.ogg",
+   "species": "kenari",
+   "role": "master",
+   "nameId": "Kenari",
+   "nameEn": "Canary",
+   "sci": "Serinus canaria",
+   "file": "audio/kenari-wc411699834.mp3",
+   "bytes": 1080887,
+   "durationSec": 90,
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "recordist": "Frank Vincentz",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Serinus_canaria_forma_domestica_-_audio_01_ies.ogg",
+   "title": "Serinus canaria forma domestica - audio 01 ies.ogg",
+   "sourceWindow": {
+    "startSec": 224.01,
+    "lengthSec": 90
+   },
+   "measurements": {
+    "licenseAllowed": true,
+    "attribution": {
+     "title": "Serinus canaria forma domestica - audio 01 ies.ogg",
+     "author": "Frank Vincentz",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Serinus_canaria_forma_domestica_-_audio_01_ies.ogg",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "durationSec": 90,
+    "integratedLufs": -21.3,
+    "truePeakDbtp": -9.7,
+    "snrDb": 42,
+    "kerjaPct": 61,
+    "clippedFraction": 0.00004901225982207538,
+    "sourceSampleRate": 44100,
+    "sourceGrade": "?",
+    "backgroundSpecies": null,
+    "country": "",
+    "preferredCountries": [],
+    "isianCount": 3
+   },
+   "auto": {
+    "L1": {
+     "status": "pass",
+     "value": "allowed"
+    },
+    "L2": {
+     "status": "pass",
+     "value": "Frank Vincentz · source · licence"
+    },
+    "A1": {
+     "status": "pass",
+     "value": "90.0 s"
+    },
+    "A2": {
+     "status": "pass",
+     "value": "-21.3 LUFS · -9.7 dBTP"
+    },
+    "A3": {
+     "status": "pass",
+     "value": "42 dB"
+    },
+    "A4": {
+     "status": "pass",
+     "value": "61%"
+    },
+    "A5": {
+     "status": "pass",
+     "value": "0.005%"
+    },
+    "A6": {
+     "status": "pass",
+     "value": "44100 Hz"
+    },
+    "M1": {
+     "status": "human",
+     "value": "no archive grade"
+    },
+    "M2": {
+     "status": "human",
+     "value": "not recorded"
+    },
+    "M3": {
+     "status": "pass",
+     "value": "unknown"
+    }
+   },
+   "isian": [
+    {
+     "id": "kenari-wc411699834-i1",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 48.588,
+     "endSec": 50.422,
+     "repeats": 3
+    },
+    {
+     "id": "kenari-wc411699834-i2",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 68.615,
+     "endSec": 69.381,
+     "repeats": 3
+    },
+    {
+     "id": "kenari-wc411699834-i3",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 82.361,
+     "endSec": 84.405,
+     "repeats": 2
+    }
+   ]
+  },
+  {
+   "id": "kenari-wc1264610207",
+   "key": "commons:File:De-Kanari.ogg",
+   "species": "kenari",
+   "role": "master",
+   "nameId": "Kenari",
+   "nameEn": "Canary",
+   "sci": "Serinus canaria",
+   "file": "audio/kenari-wc1264610207.mp3",
+   "bytes": 24809,
+   "durationSec": 2.01,
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "recordist": "Jeuwre",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:De-Kanari.ogg",
+   "title": "De-Kanari.ogg",
+   "sourceWindow": {
+    "startSec": 0,
+    "lengthSec": 2.01
+   },
+   "measurements": {
+    "licenseAllowed": true,
+    "attribution": {
+     "title": "De-Kanari.ogg",
+     "author": "Jeuwre",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:De-Kanari.ogg",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "durationSec": 2.01,
+    "integratedLufs": -21.4,
+    "truePeakDbtp": -3.5,
+    "snrDb": 111,
+    "kerjaPct": 68,
+    "clippedFraction": 0.000011281461174851367,
+    "sourceSampleRate": 44100,
+    "sourceGrade": "?",
+    "backgroundSpecies": null,
+    "country": "",
+    "preferredCountries": [],
+    "isianCount": 0
+   },
+   "auto": {
+    "L1": {
+     "status": "pass",
+     "value": "allowed"
+    },
+    "L2": {
+     "status": "pass",
+     "value": "Jeuwre · source · licence"
+    },
+    "A1": {
+     "status": "fail",
+     "value": "2.0 s"
+    },
+    "A2": {
+     "status": "pass",
+     "value": "-21.4 LUFS · -3.5 dBTP"
+    },
+    "A3": {
+     "status": "pass",
+     "value": "111 dB"
+    },
+    "A4": {
+     "status": "pass",
+     "value": "68%"
+    },
+    "A5": {
+     "status": "pass",
+     "value": "0.001%"
+    },
+    "A6": {
+     "status": "pass",
+     "value": "44100 Hz"
+    },
+    "M1": {
+     "status": "human",
+     "value": "no archive grade"
+    },
+    "M2": {
+     "status": "human",
+     "value": "not recorded"
+    },
+    "M3": {
+     "status": "pass",
+     "value": "unknown"
+    }
+   },
+   "isian": []
+  },
+  {
+   "id": "kenari-wc665622989",
+   "key": "commons:File:De-Kanarienvogel.ogg",
+   "species": "kenari",
+   "role": "master",
+   "nameId": "Kenari",
+   "nameEn": "Canary",
+   "sci": "Serinus canaria",
+   "file": "audio/kenari-wc665622989.mp3",
+   "bytes": 32018,
+   "durationSec": 2.6,
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "recordist": "Jeuwre",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:De-Kanarienvogel.ogg",
+   "title": "De-Kanarienvogel.ogg",
+   "sourceWindow": {
+    "startSec": 0,
+    "lengthSec": 2.6
+   },
+   "measurements": {
+    "licenseAllowed": true,
+    "attribution": {
+     "title": "De-Kanarienvogel.ogg",
+     "author": "Jeuwre",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:De-Kanarienvogel.ogg",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "durationSec": 2.6,
+    "integratedLufs": -21.1,
+    "truePeakDbtp": -3.5,
+    "snrDb": 107,
+    "kerjaPct": 70,
+    "clippedFraction": 0.000017442874585731727,
+    "sourceSampleRate": 44100,
+    "sourceGrade": "?",
+    "backgroundSpecies": null,
+    "country": "",
+    "preferredCountries": [],
+    "isianCount": 0
+   },
+   "auto": {
+    "L1": {
+     "status": "pass",
+     "value": "allowed"
+    },
+    "L2": {
+     "status": "pass",
+     "value": "Jeuwre · source · licence"
+    },
+    "A1": {
+     "status": "fail",
+     "value": "2.6 s"
+    },
+    "A2": {
+     "status": "pass",
+     "value": "-21.1 LUFS · -3.5 dBTP"
+    },
+    "A3": {
+     "status": "pass",
+     "value": "107 dB"
+    },
+    "A4": {
+     "status": "pass",
+     "value": "70%"
+    },
+    "A5": {
+     "status": "pass",
+     "value": "0.002%"
+    },
+    "A6": {
+     "status": "pass",
+     "value": "44100 Hz"
+    },
+    "M1": {
+     "status": "human",
+     "value": "no archive grade"
+    },
+    "M2": {
+     "status": "human",
+     "value": "not recorded"
+    },
+    "M3": {
+     "status": "pass",
+     "value": "unknown"
+    }
+   },
+   "isian": []
+  },
+  {
+   "id": "lovebird-wc1006001119",
+   "key": "commons:File:Sound of an Agaporni Fisheri.ogg",
+   "species": "lovebird",
+   "role": "master",
+   "nameId": "Lovebird",
+   "nameEn": "Fischer's lovebird",
+   "sci": "Agapornis fischeri",
+   "file": "audio/lovebird-wc1006001119.mp3",
+   "bytes": 255209,
+   "durationSec": 21.21,
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "recordist": "Américo Toledano",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sound_of_an_Agaporni_Fisheri.ogg",
+   "title": "Sound of an Agaporni Fisheri.ogg",
+   "sourceWindow": {
+    "startSec": 0,
+    "lengthSec": 21.21
+   },
+   "measurements": {
+    "licenseAllowed": true,
+    "attribution": {
+     "title": "Sound of an Agaporni Fisheri.ogg",
+     "author": "Américo Toledano",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sound_of_an_Agaporni_Fisheri.ogg",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "durationSec": 21.21,
+    "integratedLufs": -20.3,
+    "truePeakDbtp": -2.9,
+    "snrDb": 60,
+    "kerjaPct": 31,
+    "clippedFraction": 0,
+    "sourceSampleRate": 44100,
+    "sourceGrade": "?",
+    "backgroundSpecies": null,
+    "country": "",
+    "preferredCountries": [],
+    "isianCount": 1
+   },
+   "auto": {
+    "L1": {
+     "status": "pass",
+     "value": "allowed"
+    },
+    "L2": {
+     "status": "pass",
+     "value": "Américo Toledano · source · licence"
+    },
+    "A1": {
+     "status": "fail",
+     "value": "21.2 s"
+    },
+    "A2": {
+     "status": "pass",
+     "value": "-20.3 LUFS · -2.9 dBTP"
+    },
+    "A3": {
+     "status": "pass",
+     "value": "60 dB"
+    },
+    "A4": {
+     "status": "pass",
+     "value": "31%"
+    },
+    "A5": {
+     "status": "pass",
+     "value": "0.000%"
+    },
+    "A6": {
+     "status": "pass",
+     "value": "44100 Hz"
+    },
+    "M1": {
+     "status": "human",
+     "value": "no archive grade"
+    },
+    "M2": {
+     "status": "human",
+     "value": "not recorded"
+    },
+    "M3": {
+     "status": "pass",
+     "value": "unknown"
+    }
+   },
+   "isian": [
+    {
+     "id": "lovebird-wc1006001119-i1",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 14.106,
+     "endSec": 14.698,
+     "repeats": 10
+    }
+   ]
+  },
+  {
+   "id": "lovebird-wc599254058",
+   "key": "commons:File:De-Pfirsichköpfchen.ogg",
+   "species": "lovebird",
+   "role": "master",
+   "nameId": "Lovebird",
+   "nameEn": "Fischer's lovebird",
+   "sci": "Agapornis fischeri",
+   "file": "audio/lovebird-wc599254058.mp3",
+   "bytes": 26063,
+   "durationSec": 2.11,
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "recordist": "Jeuwre",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:De-Pfirsichk%C3%B6pfchen.ogg",
+   "title": "De-Pfirsichköpfchen.ogg",
+   "sourceWindow": {
+    "startSec": 0,
+    "lengthSec": 2.11
+   },
+   "measurements": {
+    "licenseAllowed": true,
+    "attribution": {
+     "title": "De-Pfirsichköpfchen.ogg",
+     "author": "Jeuwre",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:De-Pfirsichk%C3%B6pfchen.ogg",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "durationSec": 2.11,
+    "integratedLufs": -20.4,
+    "truePeakDbtp": -6.6,
+    "snrDb": 92,
+    "kerjaPct": 74,
+    "clippedFraction": 0,
+    "sourceSampleRate": 44100,
+    "sourceGrade": "?",
+    "backgroundSpecies": null,
+    "country": "",
+    "preferredCountries": [],
+    "isianCount": 0
+   },
+   "auto": {
+    "L1": {
+     "status": "pass",
+     "value": "allowed"
+    },
+    "L2": {
+     "status": "pass",
+     "value": "Jeuwre · source · licence"
+    },
+    "A1": {
+     "status": "fail",
+     "value": "2.1 s"
+    },
+    "A2": {
+     "status": "pass",
+     "value": "-20.4 LUFS · -6.6 dBTP"
+    },
+    "A3": {
+     "status": "pass",
+     "value": "92 dB"
+    },
+    "A4": {
+     "status": "pass",
+     "value": "74%"
+    },
+    "A5": {
+     "status": "pass",
+     "value": "0.000%"
+    },
+    "A6": {
+     "status": "pass",
+     "value": "44100 Hz"
+    },
+    "M1": {
+     "status": "human",
+     "value": "no archive grade"
+    },
+    "M2": {
+     "status": "human",
+     "value": "not recorded"
+    },
+    "M3": {
+     "status": "pass",
+     "value": "unknown"
+    }
+   },
+   "isian": []
+  },
+  {
+   "id": "chao_mao-wc108751240",
+   "key": "commons:File:Pycnonotus jocosus Pune (27 April 2023).ogg",
+   "species": "chao_mao",
+   "role": "master",
+   "nameId": "Cucak kutilang jambul (chào mào)",
+   "nameEn": "Red-whiskered bulbul",
+   "sci": "Pycnonotus jocosus",
+   "file": "audio/chao_mao-wc108751240.mp3",
+   "bytes": 500028,
+   "durationSec": 41.61,
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "recordist": "Ashwin Baindur",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pycnonotus_jocosus_Pune_(27_April_2023).ogg",
+   "title": "Pycnonotus jocosus Pune (27 April 2023).ogg",
+   "sourceWindow": {
+    "startSec": 0,
+    "lengthSec": 41.61
+   },
+   "measurements": {
+    "licenseAllowed": true,
+    "attribution": {
+     "title": "Pycnonotus jocosus Pune (27 April 2023).ogg",
+     "author": "Ashwin Baindur",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pycnonotus_jocosus_Pune_(27_April_2023).ogg",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "durationSec": 41.61,
+    "integratedLufs": -20.8,
+    "truePeakDbtp": -3.5,
+    "snrDb": 40,
+    "kerjaPct": 45,
+    "clippedFraction": 0,
+    "sourceSampleRate": 22050,
+    "sourceGrade": "?",
+    "backgroundSpecies": null,
+    "country": "",
+    "preferredCountries": [
+     "Vietnam",
+     "Thailand",
+     "Malaysia",
+     "Singapore"
+    ],
+    "isianCount": 2
+   },
+   "auto": {
+    "L1": {
+     "status": "pass",
+     "value": "allowed"
+    },
+    "L2": {
+     "status": "pass",
+     "value": "Ashwin Baindur · source · licence"
+    },
+    "A1": {
+     "status": "fail",
+     "value": "41.6 s"
+    },
+    "A2": {
+     "status": "pass",
+     "value": "-20.8 LUFS · -3.5 dBTP"
+    },
+    "A3": {
+     "status": "pass",
+     "value": "40 dB"
+    },
+    "A4": {
+     "status": "pass",
+     "value": "45%"
+    },
+    "A5": {
+     "status": "pass",
+     "value": "0.000%"
+    },
+    "A6": {
+     "status": "fail",
+     "value": "22050 Hz"
+    },
+    "M1": {
+     "status": "human",
+     "value": "no archive grade"
+    },
+    "M2": {
+     "status": "human",
+     "value": "not recorded"
+    },
+    "M3": {
+     "status": "human",
+     "value": "unknown"
+    }
+   },
+   "isian": [
+    {
+     "id": "chao_mao-wc108751240-i1",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 7.639,
+     "endSec": 9.66,
+     "repeats": 4
+    },
+    {
+     "id": "chao_mao-wc108751240-i2",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 27.562,
+     "endSec": 29.536,
+     "repeats": 2
+    }
+   ]
+  },
+  {
+   "id": "chao_mao-wc1491140081",
+   "key": "commons:File:181021 0020 Red-whiskered Bulbul.wav",
+   "species": "chao_mao",
+   "role": "master",
+   "nameId": "Cucak kutilang jambul (chào mào)",
+   "nameEn": "Red-whiskered bulbul",
+   "sci": "Pycnonotus jocosus",
+   "file": "audio/chao_mao-wc1491140081.mp3",
+   "bytes": 487982,
+   "durationSec": 40.58,
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "recordist": "T. R. Shankar Raman",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:181021_0020_Red-whiskered_Bulbul.wav",
+   "title": "181021 0020 Red-whiskered Bulbul.wav",
+   "sourceWindow": {
+    "startSec": 0,
+    "lengthSec": 40.58
+   },
+   "measurements": {
+    "licenseAllowed": true,
+    "attribution": {
+     "title": "181021 0020 Red-whiskered Bulbul.wav",
+     "author": "T. R. Shankar Raman",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:181021_0020_Red-whiskered_Bulbul.wav",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "durationSec": 40.58,
+    "integratedLufs": -39.9,
+    "truePeakDbtp": -24.6,
+    "snrDb": 0,
+    "kerjaPct": 0,
+    "clippedFraction": 0,
+    "sourceSampleRate": 44100,
+    "sourceGrade": "?",
+    "backgroundSpecies": null,
+    "country": "",
+    "preferredCountries": [
+     "Vietnam",
+     "Thailand",
+     "Malaysia",
+     "Singapore"
+    ],
+    "isianCount": 0
+   },
+   "auto": {
+    "L1": {
+     "status": "pass",
+     "value": "allowed"
+    },
+    "L2": {
+     "status": "pass",
+     "value": "T. R. Shankar Raman · source · licence"
+    },
+    "A1": {
+     "status": "fail",
+     "value": "40.6 s"
+    },
+    "A2": {
+     "status": "fail",
+     "value": "-39.9 LUFS · -24.6 dBTP"
+    },
+    "A3": {
+     "status": "fail",
+     "value": "0 dB"
+    },
+    "A4": {
+     "status": "fail",
+     "value": "0%"
+    },
+    "A5": {
+     "status": "pass",
+     "value": "0.000%"
+    },
+    "A6": {
+     "status": "pass",
+     "value": "44100 Hz"
+    },
+    "M1": {
+     "status": "human",
+     "value": "no archive grade"
+    },
+    "M2": {
+     "status": "human",
+     "value": "not recorded"
+    },
+    "M3": {
+     "status": "human",
+     "value": "unknown"
+    }
+   },
+   "isian": []
+  },
+  {
+   "id": "chao_mao-wc417178230",
+   "key": "commons:File:Red-whiskered Bulbul (Pycnonotus jocosus) from Ezhimala ML155331601.wav",
+   "species": "chao_mao",
+   "role": "master",
+   "nameId": "Cucak kutilang jambul (chào mào)",
+   "nameEn": "Red-whiskered bulbul",
+   "sci": "Pycnonotus jocosus",
+   "file": "audio/chao_mao-wc417178230.mp3",
+   "bytes": 511313,
+   "durationSec": 42.55,
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "recordist": "Manoj Karingamadathil",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red-whiskered_Bulbul_(Pycnonotus_jocosus)_from_Ezhimala_ML155331601.wav",
+   "title": "Red-whiskered Bulbul (Pycnonotus jocosus) from Ezhimala ML155331601.wav",
+   "sourceWindow": {
+    "startSec": 0,
+    "lengthSec": 42.55
+   },
+   "measurements": {
+    "licenseAllowed": true,
+    "attribution": {
+     "title": "Red-whiskered Bulbul (Pycnonotus jocosus) from Ezhimala ML155331601.wav",
+     "author": "Manoj Karingamadathil",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red-whiskered_Bulbul_(Pycnonotus_jocosus)_from_Ezhimala_ML155331601.wav",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "durationSec": 42.55,
+    "integratedLufs": -20.4,
+    "truePeakDbtp": -3.1,
+    "snrDb": 48,
+    "kerjaPct": 46,
+    "clippedFraction": 0,
+    "sourceSampleRate": 44100,
+    "sourceGrade": "?",
+    "backgroundSpecies": null,
+    "country": "",
+    "preferredCountries": [
+     "Vietnam",
+     "Thailand",
+     "Malaysia",
+     "Singapore"
+    ],
+    "isianCount": 3
+   },
+   "auto": {
+    "L1": {
+     "status": "pass",
+     "value": "allowed"
+    },
+    "L2": {
+     "status": "pass",
+     "value": "Manoj Karingamadathil · source · licence"
+    },
+    "A1": {
+     "status": "fail",
+     "value": "42.5 s"
+    },
+    "A2": {
+     "status": "pass",
+     "value": "-20.4 LUFS · -3.1 dBTP"
+    },
+    "A3": {
+     "status": "pass",
+     "value": "48 dB"
+    },
+    "A4": {
+     "status": "pass",
+     "value": "46%"
+    },
+    "A5": {
+     "status": "pass",
+     "value": "0.000%"
+    },
+    "A6": {
+     "status": "pass",
+     "value": "44100 Hz"
+    },
+    "M1": {
+     "status": "human",
+     "value": "no archive grade"
+    },
+    "M2": {
+     "status": "human",
+     "value": "not recorded"
+    },
+    "M3": {
+     "status": "human",
+     "value": "unknown"
+    }
+   },
+   "isian": [
+    {
+     "id": "chao_mao-wc417178230-i1",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 35.213,
+     "endSec": 36.026,
+     "repeats": 5
+    },
+    {
+     "id": "chao_mao-wc417178230-i2",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 17.821,
+     "endSec": 18.39,
+     "repeats": 2
+    },
+    {
+     "id": "chao_mao-wc417178230-i3",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 38.951,
+     "endSec": 41.053,
+     "repeats": 2
+    }
+   ]
+  },
+  {
+   "id": "gereja-wc1572607721",
+   "key": "commons:File:Passer montanus - Eurasian Tree Sparrow XC347806.mp3",
+   "species": "gereja",
+   "role": "isian",
+   "nameId": "Gereja (tarung)",
+   "nameEn": "Eurasian tree sparrow",
+   "sci": "Passer montanus",
+   "file": "audio/gereja-wc1572607721.mp3",
+   "bytes": 194456,
+   "durationSec": 16.1,
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "recordist": "Derek Paulo",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Passer_montanus_-_Eurasian_Tree_Sparrow_XC347806.mp3",
+   "title": "Passer montanus - Eurasian Tree Sparrow XC347806.mp3",
+   "sourceWindow": {
+    "startSec": 0,
+    "lengthSec": 16.1
+   },
+   "measurements": {
+    "licenseAllowed": true,
+    "attribution": {
+     "title": "Passer montanus - Eurasian Tree Sparrow XC347806.mp3",
+     "author": "Derek Paulo",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Passer_montanus_-_Eurasian_Tree_Sparrow_XC347806.mp3",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "durationSec": 16.1,
+    "integratedLufs": -20.2,
+    "truePeakDbtp": -0.6,
+    "snrDb": 48,
+    "kerjaPct": 27,
+    "clippedFraction": 0,
+    "sourceSampleRate": 48000,
+    "sourceGrade": "?",
+    "backgroundSpecies": null,
+    "country": "",
+    "preferredCountries": [
+     "Indonesia",
+     "Malaysia",
+     "Thailand",
+     "Singapore"
+    ],
+    "isianCount": 0
+   },
+   "auto": {
+    "L1": {
+     "status": "pass",
+     "value": "allowed"
+    },
+    "L2": {
+     "status": "pass",
+     "value": "Derek Paulo · source · licence"
+    },
+    "A1": {
+     "status": "fail",
+     "value": "16.1 s"
+    },
+    "A2": {
+     "status": "fail",
+     "value": "-20.2 LUFS · -0.6 dBTP"
+    },
+    "A3": {
+     "status": "pass",
+     "value": "48 dB"
+    },
+    "A4": {
+     "status": "pass",
+     "value": "27%"
+    },
+    "A5": {
+     "status": "pass",
+     "value": "0.000%"
+    },
+    "A6": {
+     "status": "pass",
+     "value": "48000 Hz"
+    },
+    "M1": {
+     "status": "human",
+     "value": "no archive grade"
+    },
+    "M2": {
+     "status": "human",
+     "value": "not recorded"
+    },
+    "M3": {
+     "status": "human",
+     "value": "unknown"
+    }
+   },
+   "isian": []
+  },
+  {
+   "id": "gereja-wc1571684200",
+   "key": "commons:File:Passer montanus - Eurasian Tree Sparrow XC347807.mp3",
+   "species": "gereja",
+   "role": "isian",
+   "nameId": "Gereja (tarung)",
+   "nameEn": "Eurasian tree sparrow",
+   "sci": "Passer montanus",
+   "file": "audio/gereja-wc1571684200.mp3",
+   "bytes": 306058,
+   "durationSec": 25.42,
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "recordist": "Derek Paulo",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Passer_montanus_-_Eurasian_Tree_Sparrow_XC347807.mp3",
+   "title": "Passer montanus - Eurasian Tree Sparrow XC347807.mp3",
+   "sourceWindow": {
+    "startSec": 0,
+    "lengthSec": 25.42
+   },
+   "measurements": {
+    "licenseAllowed": true,
+    "attribution": {
+     "title": "Passer montanus - Eurasian Tree Sparrow XC347807.mp3",
+     "author": "Derek Paulo",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Passer_montanus_-_Eurasian_Tree_Sparrow_XC347807.mp3",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "durationSec": 25.42,
+    "integratedLufs": -20.3,
+    "truePeakDbtp": -1.8,
+    "snrDb": 48,
+    "kerjaPct": 65,
+    "clippedFraction": 0,
+    "sourceSampleRate": 48000,
+    "sourceGrade": "?",
+    "backgroundSpecies": null,
+    "country": "",
+    "preferredCountries": [
+     "Indonesia",
+     "Malaysia",
+     "Thailand",
+     "Singapore"
+    ],
+    "isianCount": 3
+   },
+   "auto": {
+    "L1": {
+     "status": "pass",
+     "value": "allowed"
+    },
+    "L2": {
+     "status": "pass",
+     "value": "Derek Paulo · source · licence"
+    },
+    "A1": {
+     "status": "fail",
+     "value": "25.4 s"
+    },
+    "A2": {
+     "status": "pass",
+     "value": "-20.3 LUFS · -1.8 dBTP"
+    },
+    "A3": {
+     "status": "pass",
+     "value": "48 dB"
+    },
+    "A4": {
+     "status": "pass",
+     "value": "65%"
+    },
+    "A5": {
+     "status": "pass",
+     "value": "0.000%"
+    },
+    "A6": {
+     "status": "pass",
+     "value": "48000 Hz"
+    },
+    "M1": {
+     "status": "human",
+     "value": "no archive grade"
+    },
+    "M2": {
+     "status": "human",
+     "value": "not recorded"
+    },
+    "M3": {
+     "status": "human",
+     "value": "unknown"
+    }
+   },
+   "isian": [
+    {
+     "id": "gereja-wc1571684200-i1",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 3.367,
+     "endSec": 4.005,
+     "repeats": 20
+    },
+    {
+     "id": "gereja-wc1571684200-i2",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 2.032,
+     "endSec": 2.554,
+     "repeats": 11
+    },
+    {
+     "id": "gereja-wc1571684200-i3",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 20.155,
+     "endSec": 21.2,
+     "repeats": 2
+    }
+   ]
+  },
+  {
+   "id": "gereja-wc85769290",
+   "key": "commons:File:Passer montanus.ogg",
+   "species": "gereja",
+   "role": "isian",
+   "nameId": "Gereja (tarung)",
+   "nameEn": "Eurasian tree sparrow",
+   "sci": "Passer montanus",
+   "file": "audio/gereja-wc85769290.mp3",
+   "bytes": 132956,
+   "durationSec": 11,
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "recordist": "Vladimir Yu. Arkhipov, Arkhivov",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Passer_montanus.ogg",
+   "title": "Passer montanus.ogg",
+   "sourceWindow": {
+    "startSec": 0,
+    "lengthSec": 11
+   },
+   "measurements": {
+    "licenseAllowed": true,
+    "attribution": {
+     "title": "Passer montanus.ogg",
+     "author": "Vladimir Yu. Arkhipov, Arkhivov",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Passer_montanus.ogg",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "durationSec": 11,
+    "integratedLufs": -21.8,
+    "truePeakDbtp": -3.3,
+    "snrDb": 37,
+    "kerjaPct": 67,
+    "clippedFraction": 0,
+    "sourceSampleRate": 96000,
+    "sourceGrade": "?",
+    "backgroundSpecies": null,
+    "country": "",
+    "preferredCountries": [
+     "Indonesia",
+     "Malaysia",
+     "Thailand",
+     "Singapore"
+    ],
+    "isianCount": 1
+   },
+   "auto": {
+    "L1": {
+     "status": "pass",
+     "value": "allowed"
+    },
+    "L2": {
+     "status": "pass",
+     "value": "Vladimir Yu. Arkhipov, Arkhivov · source · licence"
+    },
+    "A1": {
+     "status": "fail",
+     "value": "11.0 s"
+    },
+    "A2": {
+     "status": "fail",
+     "value": "-21.8 LUFS · -3.3 dBTP"
+    },
+    "A3": {
+     "status": "pass",
+     "value": "37 dB"
+    },
+    "A4": {
+     "status": "pass",
+     "value": "67%"
+    },
+    "A5": {
+     "status": "pass",
+     "value": "0.000%"
+    },
+    "A6": {
+     "status": "pass",
+     "value": "96000 Hz"
+    },
+    "M1": {
+     "status": "human",
+     "value": "no archive grade"
+    },
+    "M2": {
+     "status": "human",
+     "value": "not recorded"
+    },
+    "M3": {
+     "status": "human",
+     "value": "unknown"
+    }
+   },
+   "isian": [
+    {
+     "id": "gereja-wc85769290-i1",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 2.763,
+     "endSec": 3.878,
+     "repeats": 9
+    }
+   ]
+  },
+  {
+   "id": "belibis-wc1507447123",
+   "key": "commons:File:Lesser whistling duck from Kerala 01.wav",
+   "species": "belibis",
+   "role": "isian",
+   "nameId": "Belibis",
+   "nameEn": "Lesser whistling duck",
+   "sci": "Dendrocygna javanica",
+   "file": "audio/belibis-wc1507447123.mp3",
+   "bytes": 183111,
+   "durationSec": 15.19,
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "recordist": "Ganesh Mohan T",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lesser_whistling_duck_from_Kerala_01.wav",
+   "title": "Lesser whistling duck from Kerala 01.wav",
+   "sourceWindow": {
+    "startSec": 0,
+    "lengthSec": 15.19
+   },
+   "measurements": {
+    "licenseAllowed": true,
+    "attribution": {
+     "title": "Lesser whistling duck from Kerala 01.wav",
+     "author": "Ganesh Mohan T",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lesser_whistling_duck_from_Kerala_01.wav",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "durationSec": 15.19,
+    "integratedLufs": -23.6,
+    "truePeakDbtp": -5.9,
+    "snrDb": 40,
+    "kerjaPct": 61,
+    "clippedFraction": 0,
+    "sourceSampleRate": 48000,
+    "sourceGrade": "?",
+    "backgroundSpecies": null,
+    "country": "",
+    "preferredCountries": [
+     "Indonesia",
+     "Malaysia",
+     "Thailand",
+     "Singapore"
+    ],
+    "isianCount": 3
+   },
+   "auto": {
+    "L1": {
+     "status": "pass",
+     "value": "allowed"
+    },
+    "L2": {
+     "status": "pass",
+     "value": "Ganesh Mohan T · source · licence"
+    },
+    "A1": {
+     "status": "fail",
+     "value": "15.2 s"
+    },
+    "A2": {
+     "status": "fail",
+     "value": "-23.6 LUFS · -5.9 dBTP"
+    },
+    "A3": {
+     "status": "pass",
+     "value": "40 dB"
+    },
+    "A4": {
+     "status": "pass",
+     "value": "61%"
+    },
+    "A5": {
+     "status": "pass",
+     "value": "0.000%"
+    },
+    "A6": {
+     "status": "pass",
+     "value": "48000 Hz"
+    },
+    "M1": {
+     "status": "human",
+     "value": "no archive grade"
+    },
+    "M2": {
+     "status": "human",
+     "value": "not recorded"
+    },
+    "M3": {
+     "status": "human",
+     "value": "unknown"
+    }
+   },
+   "isian": [
+    {
+     "id": "belibis-wc1507447123-i1",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 6.037,
+     "endSec": 6.734,
+     "repeats": 8
+    },
+    {
+     "id": "belibis-wc1507447123-i2",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 10.786,
+     "endSec": 12.434,
+     "repeats": 3
+    },
+    {
+     "id": "belibis-wc1507447123-i3",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 4.911,
+     "endSec": 5.712,
+     "repeats": 2
+    }
+   ]
+  },
+  {
+   "id": "belibis-wc1508370644",
+   "key": "commons:File:Lesser whistling duck from Kerala 02.wav",
+   "species": "belibis",
+   "role": "isian",
+   "nameId": "Belibis",
+   "nameEn": "Lesser whistling duck",
+   "sci": "Dendrocygna javanica",
+   "file": "audio/belibis-wc1508370644.mp3",
+   "bytes": 88443,
+   "durationSec": 7.3,
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "recordist": "Ganesh Mohan T",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lesser_whistling_duck_from_Kerala_02.wav",
+   "title": "Lesser whistling duck from Kerala 02.wav",
+   "sourceWindow": {
+    "startSec": 0,
+    "lengthSec": 7.3
+   },
+   "measurements": {
+    "licenseAllowed": true,
+    "attribution": {
+     "title": "Lesser whistling duck from Kerala 02.wav",
+     "author": "Ganesh Mohan T",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lesser_whistling_duck_from_Kerala_02.wav",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "durationSec": 7.3,
+    "integratedLufs": -24.4,
+    "truePeakDbtp": -2.8,
+    "snrDb": 35,
+    "kerjaPct": 64,
+    "clippedFraction": 0,
+    "sourceSampleRate": 48000,
+    "sourceGrade": "?",
+    "backgroundSpecies": null,
+    "country": "",
+    "preferredCountries": [
+     "Indonesia",
+     "Malaysia",
+     "Thailand",
+     "Singapore"
+    ],
+    "isianCount": 1
+   },
+   "auto": {
+    "L1": {
+     "status": "pass",
+     "value": "allowed"
+    },
+    "L2": {
+     "status": "pass",
+     "value": "Ganesh Mohan T · source · licence"
+    },
+    "A1": {
+     "status": "fail",
+     "value": "7.3 s"
+    },
+    "A2": {
+     "status": "fail",
+     "value": "-24.4 LUFS · -2.8 dBTP"
+    },
+    "A3": {
+     "status": "pass",
+     "value": "35 dB"
+    },
+    "A4": {
+     "status": "pass",
+     "value": "64%"
+    },
+    "A5": {
+     "status": "pass",
+     "value": "0.000%"
+    },
+    "A6": {
+     "status": "pass",
+     "value": "48000 Hz"
+    },
+    "M1": {
+     "status": "human",
+     "value": "no archive grade"
+    },
+    "M2": {
+     "status": "human",
+     "value": "not recorded"
+    },
+    "M3": {
+     "status": "human",
+     "value": "unknown"
+    }
+   },
+   "isian": [
+    {
+     "id": "belibis-wc1508370644-i1",
+     "nameId": "",
+     "nameEn": "",
+     "startSec": 0.43,
+     "endSec": 1.695,
+     "repeats": 2
+    }
+   ]
+  }
+ ]
+}

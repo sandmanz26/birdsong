@@ -11,7 +11,7 @@ In Indonesia alone, about a third of Java's households keep cage birds (66–84 
 
 The UI is in Bahasa Indonesia by default, with an English toggle. Everything runs offline, on the device, with no backend.
 
-📄 **Product docs:** [Research](docs/01-research.md) · [PRD](docs/02-prd.md) · [User-testing plan](docs/03-user-testing-plan.md) · [Content strategy](docs/04-content-strategy.md)
+📄 **Product docs:** [Research](docs/01-research.md) · [PRD](docs/02-prd.md) · [User-testing plan](docs/03-user-testing-plan.md) · [Content strategy](docs/04-content-strategy.md) · [Content standard](docs/06-curation-standard.md)
 
 ## Try it
 
@@ -20,14 +20,17 @@ npm install
 npm run dev        # http://localhost:5173
 npm test           # unit tests (DSP + planner)
 npm run build      # static PWA in dist/, deploy on any HTTPS host
-XC_API_KEY=... npm run catalog   # (re)build the curated masteran catalogue
+XC_API_KEY=... npm run catalog:candidates   # 1. find, process & measure candidates → review/ (never shipped)
+npm run review                               # 2. expert curator listens & signs off (dev-only tool)
+npm run catalog:publish                      # 3. publish ONLY approved, standard-compliant tracks
 ```
 
 ## Curated catalogue
 
-Owners never upload music. `npm run catalog` builds `public/catalog/` from licence-cleared field recordings (xeno-canto + Wikimedia Commons): it picks the best recording per species, cuts the most song-dense 90 s, cleans and normalises it, runs QC with the app's own analyser and **pre-marks isian**, then assembles packs per bird species (`content/packs.json`). Licence policy (`scripts/license.ts`): commercial = CC0/BY/BY-SA, never ND. Credits are in `public/catalog/ATTRIBUTION.md` and inside the app. Expert curation lives in `content/curation.json`. Details: [content strategy](docs/04-content-strategy.md).
+Owners never upload music, and **the product contains no dummy, sample or synthetic media.** Every published sound is a real, licence-cleared field recording that passes the [Kicau Coach content standard](docs/06-curation-standard.md) (licence & TASL attribution, ≥ 45 s, BS.1770 loudness, SNR, no clipping, full bandwidth, archive grade, region) **and** is signed off by a named expert (judge / senior trainer) who also names the isian. The candidate builder only produces review material; `catalog:publish` is the single gate into `public/catalog/` and re-validates everything. Credits (title, author, source, licence, modifications, curator) are in `public/catalog/ATTRIBUTION.md` and inside the app.
 
-Tap **"Coba dengan data demo"** ("try with demo data") to get a demo bird with a 3-week learning curve, without a real bird. The demo audio is synthetic and clearly labelled. It exists only to demonstrate the app, never as training material.
+**Current state:** 0 tracks published — none has expert approval yet ([audit](docs/06-curation-standard.md#audit-of-the-current-candidates-nov-2026)). The app shows an honest "being curated" state until then.
+
 
 ## How the isian check works
 
@@ -51,11 +54,14 @@ Birds copy what they hear, artifacts included, and neural vocoders still struggl
 ## Project layout
 
 ```
-src/dsp/        FFT, spectrogram, segmentation, DTW, analysis, worker, synthetic test signals
+src/dsp/        FFT, spectrogram, segmentation, DTW, analysis, worker
+src/review/     curator review tool (dev-only, not in the production build)
+scripts/        content standard, licence policy, candidate builder, publisher
+review/         candidates awaiting expert review (never shipped)
 src/audio/      session planner (pure), playback engine, recorder, decoding
 src/screens/    Birds, BirdForm, BirdDetail (Masteran / Cek Isian / Progres tabs), Player, Library, TrackEditor, More
 src/components/ Spectrogram (tappable phrases), Charts (line + daily bars)
-tests/          Vitest: analysis accuracy on synthetic birds, planner properties
+tests/          Vitest: analyser accuracy (synthetic fixtures in tests/fixtures/ only), planner, licence, content standard
 docs/           research, PRD, user-testing plan
 ```
 

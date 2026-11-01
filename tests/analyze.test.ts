@@ -3,7 +3,7 @@ import { analyzeRecording, costToSimilarity, detectPhrases, prepareTemplate, sta
 import { FFT } from '../src/dsp/fft';
 import { logMel, resampleLinear, SR } from '../src/dsp/spectrogram';
 import { segment } from '../src/dsp/segment';
-import { demoBirdRecording, demoTutorTrack, PHRASES, phraseDuration, renderScene } from '../src/dsp/synth';
+import { demoBirdRecording, demoTutorTrack, PHRASES, phraseDuration, renderScene } from './fixtures/synth';
 
 /** Tutor track with A, B, C at known times + templates cut from it (as a user would in the editor). */
 function tutorTemplates() {
@@ -50,7 +50,7 @@ describe('spectrogram & segmentation', () => {
     expect(y[100]).toBeCloseTo(0.5, 5);
   });
 
-  it('detects phrases in the demo tutor track', () => {
+  it('detects phrases in the fixture tutor track', () => {
     expect(detectPhrases(demoTutorTrack())).toHaveLength(9);
   });
 });
@@ -116,7 +116,7 @@ describe('isian matching', () => {
   });
 });
 
-describe('demo scenario & contest metrics', () => {
+describe('learning scenario & contest metrics', () => {
   it('reports the expected story: A learned, C getting close, B not yet', () => {
     const tutor = demoTutorTrack();
     // Mark the first three tutor phrases (A, B, C) as targets, like a user tapping them.
