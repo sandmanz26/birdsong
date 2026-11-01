@@ -1,0 +1,15 @@
+{
+  "name": "Kicau Coach",
+  "short_name": "Kicau Coach",
+  "description": "Masteran terjadwal & cek isian untuk burung kicau",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6f4ee",
+  "theme_color": "#1f3d2b",
+  "lang": "id",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
