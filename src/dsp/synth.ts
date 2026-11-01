@@ -159,6 +159,6 @@ export function demoBirdRecording(sr = SR): Float32Array {
   ];
   const out = renderScene(30, placements, 0.012, 23, sr);
   // A rough, half-learned version of C: right pitch region, wrong modulation, shorter.
-  renderPhrase(out, Math.round(27.2 * sr), [{ f0: 2950, f1: 3150, dur: 0.38, gap: 0, fmDepth: 250, fmRate: 11, h2: 0.2 }], {}, sr);
+  renderPhrase(out, Math.round(27.2 * sr), [{ f0: 2955, f1: 3135, dur: 0.39, gap: 0, fmDepth: 280, fmRate: 12, h2: 0.22 }], {}, sr);
   return out;
 }

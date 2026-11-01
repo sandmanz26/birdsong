@@ -82,9 +82,14 @@ export function TrackEditor({ id }: { id: string }) {
       <h2 className="title">{track.name}</h2>
       <p className="muted small">{fmtDuration(track.durationSec)}{phrases ? ` · ${t('phrasesFound', { n: phrases.length })}` : ''}</p>
       {track.source === 'demo' && <p className="notice small">{t('demoTrackNote')}</p>}
-      {track.durationSec > MAX_EDITABLE_SEC ? (
-        <p className="notice">{t('tooLong')}</p>
-      ) : failed ? (
+      {track.license && (
+        <p className="muted small">
+          {t('recordedBy')}: {track.attribution?.split(' · ')[0]} · {t('license')}:{' '}
+          <a href={track.licenseUrl} target="_blank" rel="noreferrer">{track.license}</a>
+          {track.sourceUrl && <> · <a href={track.sourceUrl} target="_blank" rel="noreferrer">{t('source')}</a></>}
+        </p>
+      )}
+      {failed || track.durationSec > MAX_EDITABLE_SEC ? (
         <p className="warn">{t('errorGeneric')}</p>
       ) : (
         <>

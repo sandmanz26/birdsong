@@ -37,7 +37,7 @@ After the session: **SUS** questionnaire, plus three open questions: *"What woul
 3. Analysis:
    * Expert-vs-expert agreement (Fleiss' κ): this is the ceiling we can expect.
    * App-vs-expert-majority agreement (weighted Cohen's κ). **Target: κ ≥ 0.6**, and within 0.1 of expert-expert κ.
-   * Fit `COST_PERFECT`, `COST_UNRELATED` and the 50/70 thresholds (in `src/dsp/analyze.ts`) to maximise κ on half the data, then validate on the other half.
+   * Re-fit `SCORE_CONFIG` and the 50/70 thresholds (in `src/dsp/analyze.ts`; first real-data calibration in [05-matcher-calibration.md](05-matcher-calibration.md)) to maximise κ on half the data, then validate on the other half.
    * Error review: listen to every case where the app says Masuk and the experts say Belum (false "learned" verdicts are the most damaging to trust).
 
 ## 3. Success metrics and decision rules

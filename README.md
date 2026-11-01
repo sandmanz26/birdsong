@@ -6,12 +6,12 @@ In Indonesia alone, about a third of Java's households keep cage birds (66–84 
 
 | # | Feature | What it does |
 |---|---|---|
-| 1 | **Masteran Terjadwal** (Smart Masteran Program) | Imports your own masteran audio and runs morning/night sessions that sound like a tutor, not a tape: shuffled order, natural gaps, level variation, fades. It has a Stand-by mode with auto start and welfare guardrails (daily cap, a "don't change material too soon" warning, a low-volume note for moulting birds), and logs every session. |
+| 1 | **Masteran Terjadwal** (Smart Masteran Program) | Pick a **ready-made pack for your bird** (curated, licence-cleared real recordings — no uploads) and it runs morning/night sessions that sound like a tutor, not a tape: shuffled order, natural gaps, level variation, fades. It has a Stand-by mode with auto start and welfare guardrails (daily cap, a "don't change material too soon" warning, a low-volume note for moulting birds), and logs every session. |
 | 2 | **Cek Isian** (Isian Progress Check) | Mark target phrases on a tutor track's spectrogram, then record your bird for 30–120 s. On-device analysis tells you which isian is **Masuk / Mulai mirip / Belum** (learned / getting close / not yet), with a similarity %, how often it was heard and where (tap to listen). It also gives contest-style indicators (singing time, *kerja* (activity), phrases, *variasi* (variety), loudness) and a progress chart over weeks. |
 
 The UI is in Bahasa Indonesia by default, with an English toggle. Everything runs offline, on the device, with no backend.
 
-📄 **Product docs:** [Research](docs/01-research.md) · [PRD](docs/02-prd.md) · [User-testing plan](docs/03-user-testing-plan.md)
+📄 **Product docs:** [Research](docs/01-research.md) · [PRD](docs/02-prd.md) · [User-testing plan](docs/03-user-testing-plan.md) · [Content strategy](docs/04-content-strategy.md)
 
 ## Try it
 
@@ -20,7 +20,12 @@ npm install
 npm run dev        # http://localhost:5173
 npm test           # unit tests (DSP + planner)
 npm run build      # static PWA in dist/, deploy on any HTTPS host
+XC_API_KEY=... npm run catalog   # (re)build the curated masteran catalogue
 ```
+
+## Curated catalogue
+
+Owners never upload music. `npm run catalog` builds `public/catalog/` from licence-cleared field recordings (xeno-canto + Wikimedia Commons): it picks the best recording per species, cuts the most song-dense 90 s, cleans and normalises it, runs QC with the app's own analyser and **pre-marks isian**, then assembles packs per bird species (`content/packs.json`). Licence policy (`scripts/license.ts`): commercial = CC0/BY/BY-SA, never ND. Credits are in `public/catalog/ATTRIBUTION.md` and inside the app. Expert curation lives in `content/curation.json`. Details: [content strategy](docs/04-content-strategy.md).
 
 Tap **"Coba dengan data demo"** ("try with demo data") to get a demo bird with a 3-week learning curve, without a real bird. The demo audio is synthetic and clearly labelled. It exists only to demonstrate the app, never as training material.
 

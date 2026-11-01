@@ -1,0 +1,8 @@
+{
+  "$comment": "Human curation overrides. 'exclude': recording keys never to use (e.g. 'xc:123456', 'commons:File:X.ogg'). 'pin': species -> recording key to force. 'approved': track ids an expert listener has approved (review = 'approved'). 'isianNames': isian id -> {nameId, nameEn}. 'isianManual': track id -> [{startSec, endSec, nameId, nameEn}] for isian the expert marks by hand (times in the processed catalogue file).",
+  "exclude": [],
+  "pin": {},
+  "approved": [],
+  "isianNames": {},
+  "isianManual": {}
+}

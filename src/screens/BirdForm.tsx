@@ -25,7 +25,8 @@ export function BirdForm({ id }: { id?: string }) {
     e.preventDefault();
     if (!bird.name.trim()) return;
     await saveBird({ ...bird, name: bird.name.trim() });
-    nav({ name: 'bird', id: bird.id, tab: 'masteran' });
+    // New birds go straight to choosing a curated pack: ready to use in one more tap.
+    nav(id ? { name: 'bird', id: bird.id, tab: 'masteran' } : { name: 'packs', birdId: bird.id });
   };
 
   return (

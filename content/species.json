@@ -1,0 +1,23 @@
+{
+  "$comment": "Curated species registry for the masteran catalogue. 'role': master = same-species reference song for that bird; isian = phrase source taught to other birds. 'country' lists preferred recording regions (local dialects matter, e.g. murai 'medan/aceh'). 'types' restricts xeno-canto sound types (empty = any).",
+  "species": [
+    { "id": "murai_batu", "sci": "Copsychus malabaricus", "nameId": "Murai batu", "nameEn": "White-rumped shama", "roles": ["master", "isian"], "types": ["song"], "country": ["Indonesia", "Malaysia", "Thailand", "Brunei", "Singapore"] },
+    { "id": "kacer", "sci": "Copsychus saularis", "nameId": "Kacer", "nameEn": "Oriental magpie-robin", "roles": ["master", "isian"], "types": ["song"], "country": ["Indonesia", "Malaysia", "Thailand", "Singapore"] },
+    { "id": "cucak_ijo", "sci": "Chloropsis sonnerati", "nameId": "Cucak ijo", "nameEn": "Greater green leafbird", "roles": ["master"], "types": [], "country": ["Indonesia", "Malaysia", "Thailand", "Brunei"] },
+    { "id": "kenari", "sci": "Serinus canaria", "nameId": "Kenari", "nameEn": "Canary", "roles": ["master", "isian"], "types": ["song"], "country": [] },
+    { "id": "lovebird", "sci": "Agapornis fischeri", "nameId": "Lovebird", "nameEn": "Fischer's lovebird", "roles": ["master"], "types": [], "country": [] },
+    { "id": "pleci", "sci": "Zosterops simplex", "nameId": "Pleci", "nameEn": "Swinhoe's white-eye", "roles": ["master"], "types": ["song"], "country": [] },
+    { "id": "chao_mao", "sci": "Pycnonotus jocosus", "nameId": "Cucak kutilang jambul (chào mào)", "nameEn": "Red-whiskered bulbul", "roles": ["master"], "types": ["song"], "country": ["Vietnam", "Thailand", "Malaysia", "Singapore"] },
+    { "id": "cililin", "sci": "Platylophus galericulatus", "nameId": "Cililin", "nameEn": "Crested jay", "roles": ["isian"], "types": [], "country": ["Indonesia", "Malaysia", "Brunei"] },
+    { "id": "cucak_jenggot", "sci": "Alophoixus bres", "nameId": "Cucak jenggot", "nameEn": "Grey-cheeked bulbul", "roles": ["isian"], "types": [], "country": ["Indonesia", "Malaysia"] },
+    { "id": "ciblek", "sci": "Prinia familiaris", "nameId": "Ciblek", "nameEn": "Bar-winged prinia", "roles": ["isian"], "types": [], "country": ["Indonesia"] },
+    { "id": "tledekan", "sci": "Cyornis banyumas", "nameId": "Tledekan", "nameEn": "Hill blue flycatcher", "roles": ["isian"], "types": ["song"], "country": ["Indonesia", "Malaysia", "Thailand"] },
+    { "id": "gereja", "sci": "Passer montanus", "nameId": "Gereja (tarung)", "nameEn": "Eurasian tree sparrow", "roles": ["isian"], "types": [], "country": ["Indonesia", "Malaysia", "Thailand", "Singapore"] },
+    { "id": "cendet", "sci": "Lanius schach", "nameId": "Cendet", "nameEn": "Long-tailed shrike", "roles": ["isian"], "types": [], "country": ["Indonesia", "Malaysia", "Thailand", "Singapore"] },
+    { "id": "belibis", "sci": "Dendrocygna javanica", "nameId": "Belibis", "nameEn": "Lesser whistling duck", "roles": ["isian"], "types": [], "country": ["Indonesia", "Malaysia", "Thailand", "Singapore"] },
+    { "id": "tengkek_buto", "sci": "Todiramphus chloris", "nameId": "Tengkek buto", "nameEn": "Collared kingfisher", "roles": ["isian"], "types": [], "country": ["Indonesia", "Malaysia", "Singapore", "Thailand"] },
+    { "id": "kapas_tembak", "sci": "Pycnonotus simplex", "nameId": "Kapas tembak", "nameEn": "Cream-vented bulbul", "roles": ["isian"], "types": [], "country": ["Indonesia", "Malaysia", "Brunei"] },
+    { "id": "trucukan", "sci": "Pycnonotus goiavier", "nameId": "Trucukan", "nameEn": "Yellow-vented bulbul", "roles": ["isian"], "types": [], "country": ["Indonesia", "Malaysia", "Singapore"] },
+    { "id": "prenjak", "sci": "Prinia inornata", "nameId": "Prenjak", "nameEn": "Plain prinia", "roles": ["isian"], "types": [], "country": ["Indonesia", "Thailand", "Malaysia"] }
+  ]
+}

@@ -53,15 +53,42 @@ export interface SubsequenceResult {
   start: Int32Array;
 }
 
-/**
- * @param penalty extra cost per non-diagonal step (discourages degenerate warping)
- */
-export function subsequenceDtw(tpl: Features, seq: Features, penalty = 0.05): SubsequenceResult {
+/** Matching configuration (tuned on real recordings, see docs/05-matcher-calibration.md). */
+export const DTW_CONFIG = {
+  /** Extra cost per non-diagonal step (discourages degenerate warping). */
+  penalty: 0.05,
+  /** Compare mean-centred frames (spectral shape correlation) instead of raw non-negative cosine. */
+  centered: false,
+};
+
+/** Per-frame mean-centred copy, used for shape correlation. */
+function centeredCopy(f: Features): { data: Float32Array; norm: Float32Array } {
+  const data = new Float32Array(f.data.length);
+  const norm = new Float32Array(f.frames);
+  for (let i = 0; i < f.frames; i++) {
+    let mean = 0;
+    for (let b = 0; b < f.dims; b++) mean += f.data[i * f.dims + b];
+    mean /= f.dims;
+    let acc = 0;
+    for (let b = 0; b < f.dims; b++) {
+      const v = f.data[i * f.dims + b] - mean;
+      data[i * f.dims + b] = v;
+      acc += v * v;
+    }
+    norm[i] = Math.sqrt(acc) || 1e-9;
+  }
+  return { data, norm };
+}
+
+export function subsequenceDtw(tpl: Features, seq: Features, penalty = DTW_CONFIG.penalty): SubsequenceResult {
   const m = tpl.frames;
   const n = seq.frames;
   const d = tpl.dims;
   const tn = norms(tpl);
   const sn = norms(seq);
+  const centered = DTW_CONFIG.centered;
+  const tc = centered ? centeredCopy(tpl) : null;
+  const sc = centered ? centeredCopy(seq) : null;
   const cost = new Float32Array(n).fill(Infinity);
   const startOut = new Int32Array(n);
   if (m === 0 || n === 0) return { cost, start: startOut };
@@ -77,6 +104,10 @@ export function subsequenceDtw(tpl: Features, seq: Features, penalty = 0.05): Su
     if (aSilent || bSilent) return 1;
     let dot = 0;
     const io = i * d, jo = j * d;
+    if (tc && sc) {
+      for (let k = 0; k < d; k++) dot += tc.data[io + k] * sc.data[jo + k];
+      return (1 - dot / (tc.norm[i] * sc.norm[j])) / 2; // correlation → [0, 1]
+    }
     for (let k = 0; k < d; k++) dot += tpl.data[io + k] * seq.data[jo + k];
     return 1 - dot / (a * b);
   };
@@ -112,6 +143,8 @@ export function subsequenceDtw(tpl: Features, seq: Features, penalty = 0.05): Su
   return { cost, start: startOut };
 }
 
+export const SPOT_CONFIG = { shifts: [-1, 0, 1], minRatio: 0.75, maxRatio: 1.35 };
+
 export interface Hit {
   start: number; // sequence frame, inclusive
   end: number; // sequence frame, exclusive
@@ -127,10 +160,10 @@ export function spot(
   seq: Features,
   opts: { shifts?: number[]; maxCost?: number; minRatio?: number; maxRatio?: number } = {},
 ): Hit[] {
-  const shifts = opts.shifts ?? [-1, 0, 1];
+  const shifts = opts.shifts ?? SPOT_CONFIG.shifts;
   const maxCost = opts.maxCost ?? 0.6;
-  const minRatio = opts.minRatio ?? 0.5;
-  const maxRatio = opts.maxRatio ?? 2.0;
+  const minRatio = opts.minRatio ?? SPOT_CONFIG.minRatio;
+  const maxRatio = opts.maxRatio ?? SPOT_CONFIG.maxRatio;
   const m = tpl.frames;
   if (m === 0 || seq.frames < Math.ceil(m * minRatio)) return [];
 

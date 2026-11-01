@@ -1,6 +1,7 @@
+import { loadCatalog } from '../catalog/client';
 import { db } from '../db';
 import { useI18n, type Lang } from '../i18n';
-import { useNav } from '../nav';
+import { useLoad, useNav } from '../nav';
 import { downloadBlob } from '../util';
 
 declare const __APP_VERSION__: string;
@@ -29,6 +30,7 @@ async function exportTestData() {
 export function MoreScreen() {
   const { t, lang, setLang } = useI18n();
   const nav = useNav();
+  const { data: catalog } = useLoad(() => loadCatalog().catch(() => null), []);
   return (
     <div className="stack">
       <h2 className="title">{t('moreTitle')}</h2>
@@ -53,6 +55,26 @@ export function MoreScreen() {
         <p>{t('about3')}</p>
         <p className="muted small">{t('version')} {__APP_VERSION__}</p>
       </section>
+      {catalog && catalog.tracks.length > 0 && (
+        <section className="card">
+          <h3>{t('credits')}</h3>
+          <p className="muted small">{t('creditsHint')}</p>
+          <ul className="log">
+            {catalog.tracks.map((tr) => (
+              <li key={tr.id}>
+                <span>
+                  {lang === 'id' ? tr.nameId : tr.nameEn} <em className="muted">{tr.sci}</em>
+                  <span className="muted small block">{tr.recordist}</span>
+                </span>
+                <span className="small">
+                  <a href={tr.licenseUrl} target="_blank" rel="noreferrer">{tr.license}</a> ·{' '}
+                  <a href={tr.sourceUrl} target="_blank" rel="noreferrer">{tr.source}</a>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
       <button
         className="btn danger"
         onClick={async () => {

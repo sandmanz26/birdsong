@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getProgram, MIN_MATERIAL_DAYS, playedTodaySec, PRESETS } from '../actions';
 import { audioContext } from '../audio/decode';
+import { appTrackId, loadCatalog } from '../catalog/client';
 import { db, logEvent } from '../db';
 import { useI18n } from '../i18n';
 import { useLoad, useNav } from '../nav';
@@ -8,16 +9,26 @@ import type { Bird, Program, SessionSlot } from '../types';
 import { daysBetween, fmtDateTime, fmtDuration, uid } from '../util';
 
 export function MasteranTab({ bird }: { bird: Bird }) {
-  const { t, locale } = useI18n();
+  const { t, locale, lang } = useI18n();
   const nav = useNav();
   const { data } = useLoad(async () => {
-    const [program, tracks, sessions, used] = await Promise.all([
+    const [program, tracks, sessions, used, catalog] = await Promise.all([
       getProgram(bird.id),
       db.all('tracks'),
       db.byBird('sessions', bird.id),
       playedTodaySec(bird.id),
+      loadCatalog().catch(() => null), // offline: installed tracks still work
     ]);
-    return { program, tracks: tracks.sort((a, b) => b.createdAt - a.createdAt), sessions: sessions.sort((a, b) => b.startedAt - a.startedAt), used };
+    const pack = catalog?.packs.find((p) => p.id === program.packId) ?? null;
+    // Tracks shown = the active pack's tracks (so one can be switched back on) + anything selected.
+    const visible = new Set([...(pack?.trackIds.map(appTrackId) ?? []), ...program.trackIds]);
+    return {
+      program,
+      pack,
+      tracks: tracks.filter((tr) => visible.has(tr.id)).sort((a, b) => Number(b.species === bird.species) - Number(a.species === bird.species) || a.name.localeCompare(b.name)),
+      sessions: sessions.sort((a, b) => b.startedAt - a.startedAt),
+      used,
+    };
   }, [bird.id]);
   const [program, setProgram] = useState<Program | null>(null);
   const [showAdvanced, setShowAdvanced] = useState(false);
@@ -96,22 +107,36 @@ export function MasteranTab({ bird }: { bird: Bird }) {
       <section className="card">
         <h3>{t('material')}</h3>
         <p className="muted small">{t('materialHint')}</p>
-        {data.tracks.length === 0 ? (
-          <div className="notice">
-            {t('noTracks')} <button className="link-btn" onClick={() => nav({ name: 'library' })}>{t('goLibrary')} →</button>
-          </div>
+        {data.pack || data.tracks.length > 0 ? (
+          <>
+            <div className="row between wrap">
+              <span>
+                <span className="muted small block">{t('currentPack')}</span>
+                <strong>{data.pack ? (lang === 'id' ? data.pack.nameId : data.pack.nameEn) : t('demoBadge')}</strong>
+              </span>
+              <button className="btn small" onClick={() => nav({ name: 'packs', birdId: bird.id })}>{t('changePack')}</button>
+            </div>
+            <p className="muted small">{t('tracksInPackHint')}</p>
+            <ul className="checklist">
+              {data.tracks.map((tr) => (
+                <li key={tr.id}>
+                  <label>
+                    <input type="checkbox" checked={program.trackIds.includes(tr.id)} onChange={() => toggleTrack(tr.id)} />
+                    <span className="grow">
+                      {tr.species === bird.species ? '★ ' : ''}
+                      {tr.name} {tr.source === 'demo' && <span className="badge">{t('demoBadge')}</span>}
+                    </span>
+                    <span className="muted small">{fmtDuration(tr.durationSec)}</span>
+                  </label>
+                </li>
+              ))}
+            </ul>
+          </>
         ) : (
-          <ul className="checklist">
-            {data.tracks.map((tr) => (
-              <li key={tr.id}>
-                <label>
-                  <input type="checkbox" checked={program.trackIds.includes(tr.id)} onChange={() => toggleTrack(tr.id)} />
-                  <span className="grow">{tr.name} {tr.source === 'demo' && <span className="badge">{t('demoBadge')}</span>}</span>
-                  <span className="muted small">{fmtDuration(tr.durationSec)}</span>
-                </label>
-              </li>
-            ))}
-          </ul>
+          <div className="stack">
+            <p className="notice">{t('noPackYet')}</p>
+            <button className="btn primary" onClick={() => nav({ name: 'packs', birdId: bird.id })}>{t('choosePack')}</button>
+          </div>
         )}
         {program.trackIds.length > 0 && (
           <p className={'small ' + (materialAge < MIN_MATERIAL_DAYS ? 'muted' : 'good-text')}>

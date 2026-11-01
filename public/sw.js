@@ -1,5 +1,5 @@
 // Offline cache for the app shell. Network-first for pages (fresh deploys), cache-first for hashed assets.
-const CACHE = 'kicau-coach-v1';
+const CACHE = 'kicau-coach-v2';
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(['./', './index.html', './manifest.webmanifest', './icon.svg'])));
   self.skipWaiting();
@@ -11,6 +11,18 @@ self.addEventListener('activate', (e) => {
 self.addEventListener('fetch', (e) => {
   const req = e.request;
   if (req.method !== 'GET' || new URL(req.url).origin !== location.origin) return;
+  const path = new URL(req.url).pathname;
+  // Catalogue audio is stored in IndexedDB when a pack is installed: don't duplicate it here.
+  if (path.includes('/catalog/audio/')) return;
+  // Catalogue index: network-first so new curated tracks appear, cached copy when offline.
+  if (path.endsWith('/catalog/catalog.json')) {
+    e.respondWith(fetch(req).then((res) => {
+      const copy = res.clone();
+      caches.open(CACHE).then((c) => c.put(req, copy));
+      return res;
+    }).catch(() => caches.match(req)));
+    return;
+  }
   if (req.mode === 'navigate') {
     e.respondWith(fetch(req).then((res) => {
       caches.open(CACHE).then((c) => c.put('./index.html', res.clone()));

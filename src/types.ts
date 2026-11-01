@@ -24,8 +24,15 @@ export interface Track {
   durationSec: number;
   mime: string;
   size: number;
-  source: 'import' | 'demo';
+  /** 'catalog' = curated library (the default); 'demo' = synthetic demo data; 'import' = legacy/dev only. */
+  source: 'catalog' | 'demo' | 'import';
+  catalogId?: string;
+  species?: string;
+  role?: 'master' | 'isian';
   attribution?: string;
+  license?: string;
+  licenseUrl?: string;
+  sourceUrl?: string;
   createdAt: number;
 }
 
@@ -49,6 +56,8 @@ export interface SessionSlot {
 
 export interface Program {
   birdId: string;
+  /** Curated pack currently applied, if any. */
+  packId?: string;
   trackIds: string[];
   isianIds: string[];
   sessions: SessionSlot[];

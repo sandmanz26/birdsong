@@ -1,6 +1,6 @@
 # PRD: Kicau Coach MVP (two testable features)
 
-*Status: MVP built and ready for user testing. Owner: Product/Eng. Research basis: [01-research.md](01-research.md), referenced below as R1–R14.*
+*Status: v0.2 — curated catalogue replaces user uploads (see [04-content-strategy.md](04-content-strategy.md)). MVP built and ready for user testing. Owner: Product/Eng. Research basis: [01-research.md](01-research.md), referenced below as R1–R14.*
 
 ## Problem
 
@@ -15,7 +15,7 @@ Validate two hypotheses with real owners in 4–6 weeks, at the lowest possible 
 | **H1** | Owners will replace ad-hoc YouTube/MP3 looping with a **structured, scheduled masteran program**. | ≥60% of testers run ≥5 sessions/week for 3 weeks, and SUS ≥ 70. |
 | **H2** | Owners **value and trust an objective "which isian has entered" check**. | Tracker verdicts agree with expert listeners at κ ≥ 0.6, ≥50% of testers run a check weekly, and ≥40% say they'd pay for it. |
 
-**Non-goals for the MVP:** accounts, cloud sync, a marketplace, social and contest features, a built-in song catalogue (licensing, see R5 and §5 of the research), iOS-native background scheduling, and AI-generated audio.
+**Non-goals for the MVP:** accounts, cloud sync, a marketplace, social and contest features, **user music uploads** (replaced by the curated catalogue in v0.2), iOS-native background scheduling, and AI-generated audio.
 
 ## Users
 
@@ -28,7 +28,7 @@ The primary user is the **Contestant** (the beachhead), with **Breeders** (multi
 > *"Set the program once and leave the phone by the cage. The app runs masteran properly and records what was played."*
 
 ### User stories
-1. As an owner, I **import my own masteran audio** (MP3/M4A/WAV, or video files from WhatsApp) into a library and preview it with a spectrogram.
+1. As an owner, I **pick a ready-made masteran pack for my bird's species** (e.g. "Murai batu – Isian dasar"). One tap downloads curated, licence-cleared real recordings and sets up the material, schedule and isian targets. I never have to find or upload audio. *(v0.2 — replaces importing own files)*
 2. I **create a program for a bird**: pick tracks, choose a preset (Pagi / Malam / Pagi+Malam), and adjust session times, duration and volume.
 3. I **start a session now**, or put the phone in **Stand-by** so sessions start automatically at the scheduled times.
 4. The app **plays like a tutor, not a tape** (R8): random order, natural silent gaps, 0 to −3 dB level variation (never boosts, so it never clips), 30 s fade-in/out, and long tracks played whole.
@@ -38,7 +38,7 @@ The primary user is the **Contestant** (the beachhead), with **Breeders** (multi
 ### Functional requirements
 | ID | Requirement |
 |---|---|
-| F1.1 | The library stores audio blobs locally (IndexedDB) and decodes to mono 22.05 kHz for analysis. Playback uses the original file quality. |
+| F1.1 | Curated catalogue (`public/catalog/catalog.json` + audio) built by the content pipeline. Installing a pack stores its audio in IndexedDB (offline). Stable ids (`cat:<id>`) make installs idempotent and shared between birds. The Library is a read-only catalogue with preview and credits. |
 | F1.2 | Program = tracks[] + sessions[] {start HH:MM, minutes, volume 0–1} + gapMin/gapMax seconds + dailyCapMinutes + materialChangedAt. |
 | F1.3 | The **session planner** is a pure, seeded function: (tracks, duration, gaps, seed) → timeline of {track, startAt, offset, length, gainDb}. It never exceeds the session length, and no clip plays immediately after itself if an alternative exists. Unit-tested. |
 | F1.4 | **Audio engine.** Web Audio with look-ahead scheduling (it schedules about 60 s ahead every 5 s, which survives timer throttling while audio is audible), a master gain with fades, and a Stop that fades in 2 s. |
@@ -58,7 +58,7 @@ The primary user is the **Contestant** (the beachhead), with **Breeders** (multi
 > *"Record my bird for a minute. The app tells me which target isian it now sings, how closely, and how it's trending week by week."*
 
 ### User stories
-1. In the Library, I open a track's spectrogram, **tap a detected phrase and mark it as an "isian target"** (for example, "Cililin – cerecet"). These become the bird's targets.
+1. The isian in my pack are **already marked** by the content pipeline (the most frequent phrase types of each curated track), so they are my bird's targets from day one. *(Advanced: I can still tap another phrase on a track's spectrogram to add a target.)*
 2. I **record the bird** for 30–120 s in-app (raw mic, with AGC, noise suppression and echo cancellation **off**), or **upload** a recording or WhatsApp video.
 3. The app shows, for each target isian: **status** (✅ Masuk = learned / 🟡 Mulai mirip = getting close / ⬜ Belum = not yet), **best similarity %**, **number of times heard**, and the timestamp to jump to and listen.
 4. It also shows **contest-style indicators** (R7): *Durasi kicau* (seconds of song), *Kerja* (% of time singing), *Jumlah frasa* (number of phrases), *Variasi* (distinct phrase types), and *Volume relatif* (relative loudness, uncalibrated, to compare like-with-like only).

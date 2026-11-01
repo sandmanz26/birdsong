@@ -288,3 +288,14 @@ input[type='checkbox'] { width: 22px; height: 22px; accent-color: var(--primary)
 @media (min-width: 600px) {
   .content { padding-top: 24px; }
 }
+
+/* Packs & catalogue */
+.pack-card.in-use { border-color: var(--primary); box-shadow: 0 0 0 1px var(--primary); }
+.pack-species { display: flex; flex-wrap: wrap; gap: 6px; }
+.species-chip { font-size: 0.8rem; border-radius: 999px; padding: 3px 10px; background: var(--surface-2); color: var(--text-2); }
+.species-chip.master { border: 1.5px solid var(--accent); color: var(--text); font-weight: 600; }
+.chip.soon { align-self: flex-start; }
+.qc { font-size: 0.7rem; font-weight: 700; border-radius: 6px; padding: 2px 6px; border: 1px solid var(--border); color: var(--muted); }
+.qc.approved { border-color: var(--accent); color: var(--text); }
+.track-main:disabled { opacity: 1; cursor: default; color: inherit; }
+a { color: var(--primary); }

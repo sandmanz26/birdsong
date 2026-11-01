@@ -99,7 +99,7 @@ export function CheckTab({ bird, initialCheckId }: { bird: Bird; initialCheckId?
         <p className="muted small">{t('targetsHint')}</p>
         {isian.length === 0 ? (
           <div className="notice">
-            {t('noIsian')} <button className="link-btn" onClick={() => nav({ name: 'library' })}>{t('goLibrary')} →</button>
+            {t('noIsian')} <button className="link-btn" onClick={() => nav({ name: 'packs', birdId: bird.id })}>{t('choosePack')} →</button>
           </div>
         ) : (
           <ul className="checklist">

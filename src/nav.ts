@@ -6,6 +6,7 @@ export type Route =
   | { name: 'birdForm'; id?: string }
   | { name: 'bird'; id: string; tab: BirdTab; checkId?: string }
   | { name: 'player'; birdId: string; mode: 'now' | 'standby'; minutes?: number }
+  | { name: 'packs'; birdId: string }
   | { name: 'library' }
   | { name: 'track'; id: string }
   | { name: 'more' };

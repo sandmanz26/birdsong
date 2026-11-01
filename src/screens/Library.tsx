@@ -1,85 +1,89 @@
+/** Read-only curated catalogue: browse, preview and see credits. Owners never upload music. */
 import { useRef, useState } from 'react';
-import { deleteTrack, importTrack } from '../actions';
-import { playExcerpt } from '../audio/decode';
+import { audioUrl, appTrackId, loadCatalog } from '../catalog/client';
+import type { CatalogTrack } from '../catalog/types';
 import { db } from '../db';
 import { useI18n } from '../i18n';
 import { useLoad, useNav } from '../nav';
 import { fmtDuration } from '../util';
+import { CatalogError } from './PackPicker';
 
 export function LibraryScreen() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const nav = useNav();
-  const fileRef = useRef<HTMLInputElement>(null);
-  const [busy, setBusy] = useState(false);
-  const [errors, setErrors] = useState<string[]>([]);
   const [playing, setPlaying] = useState<string | null>(null);
-  const stopRef = useRef<(() => void) | null>(null);
-  const { data, reload } = useLoad(async () => {
-    const [tracks, isian] = await Promise.all([db.all('tracks'), db.all('isian')]);
-    return { tracks: tracks.sort((a, b) => b.createdAt - a.createdAt), isian };
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const { data, error, reload } = useLoad(async () => {
+    const [catalog, local] = await Promise.all([loadCatalog(), db.all('tracks')]);
+    return { catalog, installed: new Set(local.map((x) => x.id)), demo: local.filter((x) => x.source === 'demo') };
   }, []);
 
-  const onFiles = async (files: FileList) => {
-    setBusy(true);
-    const errs: string[] = [];
-    for (const f of Array.from(files)) {
-      try {
-        await importTrack(f, f.name.replace(/\.[^.]+$/, ''));
-      } catch {
-        errs.push(t('importFailed', { name: f.name }));
-      }
-    }
-    setErrors(errs);
-    setBusy(false);
-    reload();
+  if (error) return <CatalogError onRetry={reload} />;
+  if (!data) return <p className="muted pad">{t('loading')}</p>;
+
+  const preview = (tr: CatalogTrack) => {
+    audioRef.current?.pause();
+    if (playing === tr.id) return setPlaying(null);
+    const el = new Audio(audioUrl(tr));
+    el.onended = () => setPlaying((p) => (p === tr.id ? null : p));
+    void el.play().catch(() => setPlaying(null));
+    audioRef.current = el;
+    setPlaying(tr.id);
   };
 
-  const toggle = async (id: string) => {
-    stopRef.current?.();
-    if (playing === id) return setPlaying(null);
-    const blob = await db.getBlob('track:' + id);
-    if (!blob) return;
-    setPlaying(id);
-    stopRef.current = playExcerpt(blob, 0, undefined, () => setPlaying((p) => (p === id ? null : p)));
-  };
+  const groups: ['master' | 'isian', string][] = [
+    ['master', t('roleMaster')],
+    ['isian', t('roleIsian')],
+  ];
 
   return (
     <div className="stack">
-      <h2 className="title">{t('libraryTitle')}</h2>
-      <p className="muted small">{t('libraryHint')}</p>
-      <button className="btn primary" onClick={() => fileRef.current?.click()} disabled={busy}>
-        {busy ? t('importing') : `+ ${t('importAudio')}`}
-      </button>
-      <input ref={fileRef} type="file" accept="audio/*,video/*" multiple hidden onChange={(e) => e.target.files && void onFiles(e.target.files).then(() => (e.target.value = ''))} />
-      {errors.map((e) => <p key={e} className="warn small" role="alert">{e}</p>)}
-      {data?.tracks.map((tr) => {
-        const n = data.isian.filter((i) => i.trackId === tr.id).length;
+      <h2 className="title">{t('catalogTitle')}</h2>
+      <p className="muted small">{t('catalogHint')}</p>
+      {data.catalog.tracks.length === 0 && <p className="notice">{t('catalogEmpty')}</p>}
+      {groups.map(([role, label]) => {
+        const list = data.catalog.tracks.filter((x) => x.role === role).sort((a, b) => a.nameId.localeCompare(b.nameId));
+        if (list.length === 0) return null;
         return (
-          <div className="card track-row" key={tr.id}>
-            <button className="icon-btn play" onClick={() => void toggle(tr.id)} aria-label={playing === tr.id ? t('pause') : t('play')}>
-              {playing === tr.id ? '■' : '▶'}
-            </button>
-            <button className="grow track-main" onClick={() => nav({ name: 'track', id: tr.id })}>
-              <strong>{tr.name}</strong> {tr.source === 'demo' && <span className="badge">{t('demoBadge')}</span>}
-              <span className="muted small block">
-                {fmtDuration(tr.durationSec)} · {t('isianCount', { n })}
-              </span>
-            </button>
-            <button
-              className="icon-btn"
-              aria-label={t('delete')}
-              onClick={async () => {
-                if (confirm(t('deleteTrackConfirm'))) {
-                  await deleteTrack(tr.id);
-                  reload();
-                }
-              }}
-            >
-              ✕
-            </button>
-          </div>
+          <section key={role} className="stack">
+            <h3>{label}</h3>
+            {list.map((tr) => {
+              const isInstalled = data.installed.has(appTrackId(tr.id));
+              return (
+                <div className="card track-row" key={tr.id}>
+                  <button className="icon-btn play" onClick={() => preview(tr)} aria-label={playing === tr.id ? t('pause') : t('preview')}>
+                    {playing === tr.id ? '■' : '▶'}
+                  </button>
+                  <button
+                    className="grow track-main"
+                    disabled={!isInstalled}
+                    onClick={() => nav({ name: 'track', id: appTrackId(tr.id) })}
+                    aria-label={`${tr.nameId} – ${t('details')}`}
+                  >
+                    <strong>{lang === 'id' ? tr.nameId : tr.nameEn}</strong> <em className="muted small">{tr.sci}</em>
+                    <span className="muted small block">
+                      {fmtDuration(tr.durationSec)} · {t('isianCount', { n: tr.isian.length })} · {tr.license}
+                      {isInstalled && <> · ✓ {t('installed')}</>}
+                    </span>
+                    <span className="muted small block">{t('recordedBy')}: {tr.recordist}</span>
+                  </button>
+                  <span className={'qc ' + tr.review} title={tr.review === 'approved' ? t('qcApproved') : t('qcAuto')}>
+                    {tr.review === 'approved' ? '★' : 'QC'}
+                  </span>
+                </div>
+              );
+            })}
+          </section>
         );
       })}
+      {data.demo.map((tr) => (
+        <button key={tr.id} className="card track-row" onClick={() => nav({ name: 'track', id: tr.id })}>
+          <span className="grow">
+            <strong>{tr.name}</strong> <span className="badge">{t('demoBadge')}</span>
+            <span className="muted small block">{t('demoTrackNote')}</span>
+          </span>
+        </button>
+      ))}
     </div>
   );
 }

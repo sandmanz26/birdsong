@@ -7,6 +7,7 @@ import { BirdForm } from './screens/BirdForm';
 import { BirdsScreen } from './screens/Birds';
 import { LibraryScreen } from './screens/Library';
 import { MoreScreen } from './screens/More';
+import { PackPicker } from './screens/PackPicker';
 import { Player } from './screens/Player';
 import { TrackEditor } from './screens/TrackEditor';
 
@@ -21,6 +22,7 @@ function loadLang(): Lang {
 }
 
 const topLevel = (r: Route) => (r.name === 'library' || r.name === 'track' ? 'library' : r.name === 'more' ? 'more' : 'birds');
+// Note: 'packs' belongs to the bird flow, so it highlights the Birds tab.
 
 export function App() {
   const [lang, setLangState] = useState<Lang>(loadLang);
@@ -95,6 +97,7 @@ export function App() {
             {route.name === 'birdForm' && <BirdForm id={route.id} />}
             {route.name === 'bird' && <BirdDetail id={route.id} tab={route.tab} checkId={route.checkId} />}
             {route.name === 'player' && <Player birdId={route.birdId} mode={route.mode} minutes={route.minutes} />}
+            {route.name === 'packs' && <PackPicker birdId={route.birdId} />}
             {route.name === 'library' && <LibraryScreen />}
             {route.name === 'track' && <TrackEditor id={route.id} />}
             {route.name === 'more' && <MoreScreen />}
