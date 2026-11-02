@@ -5,7 +5,8 @@ import { applyPack, loadCatalog, materialInUseDays, packMegabytes, packSeconds, 
 import { fmtDuration } from '../util';
 import type { Catalog, CatalogPack } from '../catalog/types';
 import { db } from '../db';
-import { useI18n, type TKey } from '../i18n';
+import { speciesName } from '../species';
+import { useI18n } from '../i18n';
 import { useLoad, useNav } from '../nav';
 
 export function PackPicker({ birdId }: { birdId: string }) {
@@ -50,7 +51,7 @@ export function PackPicker({ birdId }: { birdId: string }) {
       {catalog.packs.length === 0 && <p className="notice">{t('noPacksYet')}</p>}
       {recommended.length > 0 && (
         <>
-          <h3>{t('recommendedFor', { species: t(`sp_${bird.species}` as TKey) })}</h3>
+          <h3>{t('recommendedFor', { species: speciesName(bird.species, lang) })}</h3>
           {recommended.map(card)}
         </>
       )}
@@ -78,12 +79,17 @@ function PackCard({ pack, catalog, lang, inUse, busy, disabled, onUse }: {
       {tracks.length > 0 ? (
         <>
           <div className="pack-species">
-            {tracks.map((tr) => (
-              <span key={tr.id} className={'species-chip ' + (pack.target.includes(tr.species) ? 'master' : 'isian')}>
-                {pack.target.includes(tr.species) ? '★ ' : ''}
-                {lang === 'id' ? tr.nameId : tr.nameEn}
-              </span>
-            ))}
+            {[...new Set(tracks.map((tr) => tr.species))].map((sp) => {
+              const clips = tracks.filter((tr) => tr.species === sp);
+              const own = pack.target.includes(sp);
+              return (
+                <span key={sp} className={'species-chip ' + (own ? 'master' : 'isian')}>
+                  {own ? '★ ' : ''}
+                  {lang === 'id' ? clips[0].nameId : clips[0].nameEn}
+                  {clips.length > 1 && <span className="muted"> ×{clips.length}</span>}
+                </span>
+              );
+            })}
           </div>
           <p className="muted small">
             {t('packStats', { n: tracks.length, m: fmtDuration(packSeconds(pack, catalog)), mb: packMegabytes(pack, catalog).toFixed(1) })}

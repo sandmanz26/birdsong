@@ -146,3 +146,39 @@ describe('score mapping', () => {
     expect(statusFor(20)).toBe('belum');
   });
 });
+
+describe('recording quality gate', () => {
+  it('accepts a normal recording', () => {
+    const rec = renderScene(30, [0, 4, 8, 12, 16, 20, 24].map((at, i) => ({ phrase: ['A', 'D', 'E'][i % 3], at: at + 1 })), 0.01, 3);
+    const q = analyzeRecording(rec, []).quality!;
+    expect(q.issues).toEqual([]);
+    expect(q.reliability).toBe('ok');
+  });
+
+  it('flags short, silent and clipped recordings with actionable issues', () => {
+    expect(analyzeRecording(renderScene(8, [{ phrase: 'A', at: 1 }], 0.01, 3), []).quality!.issues).toContain('too_short');
+    const silent = analyzeRecording(renderScene(30, [], 0.01, 3), []).quality!;
+    expect(silent.issues).toContain('no_song');
+    expect(silent.reliability).toBe('low');
+    const hot = renderScene(30, [0, 5, 10, 15, 20].map((at) => ({ phrase: 'A', at: at + 1, opts: { amplitude: 3 } })), 0.01, 3);
+    for (let i = 0; i < hot.length; i++) hot[i] = Math.max(-1, Math.min(1, hot[i]));
+    expect(analyzeRecording(hot, []).quality!.issues).toContain('clipped');
+  });
+});
+
+describe('cohort-normalised scoring (opt-in)', () => {
+  it('maps z = zMasuk to the "masuk" threshold and leaves raw mode unchanged', async () => {
+    const { scoreHit, SCORE_CONFIG, costToSimilarity, THRESHOLD_MASUK } = await import('../src/dsp/analyze');
+    const tpl = { id: 't', features: { frames: 1, dims: 1, data: new Float32Array(1) }, cohort: { mu: 0.4, sd: 0.05 } };
+    expect(scoreHit(0.2, tpl)).toBe(costToSimilarity(0.2)); // default: raw
+    const saved = SCORE_CONFIG.mode;
+    SCORE_CONFIG.mode = 'znorm';
+    try {
+      expect(scoreHit(0.4 - SCORE_CONFIG.zMasuk * 0.05, tpl)).toBe(THRESHOLD_MASUK);
+      expect(scoreHit(0.45, tpl)).toBe(0); // worse than the average impostor
+      expect(scoreHit(0.2, { ...tpl, cohort: undefined })).toBe(costToSimilarity(0.2)); // no cohort → raw
+    } finally {
+      SCORE_CONFIG.mode = saved;
+    }
+  });
+});

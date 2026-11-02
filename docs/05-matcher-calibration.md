@@ -31,3 +31,28 @@ The harness is `calibrate.ts` (run during development): 7 catalogue tracks, 12 a
 | Pitch tolerance costs little | Within noise | Keep ±1 band, since imitations drift in pitch |
 
 **Caveat: the sample is small** (11–12 genuine templates, 66–72 impostor pairs, one recording per species). Treat these numbers as directional. The remaining false "Masuk" cases include the magpie-robin (kacer) scoring 88 against a bulbul isian. Magpie-robins are mimics, so this may be a *true* imitation inside the recording, and only expert listeners can tell. That is exactly what Part C of the [user-testing plan](03-user-testing-plan.md) measures. Re-run the harness once xeno-canto fills the catalogue (3+ recordings per species), and again on expert-labelled bird recordings.
+
+## v0.4 — validation at scale (2 Nov 2026)
+
+`npm run calibrate` on the v0.4 candidate set: **153 clean real recordings, 29 species, 145 isian templates, 10,354 cross-species impostor pairs** (vs. 7 recordings / 66 pairs in v0.2). Genuine = the same phrase type repeated elsewhere in the same recording; impostor = other species. Cohort statistics and evaluation use disjoint species halves.
+
+| Method | AUC | Genuine accepted at 5% false matches |
+|---|---|---|
+| **Raw path cost (shipped)** | **0.900** | **63.4%** |
+| Cohort normalisation (Z-norm) | 0.893 | 40.7% |
+
+**Z-norm is not adopted.** It is a standard fix in speaker verification, but on this data it is worse. The code stays opt-in (`SCORE_CONFIG.mode = 'znorm'`, `catalog:publish --cohort`) so it can be re-tested on expert-labelled data.
+
+**Operating points (raw score):**
+
+| False-match rate | Cost threshold | Genuine accepted |
+|---|---|---|
+| 1% | — | 36.6% |
+| 2% | 0.20 | 49.7% |
+| 5% | 0.23 | 63.4% |
+| 10% | 0.26 | 72.4% |
+| 20% | 0.31 | 87.6% |
+
+**The shipped mapping holds up at scale:** "Masuk" (70) sits at cost 0.19, which is **2.0% false matches**; "Mulai mirip" (50) sits at 0.24, which is **6.1%**. The v0.2 fit from only 7 recordings generalises. The policy is now stated as measured: *"Masuk" ≈ 2% false matches* (deliberately stricter than 5%, because a false "learned" verdict is the costliest error for owner trust), and *"Mulai mirip" ≈ 6%*. Genuine renditions that miss "Masuk" still show as "Mulai mirip" (64.8% reach it).
+
+**Limitations.** Genuine pairs here are a bird repeating its *own* phrase. A pupil imitating a tutor varies more, so real recall for learned isian is probably lower than these numbers. Part C of the user test (expert-labelled pupil recordings) remains the decisive calibration.

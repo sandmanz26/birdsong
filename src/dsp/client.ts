@@ -1,5 +1,5 @@
 /** Promise wrapper around the analysis Web Worker (keeps the UI responsive, PRD F2.2). */
-import type { AnalysisResult } from './analyze';
+import type { AnalysisResult, PreparedTemplate } from './analyze';
 import { SR, type Matrix } from './spectrogram';
 
 export type DisplaySpec = Matrix & { secPerCol: number };
@@ -35,11 +35,15 @@ export const workerSpectrogram = (samples: Float32Array, maxCols = 1600) => call
 export const workerPhrases = (samples: Float32Array) => call<{ startSec: number; endSec: number }[]>({ type: 'phrases', samples });
 
 const CONTEXT_SEC = 15;
-export function workerAnalyze(samples: Float32Array, templates: { id: string; track: Float32Array; startSec: number; endSec: number }[]) {
-  const t = templates.map((tpl) => {
-    const from = Math.max(0, Math.floor((tpl.startSec - CONTEXT_SEC) * SR));
-    const to = Math.min(tpl.track.length, Math.ceil((tpl.endSec + CONTEXT_SEC) * SR));
-    return { id: tpl.id, window: tpl.track.slice(from, to), startSec: tpl.startSec - from / SR, endSec: tpl.endSec - from / SR };
-  });
-  return call<AnalysisResult>({ type: 'analyze', samples, templates: t });
-}
+const windowFor = (tpl: { id: string; track: Float32Array; startSec: number; endSec: number }) => {
+  const from = Math.max(0, Math.floor((tpl.startSec - CONTEXT_SEC) * SR));
+  const to = Math.min(tpl.track.length, Math.ceil((tpl.endSec + CONTEXT_SEC) * SR));
+  return { id: tpl.id, window: tpl.track.slice(from, to), startSec: tpl.startSec - from / SR, endSec: tpl.endSec - from / SR };
+};
+
+/** Compute isian templates once (e.g. when a pack is installed) so checks never re-decode tutor tracks. */
+export const workerPrepare = (templates: { id: string; track: Float32Array; startSec: number; endSec: number }[]) =>
+  call<PreparedTemplate[]>({ type: 'prepare', windows: templates.map(windowFor) });
+
+export const workerAnalyzePrepared = (samples: Float32Array, templates: PreparedTemplate[]) =>
+  call<AnalysisResult>({ type: 'analyzePrepared', samples, templates });

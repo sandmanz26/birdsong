@@ -28,6 +28,7 @@
   ],
   "exclude": [
     "scripts/build-candidates.ts",
+    "scripts/calibrate.ts",
     "scripts/publish-catalog.ts"
   ]
 }

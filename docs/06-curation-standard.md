@@ -1,6 +1,6 @@
-# Kicau Coach content standard v1, and the curation audit
+# Kicau Coach content standard (v2), and the curation audit
 
-*Effective Nov 2026. Owner: Product. Implemented in `scripts/standard.ts`, which has unit tests.*
+*Effective Nov 2026 (v2 from 2 Nov 2026). Owner: Product. Implemented in `scripts/standard.ts`, which has unit tests. Changes from v1 are listed at the end.*
 
 ## Principle
 
@@ -16,23 +16,26 @@ There is no single official "masteran standard" in the hobby. Contest standards 
 
 | ID | Check | Type | Threshold | Basis |
 |---|---|---|---|---|
-| L1 | Licence allows commercial use and derivatives | auto, hard | CC0 / CC BY / CC BY-SA only (never NC or ND) | Creative Commons licence terms |
+| L1 | Licence allows commercial use and derivatives | auto, hard | CC0 / CC BY / CC BY-SA, **or documented written permission** for an NC recording (never ND) | Creative Commons licence terms |
+| T1 | Scientific name accepted and source taxon matches | auto, hard | GBIF Backbone EXACT + ACCEPTED (or a documented synonym); source taxon = species or its subspecies | [GBIF Backbone](https://www.gbif.org/dataset/d7dddbf4-2cf0-4f39-9b2a-bb099caae36c) |
 | L2 | Complete attribution | auto, hard | Title, Author, Source, Licence present | [CC best practice "TASL"](https://wiki.creativecommons.org/Best_practices_for_attribution) |
-| A1 | Enough material | auto, hard | ≥ 45 s after processing | Variety for a masteran session |
-| A2 | Loudness | auto, hard | −20 ± 1.5 LUFS integrated, true peak ≤ −1 dBTP | ITU-R BS.1770 / EBU R128 measurement |
+| A1 | Complete song bout per clip | auto, hard | ≥ 8 s per clip | One song bout; iNaturalist clips have a median of ~15 s |
+| P1 | Enough material per species | publish, hard | ≥ 45 s of approved clips per species (up to 6 clips / 240 s) | Variety for a masteran session |
+| A2 | Loudness | auto, hard | −23 … −18.5 LUFS integrated (target −20), true peak ≤ −1 dBTP | ITU-R BS.1770 / EBU R128 measurement |
 | A3 | Clean recording | auto, hard | Bird ≥ 25 dB above background | "Jernih, tanpa noise" (clear, no noise) |
 | A4 | Active bird | auto, hard | Song ≥ 20% of the time | "Gacor" (actively singing) material |
 | A5 | No distortion | auto, hard | ≤ 0.01% clipped samples in the source | Learning birds copy distortion |
 | A6 | Full bandwidth | auto, hard | Source sample rate ≥ 32 kHz | Song energy up to ~10 kHz |
 | M1 | Archive grade "A" | auto, or expert if unknown | xeno-canto grade A; no grade → covered by H3 | [xeno-canto quality scale](https://xeno-canto.org/forum/topic/32514) |
 | M2 | No background species listed | auto, or expert if unknown | 0 listed; not recorded → covered by H2 | Single focal species |
+| M4 | Species ID verified by the source community | auto, or expert | iNaturalist research grade; otherwise covered by H1 | iNaturalist community ID |
 | M3 | Preferred region/dialect | auto, or expert override | Country in the species' preferred list; otherwise needs H5 | Local dialects matter |
 | H1 | Correct species | expert | Matches label and scientific name | Burung Indonesia checklist / AviList taxonomy |
 | H2 | Only the focal species audible | expert | — | Expert ear |
 | H3 | No human voice, music, vehicles, wind or handling noise | expert | — | Expert ear |
 | H4 | Suitable as masteran (active, contest-worthy) | expert | — | Contest judge / senior trainer |
 | H5 | Dialect/region acceptable for target birds | expert | — | Contest judge / senior trainer |
-| H6 | Isian markers on complete phrases, with community names | expert | Unnamed isian are dropped | Contest judge / senior trainer |
+| H6 | Isian markers on complete phrases, with community names | expert | Unnamed isian are dropped; a clip may keep none (then it is masteran material only, not a Cek Isian target) | Contest judge / senior trainer |
 
 An approval must name the curator, their role/credential and a date, and confirm H1–H6. A curator **can't** override a hard automatic failure.
 
@@ -83,3 +86,15 @@ These sources are Wikimedia Commons only, because xeno-canto needs an API key. T
 1. **A xeno-canto API key** (free account), so candidates are drawn from thousands of graded SE-Asian recordings: `XC_API_KEY=… npm run catalog:candidates`.
 2. **A named expert curator** (a contest judge or senior trainer). Budget about 5 minutes per candidate in `npm run review`.
 3. **Partner recordings** for species and dialects the archives don't cover (e.g. Sumatran murai "medan"), recorded under a written licence and held to this same standard.
+
+## Changes in v2 (2 Nov 2026)
+
+| Change | Why |
+|---|---|
+| **T1** taxonomy check added | Names must be verified, not assumed; it caught the jalak suren split that GBIF still lumps |
+| **M4** community-ID check added | iNaturalist research grade is independent evidence for H1 |
+| **L1** accepts documented written permission | Unlocks good non-commercial recordings legally (permission-request list) |
+| **A1** 45 s → 8 s per clip, with new **P1** ≥ 45 s per species | Real archive clips are short (iNaturalist median ~15 s); variety is guaranteed per species, not per clip |
+| **A2** ±1.5 LU → −23 … −18.5 LUFS | Peaky calls would otherwise need ~10 dB of limiting, which alters the song. Limiting is capped at 4 dB, and the band matches the planner's own 0…−3 dB per-play variation |
+| Processing: explicit linear gain instead of loudnorm "linear" mode | loudnorm silently fell back to dynamic mode on short or peaky clips (a pipeline bug the standard exposed) |
+

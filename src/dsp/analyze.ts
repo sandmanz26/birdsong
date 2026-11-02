@@ -6,13 +6,22 @@ import { Features, spot } from './dtw';
 import { segment, noiseFloor, excessMatrix, frameActivity, Segment } from './segment';
 import { HOP_SEC, logMel, percentile, SR } from './spectrogram';
 
-export const ANALYSIS_VERSION = 1;
+export const ANALYSIS_VERSION = 2;
 
 /** Cost → similarity calibration (normalised cosine-DTW path cost). Tuned on synthetic tests; to be
  * re-calibrated against expert labels collected in user testing (see docs/03-user-testing-plan.md). */
-/** Calibrated on real catalogue recordings (genuine repeats vs other species): "masuk" (70) sits at the
- * cost where ≈5% of cross-species pairs would pass. See docs/05-matcher-calibration.md. */
-export const SCORE_CONFIG = { costPerfect: 0.115, costUnrelated: 0.365 };
+/** Calibrated and validated on real recordings (v0.4: 145 isian, 10,354 cross-species pairs):
+ * "masuk" (70) ≈ 2% false matches, "mulai mirip" (50) ≈ 6%. See docs/05-matcher-calibration.md. */
+export const SCORE_CONFIG = {
+  costPerfect: 0.115,
+  costUnrelated: 0.365,
+  /** 'znorm' scores each hit relative to how easily that isian matches other species (its cohort);
+   * only used for templates that carry cohort statistics. See docs/05-matcher-calibration.md. */
+  mode: 'raw' as 'raw' | 'znorm',
+  /** z-score mapping: z ≤ zZero → 0, z at zMasuk → THRESHOLD_MASUK (70). */
+  zZero: 0,
+  zMasuk: 3,
+};
 
 export const THRESHOLD_MASUK = 70;
 export const THRESHOLD_MIRIP = 50;
@@ -26,12 +35,22 @@ export const costToSimilarity = (cost: number): number => {
   return Math.round(100 * Math.min(1, Math.max(0, s)));
 };
 
+/** Similarity for one hit: raw cost mapping, or cohort-normalised when enabled and available. */
+export function scoreHit(cost: number, tpl: PreparedTemplate): number {
+  if (SCORE_CONFIG.mode !== 'znorm' || !tpl.cohort) return costToSimilarity(cost);
+  const z = (tpl.cohort.mu - cost) / Math.max(0.01, tpl.cohort.sd);
+  const s = (THRESHOLD_MASUK / 100) * ((z - SCORE_CONFIG.zZero) / (SCORE_CONFIG.zMasuk - SCORE_CONFIG.zZero));
+  return Math.round(100 * Math.min(1, Math.max(0, s)));
+}
+
 export const statusFor = (similarity: number): IsianStatus =>
   similarity >= THRESHOLD_MASUK ? 'masuk' : similarity >= THRESHOLD_MIRIP ? 'mirip' : 'belum';
 
 export interface PreparedTemplate {
   id: string;
   features: Features;
+  /** Path-cost statistics of this isian against recordings of other species (catalogue publish step). */
+  cohort?: { mu: number; sd: number };
 }
 
 /** Window of context (s) around a marked isian used to estimate the background level. */
@@ -82,11 +101,40 @@ export interface PhraseInfo {
   similarity: number | null;
 }
 
+export type RecordingIssue = 'too_short' | 'clipped' | 'no_song' | 'little_song' | 'noisy';
+
+/** Input-recording quality limits for a trustworthy check (see docs/07, "recording quality gate"). */
+export const RECORDING_LIMITS = { minSec: 20, maxClippedPct: 0.1, minKerjaPct: 5, minSnrDb: 15 };
+
+export interface RecordingQuality {
+  issues: RecordingIssue[];
+  /** 'low' = verdicts (especially "Belum") may reflect the recording rather than the bird. */
+  reliability: 'ok' | 'low';
+  clippedPct: number;
+}
+
+/** Judge whether a recording is good enough for reliable isian verdicts, and say why not. */
+export function assessRecording(samples: Float32Array, metrics: AnalysisResult['metrics'], sr = SR): RecordingQuality {
+  let clipped = 0;
+  for (let i = 0; i < samples.length; i++) if (Math.abs(samples[i]) >= 0.99) clipped++;
+  const clippedPct = samples.length ? (100 * clipped) / samples.length : 0;
+  const issues: RecordingIssue[] = [];
+  if (samples.length / sr < RECORDING_LIMITS.minSec) issues.push('too_short');
+  if (clippedPct > RECORDING_LIMITS.maxClippedPct) issues.push('clipped');
+  if (metrics.phraseCount === 0) issues.push('no_song');
+  else if (metrics.kerjaPct < RECORDING_LIMITS.minKerjaPct) issues.push('little_song');
+  if (metrics.phraseCount > 0 && metrics.loudnessDb < RECORDING_LIMITS.minSnrDb) issues.push('noisy');
+  const severe: RecordingIssue[] = ['too_short', 'clipped', 'no_song', 'noisy'];
+  return { issues, reliability: issues.some((i) => severe.includes(i)) ? 'low' : 'ok', clippedPct: +clippedPct.toFixed(3) };
+}
+
 export interface AnalysisResult {
   version: number;
   durationSec: number;
   matches: IsianMatch[];
   phrases: PhraseInfo[];
+  /** Input-recording quality (v2+; absent on older stored checks). */
+  quality?: RecordingQuality;
   metrics: {
     /** Seconds of actual sound (syllables). */
     singingSec: number;
@@ -199,7 +247,7 @@ export function analyzeRecording(samples: Float32Array, templates: PreparedTempl
     seg.phrases.forEach((ph, pi) => {
       const { feats, offset } = phraseFeatures(all, ph);
       for (const h of spot(tpl.features, feats)) {
-        const sim = costToSimilarity(h.cost);
+        const sim = scoreHit(h.cost, tpl);
         if (sim > best) {
           best = sim;
           bestAt = toSec(offset + h.start);
@@ -229,18 +277,20 @@ export function analyzeRecording(samples: Float32Array, templates: PreparedTempl
     similarity: phraseBest[i].sim >= 0 ? phraseBest[i].sim : null,
   }));
 
+  const metrics = {
+    singingSec: +(sylFrames * HOP_SEC).toFixed(1),
+    kerjaPct: mel.rows ? Math.round((100 * phraseFrames) / mel.rows) : 0,
+    phraseCount: seg.phrases.length,
+    variasi: typeCount,
+    loudnessDb: activeLevels.length ? Math.round(percentile(activeLevels, 95)) : 0,
+  };
   return {
     version: ANALYSIS_VERSION,
     durationSec: +(samples.length / sr).toFixed(2),
     matches,
     phrases,
-    metrics: {
-      singingSec: +(sylFrames * HOP_SEC).toFixed(1),
-      kerjaPct: mel.rows ? Math.round((100 * phraseFrames) / mel.rows) : 0,
-      phraseCount: seg.phrases.length,
-      variasi: typeCount,
-      loudnessDb: activeLevels.length ? Math.round(percentile(activeLevels, 95)) : 0,
-    },
+    quality: assessRecording(samples, metrics, sr),
+    metrics,
   };
 }
 

@@ -1,5 +1,6 @@
 {
-  "$comment": "Expert curation (content standard v1, docs/06-curation-standard.md). 'approvals' is written by the review tool (npm run review): candidate id -> {decision, curator, role, date, checks{H1..H6}, isian{id:{nameId,nameEn}}, notes}. 'exclude': source keys never to use again (e.g. 'xc:123456').",
+  "$comment": "Expert curation (content standard v1, docs/06-curation-standard.md). 'approvals' is written by the review tool (npm run review): candidate id -> {decision, curator, role, date, checks{H1..H6}, isian{id:{nameId,nameEn}}, notes}. 'exclude': source keys never to use again (e.g. 'xc:123456'). 'permissions': source key -> {grantedBy, date, scope, evidence} for written permission to use a non-commercial recording commercially.",
   "exclude": [],
-  "approvals": {}
+  "approvals": {},
+  "permissions": {}
 }

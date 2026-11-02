@@ -52,6 +52,7 @@ After the session: **SUS** questionnaire, plus three open questions: *"What woul
 | **H2**: verdict trust (Agree rate on verdicts) | `verdict_feedback` | ≥ 70% | 50–70% | < 50% |
 | **H2**: app–expert κ | Part C | ≥ 0.6 | 0.4–0.6 | < 0.4 |
 | Willingness to pay ("would pay Rp25k/month") | interviews | ≥ 40% of contestants and breeders | 20–40% | < 20% |
+| Recording quality gate: share of checks flagged `reliability: low` | `check_completed` + stored result | < 25% after week 1 | 25–40% | > 40% → improve recording guidance |
 | Welfare: sessions overriding the daily cap | `session_*` vs cap | < 10% | 10–25% | > 25% → rethink defaults |
 
 **Decision at week 6:**

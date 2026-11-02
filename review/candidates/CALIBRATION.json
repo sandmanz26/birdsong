@@ -1,0 +1,1369 @@
+{
+ "summary": {
+  "generatedAt": "2026-11-02T04:41:51.006Z",
+  "clips": 153,
+  "species": 29,
+  "templates": 145,
+  "impostorPairs": 10354,
+  "raw": {
+   "auc": 0.9,
+   "tprAt5pctFpr": 0.634,
+   "masukCost": 0.23
+  },
+  "znorm": {
+   "auc": 0.893,
+   "tprAt5pctFpr": 0.407,
+   "masukZ": 1.46
+  },
+  "operatingPoints": [
+   {
+    "fpr": 0.01,
+    "cost": 0.18,
+    "tpr": 0.366
+   },
+   {
+    "fpr": 0.02,
+    "cost": 0.2,
+    "tpr": 0.497
+   },
+   {
+    "fpr": 0.05,
+    "cost": 0.23,
+    "tpr": 0.634
+   },
+   {
+    "fpr": 0.1,
+    "cost": 0.26,
+    "tpr": 0.724
+   },
+   {
+    "fpr": 0.2,
+    "cost": 0.31,
+    "tpr": 0.876
+   }
+  ],
+  "currentMapping": [
+   {
+    "similarity": 70,
+    "cost": 0.19,
+    "fpr": 0.02,
+    "tpr": 0.497
+   },
+   {
+    "similarity": 50,
+    "cost": 0.24,
+    "fpr": 0.061,
+    "tpr": 0.648
+   }
+  ],
+  "genuineCostMedian": 0.2,
+  "impostorCostMedian": 0.45
+ },
+ "rows": [
+  {
+   "id": "murai_batu-in796207-i1",
+   "species": "murai_batu",
+   "frames": 93,
+   "gen": 0.20999999999999996,
+   "mu": 0.5752380952380951,
+   "sd": 0.28742345919906953,
+   "impostors": 84
+  },
+  {
+   "id": "murai_batu-in855095-i1",
+   "species": "murai_batu",
+   "frames": 141,
+   "gen": 0.21999999999999997,
+   "mu": 0.7084126984126983,
+   "sd": 0.3316443225266297,
+   "impostors": 84
+  },
+  {
+   "id": "murai_batu-in1295641-i1",
+   "species": "murai_batu",
+   "frames": 63,
+   "gen": 0.29000000000000004,
+   "mu": 0.5061904761904762,
+   "sd": 0.2115207864109346,
+   "impostors": 84
+  },
+  {
+   "id": "murai_batu-in1363395-i1",
+   "species": "murai_batu",
+   "frames": 181,
+   "gen": 0.31999999999999995,
+   "mu": 0.8482539682539683,
+   "sd": 0.26585913254441496,
+   "impostors": 84
+  },
+  {
+   "id": "kacer-in1418920-i1",
+   "species": "kacer",
+   "frames": 198,
+   "gen": 0.20999999999999996,
+   "mu": 0.8923809523809524,
+   "sd": 0.23557908580545572,
+   "impostors": 82
+  },
+  {
+   "id": "kacer-in858460-i1",
+   "species": "kacer",
+   "frames": 47,
+   "gen": 0.13,
+   "mu": 0.4066666666666667,
+   "sd": 0.1940299436881304,
+   "impostors": 82
+  },
+  {
+   "id": "kacer-in753687-i1",
+   "species": "kacer",
+   "frames": 160,
+   "gen": 0.38,
+   "mu": 0.7720634920634921,
+   "sd": 0.2930255892729472,
+   "impostors": 82
+  },
+  {
+   "id": "kacer-in728633-i1",
+   "species": "kacer",
+   "frames": 188,
+   "gen": 1,
+   "mu": 0.9268253968253969,
+   "sd": 0.2073936935321468,
+   "impostors": 82
+  },
+  {
+   "id": "kacer-wc1853934452-i1",
+   "species": "kacer",
+   "frames": 113,
+   "gen": 0.18999999999999995,
+   "mu": 0.6317460317460318,
+   "sd": 0.3157130487498413,
+   "impostors": 82
+  },
+  {
+   "id": "kacer-in21295-i2",
+   "species": "kacer",
+   "frames": 187,
+   "gen": 0.21999999999999997,
+   "mu": 0.8363492063492063,
+   "sd": 0.2700164697346101,
+   "impostors": 82
+  },
+  {
+   "id": "kacer-in990376-i1",
+   "species": "kacer",
+   "frames": 49,
+   "gen": 0.15000000000000002,
+   "mu": 0.3198412698412698,
+   "sd": 0.11830136474265546,
+   "impostors": 82
+  },
+  {
+   "id": "kacer-in1856358-i1",
+   "species": "kacer",
+   "frames": 170,
+   "gen": 0.16000000000000003,
+   "mu": 0.8142857142857144,
+   "sd": 0.3101597861917653,
+   "impostors": 82
+  },
+  {
+   "id": "cucak_ijo-in585261-i2",
+   "species": "cucak_ijo",
+   "frames": 49,
+   "gen": 0.12,
+   "mu": 0.4395238095238095,
+   "sd": 0.2509754213693431,
+   "impostors": 88
+  },
+  {
+   "id": "cucak_ijo-in1308088-i1",
+   "species": "cucak_ijo",
+   "frames": 113,
+   "gen": 0.12,
+   "mu": 0.6806349206349206,
+   "sd": 0.3316331546403944,
+   "impostors": 88
+  },
+  {
+   "id": "kenari-in523487-i1",
+   "species": "kenari",
+   "frames": 47,
+   "gen": 0.15000000000000002,
+   "mu": 0.4291111111111111,
+   "sd": 0.21766765923430884,
+   "impostors": 61
+  },
+  {
+   "id": "lovebird-wc1006001119-i1",
+   "species": "lovebird",
+   "frames": 52,
+   "gen": 0.050000000000000044,
+   "mu": 0.34011111111111114,
+   "sd": 0.21785058306832664,
+   "impostors": 62
+  },
+  {
+   "id": "pleci-wc597592056-i2",
+   "species": "pleci",
+   "frames": 57,
+   "gen": 0.28,
+   "mu": 0.39809523809523817,
+   "sd": 0.10499973005040347,
+   "impostors": 88
+  },
+  {
+   "id": "pleci-wc1797562925-i1",
+   "species": "pleci",
+   "frames": 197,
+   "gen": 0.31000000000000005,
+   "mu": 0.9007936507936508,
+   "sd": 0.206269215264995,
+   "impostors": 88
+  },
+  {
+   "id": "cucak_rawa-in311829-i1",
+   "species": "cucak_rawa",
+   "frames": 44,
+   "gen": 0.25,
+   "mu": 0.5082539682539681,
+   "sd": 0.24792177262474507,
+   "impostors": 81
+  },
+  {
+   "id": "cucak_rawa-in333359-i1",
+   "species": "cucak_rawa",
+   "frames": 227,
+   "gen": 0.35,
+   "mu": 0.9550793650793651,
+   "sd": 0.15512281888645343,
+   "impostors": 81
+  },
+  {
+   "id": "cucak_rawa-in333360-i1",
+   "species": "cucak_rawa",
+   "frames": 57,
+   "gen": 0.18000000000000005,
+   "mu": 0.4246031746031745,
+   "sd": 0.21682284039488556,
+   "impostors": 81
+  },
+  {
+   "id": "cucak_rawa-in341570-i1",
+   "species": "cucak_rawa",
+   "frames": 214,
+   "gen": 0.18000000000000005,
+   "mu": 0.8992063492063492,
+   "sd": 0.22056422300006892,
+   "impostors": 81
+  },
+  {
+   "id": "cucak_rawa-in295807-i1",
+   "species": "cucak_rawa",
+   "frames": 52,
+   "gen": 0.24,
+   "mu": 0.5012698412698412,
+   "sd": 0.2087718589524244,
+   "impostors": 81
+  },
+  {
+   "id": "cucak_rawa-in295808-i1",
+   "species": "cucak_rawa",
+   "frames": 157,
+   "gen": 0.18999999999999995,
+   "mu": 0.7820634920634921,
+   "sd": 0.29151034575644735,
+   "impostors": 81
+  },
+  {
+   "id": "cucak_rawa-in332476-i1",
+   "species": "cucak_rawa",
+   "frames": 47,
+   "gen": 0.29000000000000004,
+   "mu": 0.5719047619047618,
+   "sd": 0.2706655943144201,
+   "impostors": 81
+  },
+  {
+   "id": "cucak_rawa-in180556-i1",
+   "species": "cucak_rawa",
+   "frames": 180,
+   "gen": 0.26,
+   "mu": 0.8146031746031744,
+   "sd": 0.27424832564102564,
+   "impostors": 81
+  },
+  {
+   "id": "cucak_rawa-in796125-i1",
+   "species": "cucak_rawa",
+   "frames": 256,
+   "gen": 0.10999999999999999,
+   "mu": 0.9634920634920634,
+   "sd": 0.12462207924531093,
+   "impostors": 81
+  },
+  {
+   "id": "jalak_suren-in1636941-i2",
+   "species": "jalak_suren",
+   "frames": 58,
+   "gen": 0.24,
+   "mu": 0.5157777777777778,
+   "sd": 0.23663369619063027,
+   "impostors": 62
+  },
+  {
+   "id": "anis_merah-wc384666653-i1",
+   "species": "anis_merah",
+   "frames": 206,
+   "gen": 0.18999999999999995,
+   "mu": 0.872063492063492,
+   "sd": 0.2407142726306914,
+   "impostors": 81
+  },
+  {
+   "id": "anis_merah-wc2015508097-i2",
+   "species": "anis_merah",
+   "frames": 201,
+   "gen": 0.13,
+   "mu": 0.8974603174603175,
+   "sd": 0.23676368403133483,
+   "impostors": 81
+  },
+  {
+   "id": "anis_merah-wc1935780918-i1",
+   "species": "anis_merah",
+   "frames": 110,
+   "gen": 0.26,
+   "mu": 0.7074603174603173,
+   "sd": 0.3162476839941206,
+   "impostors": 81
+  },
+  {
+   "id": "anis_merah-in672966-i1",
+   "species": "anis_merah",
+   "frames": 201,
+   "gen": 1,
+   "mu": 0.8515873015873016,
+   "sd": 0.2691149889899627,
+   "impostors": 81
+  },
+  {
+   "id": "anis_merah-in672967-i1",
+   "species": "anis_merah",
+   "frames": 91,
+   "gen": 0.12,
+   "mu": 0.6077777777777778,
+   "sd": 0.3283505890773498,
+   "impostors": 81
+  },
+  {
+   "id": "anis_merah-in672968-i1",
+   "species": "anis_merah",
+   "frames": 93,
+   "gen": 0.07999999999999996,
+   "mu": 0.559047619047619,
+   "sd": 0.32128074201972295,
+   "impostors": 81
+  },
+  {
+   "id": "anis_merah-in391817-i1",
+   "species": "anis_merah",
+   "frames": 114,
+   "gen": 0.18000000000000005,
+   "mu": 0.6676190476190478,
+   "sd": 0.35217561584966806,
+   "impostors": 81
+  },
+  {
+   "id": "anis_merah-wc222805653-i1",
+   "species": "anis_merah",
+   "frames": 118,
+   "gen": 0.18000000000000005,
+   "mu": 0.6623809523809524,
+   "sd": 0.3285886813965906,
+   "impostors": 81
+  },
+  {
+   "id": "cendet-in193157-i1",
+   "species": "cendet",
+   "frames": 53,
+   "gen": 0.15000000000000002,
+   "mu": 0.2876190476190476,
+   "sd": 0.09231956723431424,
+   "impostors": 87
+  },
+  {
+   "id": "cendet-in1312580-i2",
+   "species": "cendet",
+   "frames": 53,
+   "gen": 0.30000000000000004,
+   "mu": 0.40142857142857136,
+   "sd": 0.14969659413221323,
+   "impostors": 87
+  },
+  {
+   "id": "cendet-in155536-i1",
+   "species": "cendet",
+   "frames": 93,
+   "gen": 0.12,
+   "mu": 0.5053968253968252,
+   "sd": 0.3365550281514881,
+   "impostors": 87
+  },
+  {
+   "id": "cucak_kutilang-in1995188-i1",
+   "species": "cucak_kutilang",
+   "frames": 50,
+   "gen": 0.19999999999999996,
+   "mu": 0.6355555555555557,
+   "sd": 0.2517719916957982,
+   "impostors": 61
+  },
+  {
+   "id": "cucak_kutilang-in111929-i2",
+   "species": "cucak_kutilang",
+   "frames": 177,
+   "gen": 0.56,
+   "mu": 0.8353333333333334,
+   "sd": 0.2865317511977413,
+   "impostors": 61
+  },
+  {
+   "id": "chao_mao-in1274312-i1",
+   "species": "chao_mao",
+   "frames": 51,
+   "gen": 0.18999999999999995,
+   "mu": 0.3713333333333333,
+   "sd": 0.19238965091131535,
+   "impostors": 51
+  },
+  {
+   "id": "chao_mao-in1565588-i1",
+   "species": "chao_mao",
+   "frames": 71,
+   "gen": 0.19999999999999996,
+   "mu": 0.46111111111111114,
+   "sd": 0.19347951051120196,
+   "impostors": 51
+  },
+  {
+   "id": "chao_mao-in1295063-i1",
+   "species": "chao_mao",
+   "frames": 70,
+   "gen": 0.12,
+   "mu": 0.3919999999999998,
+   "sd": 0.2157014397520589,
+   "impostors": 51
+  },
+  {
+   "id": "chao_mao-in1256245-i1",
+   "species": "chao_mao",
+   "frames": 64,
+   "gen": 0.20999999999999996,
+   "mu": 0.438,
+   "sd": 0.17830186638270382,
+   "impostors": 51
+  },
+  {
+   "id": "chao_mao-in1241641-i1",
+   "species": "chao_mao",
+   "frames": 85,
+   "gen": 0.31000000000000005,
+   "mu": 0.5339999999999999,
+   "sd": 0.25101040261754537,
+   "impostors": 51
+  },
+  {
+   "id": "chao_mao-wc108751240-i1",
+   "species": "chao_mao",
+   "frames": 178,
+   "gen": 0.20999999999999996,
+   "mu": 0.8354444444444444,
+   "sd": 0.2853814644417424,
+   "impostors": 51
+  },
+  {
+   "id": "chao_mao-in1694697-i1",
+   "species": "chao_mao",
+   "frames": 87,
+   "gen": 0.16000000000000003,
+   "mu": 0.5432222222222224,
+   "sd": 0.2802135208799723,
+   "impostors": 51
+  },
+  {
+   "id": "chao_mao-in397095-i1",
+   "species": "chao_mao",
+   "frames": 150,
+   "gen": 0.26,
+   "mu": 0.7493333333333335,
+   "sd": 0.3047505355022184,
+   "impostors": 51
+  },
+  {
+   "id": "chao_mao-in18945-i1",
+   "species": "chao_mao",
+   "frames": 60,
+   "gen": 0.29000000000000004,
+   "mu": 0.477777777777778,
+   "sd": 0.20143252400840103,
+   "impostors": 51
+  },
+  {
+   "id": "chao_mao-in319389-i1",
+   "species": "chao_mao",
+   "frames": 232,
+   "gen": 0.19999999999999996,
+   "mu": 0.9253333333333333,
+   "sd": 0.19497692171126332,
+   "impostors": 51
+  },
+  {
+   "id": "chao_mao-in1601889-i1",
+   "species": "chao_mao",
+   "frames": 101,
+   "gen": 0.20999999999999996,
+   "mu": 0.5601111111111111,
+   "sd": 0.27765483946177355,
+   "impostors": 51
+  },
+  {
+   "id": "chao_mao-in1704248-i1",
+   "species": "chao_mao",
+   "frames": 119,
+   "gen": 0.21999999999999997,
+   "mu": 0.5746666666666665,
+   "sd": 0.3099254390620069,
+   "impostors": 51
+  },
+  {
+   "id": "poksai_mandarin-in2116840-i1",
+   "species": "poksai_mandarin",
+   "frames": 45,
+   "gen": 0.26,
+   "mu": 0.354,
+   "sd": 0.10253237970947952,
+   "impostors": 58
+  },
+  {
+   "id": "poksai_mandarin-in1603780-i1",
+   "species": "poksai_mandarin",
+   "frames": 121,
+   "gen": 0.08999999999999997,
+   "mu": 0.604111111111111,
+   "sd": 0.3362171733483003,
+   "impostors": 58
+  },
+  {
+   "id": "poksai_mandarin-in1825930-i1",
+   "species": "poksai_mandarin",
+   "frames": 201,
+   "gen": 0.21999999999999997,
+   "mu": 0.941111111111111,
+   "sd": 0.1800891411646802,
+   "impostors": 58
+  },
+  {
+   "id": "poksai_mandarin-in1090820-i1",
+   "species": "poksai_mandarin",
+   "frames": 135,
+   "gen": 0.20999999999999996,
+   "mu": 0.7657777777777778,
+   "sd": 0.2603202206590004,
+   "impostors": 58
+  },
+  {
+   "id": "poksai_mandarin-in1092676-i1",
+   "species": "poksai_mandarin",
+   "frames": 78,
+   "gen": 0.18000000000000005,
+   "mu": 0.5236666666666667,
+   "sd": 0.2689049811529881,
+   "impostors": 58
+  },
+  {
+   "id": "hwamei-in1242071-i1",
+   "species": "hwamei",
+   "frames": 68,
+   "gen": 0.17000000000000004,
+   "mu": 0.39095238095238094,
+   "sd": 0.24503782853870948,
+   "impostors": 85
+  },
+  {
+   "id": "hwamei-in1535770-i1",
+   "species": "hwamei",
+   "frames": 89,
+   "gen": 0.22999999999999998,
+   "mu": 0.5634920634920635,
+   "sd": 0.2641738168187139,
+   "impostors": 85
+  },
+  {
+   "id": "hwamei-in858205-i1",
+   "species": "hwamei",
+   "frames": 62,
+   "gen": 0.10999999999999999,
+   "mu": 0.42761904761904757,
+   "sd": 0.24079045942784758,
+   "impostors": 85
+  },
+  {
+   "id": "hwamei-in1234684-i1",
+   "species": "hwamei",
+   "frames": 47,
+   "gen": 0.17000000000000004,
+   "mu": 0.4303174603174605,
+   "sd": 0.16660921156309758,
+   "impostors": 85
+  },
+  {
+   "id": "hwamei-in1755312-i1",
+   "species": "hwamei",
+   "frames": 79,
+   "gen": 0.18999999999999995,
+   "mu": 0.5915873015873016,
+   "sd": 0.314487269024412,
+   "impostors": 85
+  },
+  {
+   "id": "gelatik_batu-in1231985-i1",
+   "species": "gelatik_batu",
+   "frames": 113,
+   "gen": 0.14,
+   "mu": 0.6922222222222222,
+   "sd": 0.3274259613120093,
+   "impostors": 81
+  },
+  {
+   "id": "gelatik_batu-in273769-i1",
+   "species": "gelatik_batu",
+   "frames": 114,
+   "gen": 0.26,
+   "mu": 0.5719047619047618,
+   "sd": 0.3420983667265993,
+   "impostors": 81
+  },
+  {
+   "id": "gelatik_batu-in703219-i1",
+   "species": "gelatik_batu",
+   "frames": 81,
+   "gen": 0.07999999999999996,
+   "mu": 0.5733333333333334,
+   "sd": 0.32056992897818615,
+   "impostors": 81
+  },
+  {
+   "id": "gelatik_batu-in2167551-i1",
+   "species": "gelatik_batu",
+   "frames": 53,
+   "gen": 0.10999999999999999,
+   "mu": 0.46999999999999986,
+   "sd": 0.22087129053846496,
+   "impostors": 81
+  },
+  {
+   "id": "gelatik_batu-in53844-i1",
+   "species": "gelatik_batu",
+   "frames": 67,
+   "gen": 0.06999999999999995,
+   "mu": 0.535079365079365,
+   "sd": 0.2699433980404571,
+   "impostors": 81
+  },
+  {
+   "id": "gelatik_batu-in1299777-i1",
+   "species": "gelatik_batu",
+   "frames": 153,
+   "gen": 0.20999999999999996,
+   "mu": 0.8171428571428572,
+   "sd": 0.26237274207187183,
+   "impostors": 81
+  },
+  {
+   "id": "gelatik_batu-in2000619-i1",
+   "species": "gelatik_batu",
+   "frames": 171,
+   "gen": 0.15000000000000002,
+   "mu": 0.8387301587301587,
+   "sd": 0.257426161788173,
+   "impostors": 81
+  },
+  {
+   "id": "gelatik_batu-in1684436-i1",
+   "species": "gelatik_batu",
+   "frames": 77,
+   "gen": 0.14,
+   "mu": 0.5084126984126984,
+   "sd": 0.3025458451378549,
+   "impostors": 81
+  },
+  {
+   "id": "perkutut-in892603-i1",
+   "species": "perkutut",
+   "frames": 59,
+   "gen": 0.12,
+   "mu": 0.6425555555555555,
+   "sd": 0.27389195400583743,
+   "impostors": 56
+  },
+  {
+   "id": "perkutut-in1928436-i1",
+   "species": "perkutut",
+   "frames": 217,
+   "gen": 0.27,
+   "mu": 0.8723333333333332,
+   "sd": 0.24165655151244897,
+   "impostors": 56
+  },
+  {
+   "id": "perkutut-in572197-i1",
+   "species": "perkutut",
+   "frames": 54,
+   "gen": 0.18000000000000005,
+   "mu": 0.4214444444444443,
+   "sd": 0.10071479104780225,
+   "impostors": 56
+  },
+  {
+   "id": "perkutut-in879614-i1",
+   "species": "perkutut",
+   "frames": 90,
+   "gen": 0.17000000000000004,
+   "mu": 0.4672222222222221,
+   "sd": 0.2502844061275438,
+   "impostors": 56
+  },
+  {
+   "id": "perkutut-in122679-i1",
+   "species": "perkutut",
+   "frames": 48,
+   "gen": 0.14,
+   "mu": 0.4852222222222222,
+   "sd": 0.18750542378986612,
+   "impostors": 56
+  },
+  {
+   "id": "perkutut-in1302275-i1",
+   "species": "perkutut",
+   "frames": 94,
+   "gen": 0.27,
+   "mu": 0.5831111111111111,
+   "sd": 0.2585886671248994,
+   "impostors": 56
+  },
+  {
+   "id": "perkutut-in1305319-i1",
+   "species": "perkutut",
+   "frames": 47,
+   "gen": 0.31999999999999995,
+   "mu": 0.5836666666666666,
+   "sd": 0.23358296170739853,
+   "impostors": 56
+  },
+  {
+   "id": "sanger-in187037-i1",
+   "species": "sanger",
+   "frames": 106,
+   "gen": 0.39,
+   "mu": 0.644,
+   "sd": 0.29247526011233466,
+   "impostors": 59
+  },
+  {
+   "id": "sanger-in1625767-i1",
+   "species": "sanger",
+   "frames": 66,
+   "gen": 1,
+   "mu": 0.3388888888888891,
+   "sd": 0.15760318979036805,
+   "impostors": 59
+  },
+  {
+   "id": "sanger-in1241662-i1",
+   "species": "sanger",
+   "frames": 211,
+   "gen": 0.21999999999999997,
+   "mu": 0.8296666666666669,
+   "sd": 0.2711844390815965,
+   "impostors": 59
+  },
+  {
+   "id": "sanger-in1674429-i1",
+   "species": "sanger",
+   "frames": 91,
+   "gen": 0.5,
+   "mu": 0.7072222222222222,
+   "sd": 0.24224426505206942,
+   "impostors": 59
+  },
+  {
+   "id": "cipoh-in906141-i1",
+   "species": "cipoh",
+   "frames": 136,
+   "gen": 0.18999999999999995,
+   "mu": 0.8721111111111111,
+   "sd": 0.2207839287853091,
+   "impostors": 56
+  },
+  {
+   "id": "cipoh-in1300310-i1",
+   "species": "cipoh",
+   "frames": 130,
+   "gen": 0.18999999999999995,
+   "mu": 0.7285555555555555,
+   "sd": 0.3162648718017896,
+   "impostors": 56
+  },
+  {
+   "id": "cipoh-in1234175-i1",
+   "species": "cipoh",
+   "frames": 54,
+   "gen": 0.16000000000000003,
+   "mu": 0.34500000000000003,
+   "sd": 0.21353245915108812,
+   "impostors": 56
+  },
+  {
+   "id": "cipoh-in269230-i1",
+   "species": "cipoh",
+   "frames": 126,
+   "gen": 0.09999999999999998,
+   "mu": 0.6934444444444444,
+   "sd": 0.3132807087407967,
+   "impostors": 56
+  },
+  {
+   "id": "cipoh-in308780-i1",
+   "species": "cipoh",
+   "frames": 169,
+   "gen": 0.30000000000000004,
+   "mu": 0.7792222222222225,
+   "sd": 0.3153207459706801,
+   "impostors": 56
+  },
+  {
+   "id": "cipoh-in180526-i1",
+   "species": "cipoh",
+   "frames": 201,
+   "gen": 0.39,
+   "mu": 0.9082222222222225,
+   "sd": 0.21667475768368577,
+   "impostors": 56
+  },
+  {
+   "id": "cipoh-in843657-i2",
+   "species": "cipoh",
+   "frames": 111,
+   "gen": 0.26,
+   "mu": 0.5615555555555558,
+   "sd": 0.3024966890952366,
+   "impostors": 56
+  },
+  {
+   "id": "kepodang-in922861-i1",
+   "species": "kepodang",
+   "frames": 91,
+   "gen": 0.15000000000000002,
+   "mu": 0.797936507936508,
+   "sd": 0.27068495557586325,
+   "impostors": 80
+  },
+  {
+   "id": "kepodang-in1315176-i1",
+   "species": "kepodang",
+   "frames": 123,
+   "gen": 1,
+   "mu": 0.7455555555555556,
+   "sd": 0.3076009462789011,
+   "impostors": 80
+  },
+  {
+   "id": "kepodang-in988848-i1",
+   "species": "kepodang",
+   "frames": 155,
+   "gen": 1,
+   "mu": 0.8242857142857144,
+   "sd": 0.2819811672520122,
+   "impostors": 80
+  },
+  {
+   "id": "kepodang-in796422-i1",
+   "species": "kepodang",
+   "frames": 83,
+   "gen": 0.10999999999999999,
+   "mu": 0.7555555555555556,
+   "sd": 0.2713913461895867,
+   "impostors": 80
+  },
+  {
+   "id": "kepodang-in1679500-i1",
+   "species": "kepodang",
+   "frames": 76,
+   "gen": 0.07999999999999996,
+   "mu": 0.3974603174603175,
+   "sd": 0.2924226570053319,
+   "impostors": 80
+  },
+  {
+   "id": "kepodang-in310381-i1",
+   "species": "kepodang",
+   "frames": 72,
+   "gen": 0.29000000000000004,
+   "mu": 0.3966666666666667,
+   "sd": 0.20931483084745428,
+   "impostors": 80
+  },
+  {
+   "id": "kepodang-in310397-i1",
+   "species": "kepodang",
+   "frames": 104,
+   "gen": 0.29000000000000004,
+   "mu": 0.7809523809523808,
+   "sd": 0.2968977927161599,
+   "impostors": 80
+  },
+  {
+   "id": "kepodang-in2074255-i1",
+   "species": "kepodang",
+   "frames": 125,
+   "gen": 0.20999999999999996,
+   "mu": 0.7544444444444444,
+   "sd": 0.3009549762127734,
+   "impostors": 80
+  },
+  {
+   "id": "kepodang-in940905-i1",
+   "species": "kepodang",
+   "frames": 57,
+   "gen": 0.09999999999999998,
+   "mu": 0.3630158730158728,
+   "sd": 0.19009300080328204,
+   "impostors": 80
+  },
+  {
+   "id": "kepodang-in562388-i1",
+   "species": "kepodang",
+   "frames": 47,
+   "gen": 0.13,
+   "mu": 0.4166666666666668,
+   "sd": 0.2439359791108353,
+   "impostors": 80
+  },
+  {
+   "id": "cililin-in1677190-i1",
+   "species": "cililin",
+   "frames": 65,
+   "gen": 0.17000000000000004,
+   "mu": 0.39122222222222214,
+   "sd": 0.21803581651634807,
+   "impostors": 62
+  },
+  {
+   "id": "ciblek-in1234017-i1",
+   "species": "ciblek",
+   "frames": 60,
+   "gen": 0.26,
+   "mu": 0.47634920634920636,
+   "sd": 0.22729815107804358,
+   "impostors": 89
+  },
+  {
+   "id": "gereja-in2153346-i1",
+   "species": "gereja",
+   "frames": 46,
+   "gen": 0.20999999999999996,
+   "mu": 0.373,
+   "sd": 0.10751175646308538,
+   "impostors": 57
+  },
+  {
+   "id": "gereja-in459030-i1",
+   "species": "gereja",
+   "frames": 52,
+   "gen": 0.24,
+   "mu": 0.31599999999999995,
+   "sd": 0.09034255795458626,
+   "impostors": 57
+  },
+  {
+   "id": "gereja-in962729-i1",
+   "species": "gereja",
+   "frames": 191,
+   "gen": 0.28,
+   "mu": 0.8883333333333332,
+   "sd": 0.23617907518566406,
+   "impostors": 57
+  },
+  {
+   "id": "gereja-in1519745-i1",
+   "species": "gereja",
+   "frames": 70,
+   "gen": 0.16000000000000003,
+   "mu": 0.7281111111111113,
+   "sd": 0.2788304719695561,
+   "impostors": 57
+  },
+  {
+   "id": "gereja-in382657-i1",
+   "species": "gereja",
+   "frames": 70,
+   "gen": 0.21999999999999997,
+   "mu": 0.5010000000000001,
+   "sd": 0.20850286435549142,
+   "impostors": 57
+  },
+  {
+   "id": "gereja-in382679-i1",
+   "species": "gereja",
+   "frames": 224,
+   "gen": 0.18000000000000005,
+   "mu": 0.8953333333333333,
+   "sd": 0.2473513021325473,
+   "impostors": 57
+  },
+  {
+   "id": "belibis-in306154-i1",
+   "species": "belibis",
+   "frames": 114,
+   "gen": 0.24,
+   "mu": 0.535,
+   "sd": 0.2935046848007711,
+   "impostors": 57
+  },
+  {
+   "id": "belibis-in855379-i1",
+   "species": "belibis",
+   "frames": 125,
+   "gen": 0.25,
+   "mu": 0.7393333333333335,
+   "sd": 0.3267204037433571,
+   "impostors": 57
+  },
+  {
+   "id": "belibis-in1158167-i1",
+   "species": "belibis",
+   "frames": 57,
+   "gen": 0.36,
+   "mu": 0.4950000000000001,
+   "sd": 0.20935482904496,
+   "impostors": 57
+  },
+  {
+   "id": "belibis-in1394783-i1",
+   "species": "belibis",
+   "frames": 49,
+   "gen": 0.15000000000000002,
+   "mu": 0.35177777777777774,
+   "sd": 0.1530110945707154,
+   "impostors": 57
+  },
+  {
+   "id": "belibis-wc1507447123-i1",
+   "species": "belibis",
+   "frames": 60,
+   "gen": 0.18000000000000005,
+   "mu": 0.3412222222222221,
+   "sd": 0.1223004295238917,
+   "impostors": 57
+  },
+  {
+   "id": "belibis-wc1508370644-i1",
+   "species": "belibis",
+   "frames": 125,
+   "gen": 0.26,
+   "mu": 0.7398888888888889,
+   "sd": 0.31975509532711816,
+   "impostors": 57
+  },
+  {
+   "id": "tengkek_buto-in183218-i1",
+   "species": "tengkek_buto",
+   "frames": 54,
+   "gen": 0.06999999999999995,
+   "mu": 0.3814444444444446,
+   "sd": 0.22204384507525196,
+   "impostors": 55
+  },
+  {
+   "id": "tengkek_buto-in596432-i1",
+   "species": "tengkek_buto",
+   "frames": 157,
+   "gen": 0.22999999999999998,
+   "mu": 0.7185555555555556,
+   "sd": 0.32663796170177667,
+   "impostors": 55
+  },
+  {
+   "id": "tengkek_buto-in1682697-i1",
+   "species": "tengkek_buto",
+   "frames": 66,
+   "gen": 0.07999999999999996,
+   "mu": 0.39344444444444443,
+   "sd": 0.23973671257866344,
+   "impostors": 55
+  },
+  {
+   "id": "tengkek_buto-in2010327-i1",
+   "species": "tengkek_buto",
+   "frames": 49,
+   "gen": 0.15000000000000002,
+   "mu": 0.356,
+   "sd": 0.07910330797971304,
+   "impostors": 55
+  },
+  {
+   "id": "tengkek_buto-in320402-i1",
+   "species": "tengkek_buto",
+   "frames": 70,
+   "gen": 0.10999999999999999,
+   "mu": 0.3928888888888889,
+   "sd": 0.24488203257189617,
+   "impostors": 55
+  },
+  {
+   "id": "tengkek_buto-in1679493-i1",
+   "species": "tengkek_buto",
+   "frames": 122,
+   "gen": 0.18000000000000005,
+   "mu": 0.6155555555555555,
+   "sd": 0.3413506216686594,
+   "impostors": 55
+  },
+  {
+   "id": "tengkek_buto-in1288928-i1",
+   "species": "tengkek_buto",
+   "frames": 144,
+   "gen": 1,
+   "mu": 0.7565555555555556,
+   "sd": 0.32416443396355765,
+   "impostors": 55
+  },
+  {
+   "id": "trucukan-in798004-i1",
+   "species": "trucukan",
+   "frames": 59,
+   "gen": 0.17000000000000004,
+   "mu": 0.459047619047619,
+   "sd": 0.2767367340174567,
+   "impostors": 86
+  },
+  {
+   "id": "trucukan-in894998-i1",
+   "species": "trucukan",
+   "frames": 63,
+   "gen": 0.17000000000000004,
+   "mu": 0.40396825396825403,
+   "sd": 0.1810949034941473,
+   "impostors": 86
+  },
+  {
+   "id": "trucukan-in926588-i1",
+   "species": "trucukan",
+   "frames": 232,
+   "gen": 0.14,
+   "mu": 0.9182539682539683,
+   "sd": 0.23331659587955658,
+   "impostors": 86
+  },
+  {
+   "id": "trucukan-in847112-i1",
+   "species": "trucukan",
+   "frames": 47,
+   "gen": 0.27,
+   "mu": 0.42079365079365083,
+   "sd": 0.1256639710119063,
+   "impostors": 86
+  },
+  {
+   "id": "prenjak-in415069-i1",
+   "species": "prenjak",
+   "frames": 160,
+   "gen": 1,
+   "mu": 0.8036507936507937,
+   "sd": 0.3028609696606921,
+   "impostors": 86
+  },
+  {
+   "id": "prenjak-in1436414-i1",
+   "species": "prenjak",
+   "frames": 70,
+   "gen": 0.17000000000000004,
+   "mu": 0.4979365079365079,
+   "sd": 0.21902495857023785,
+   "impostors": 86
+  },
+  {
+   "id": "prenjak-in871108-i1",
+   "species": "prenjak",
+   "frames": 198,
+   "gen": 0.12,
+   "mu": 0.956031746031746,
+   "sd": 0.15196636723290854,
+   "impostors": 86
+  },
+  {
+   "id": "prenjak-in922878-i1",
+   "species": "prenjak",
+   "frames": 117,
+   "gen": 0.18999999999999995,
+   "mu": 0.7047619047619046,
+   "sd": 0.3051039746941191,
+   "impostors": 86
+  },
+  {
+   "id": "srigunting-in1847199-i2",
+   "species": "srigunting",
+   "frames": 145,
+   "gen": 0.27,
+   "mu": 0.7349206349206349,
+   "sd": 0.30177713323846883,
+   "impostors": 84
+  },
+  {
+   "id": "srigunting-in842968-i2",
+   "species": "srigunting",
+   "frames": 116,
+   "gen": 0.16000000000000003,
+   "mu": 0.6138095238095237,
+   "sd": 0.3315831604443287,
+   "impostors": 84
+  },
+  {
+   "id": "srigunting-in1960219-i1",
+   "species": "srigunting",
+   "frames": 45,
+   "gen": 0.18000000000000005,
+   "mu": 0.35253968253968265,
+   "sd": 0.12165483639768226,
+   "impostors": 84
+  },
+  {
+   "id": "srigunting-in2210661-i1",
+   "species": "srigunting",
+   "frames": 54,
+   "gen": 0.09999999999999998,
+   "mu": 0.3047619047619046,
+   "sd": 0.15571501383257755,
+   "impostors": 84
+  },
+  {
+   "id": "srigunting-in1240390-i1",
+   "species": "srigunting",
+   "frames": 92,
+   "gen": 0.12,
+   "mu": 0.5590476190476192,
+   "sd": 0.3200333032556828,
+   "impostors": 84
+  },
+  {
+   "id": "srigunting-in1234678-i1",
+   "species": "srigunting",
+   "frames": 85,
+   "gen": 0.14,
+   "mu": 0.5165079365079365,
+   "sd": 0.2824561139119105,
+   "impostors": 84
+  },
+  {
+   "id": "cinenen-in1246726-i1",
+   "species": "cinenen",
+   "frames": 62,
+   "gen": 0.21999999999999997,
+   "mu": 0.40714285714285725,
+   "sd": 0.1902915772012558,
+   "impostors": 78
+  },
+  {
+   "id": "cinenen-in317420-i1",
+   "species": "cinenen",
+   "frames": 55,
+   "gen": 0.25,
+   "mu": 0.4261904761904763,
+   "sd": 0.15894921392605177,
+   "impostors": 78
+  },
+  {
+   "id": "cinenen-in301667-i1",
+   "species": "cinenen",
+   "frames": 58,
+   "gen": 0.14,
+   "mu": 0.3101587301587301,
+   "sd": 0.1962383719211423,
+   "impostors": 78
+  },
+  {
+   "id": "cinenen-in512863-i1",
+   "species": "cinenen",
+   "frames": 65,
+   "gen": 0.18999999999999995,
+   "mu": 0.39968253968253975,
+   "sd": 0.19444645285648865,
+   "impostors": 78
+  },
+  {
+   "id": "cinenen-in995068-i1",
+   "species": "cinenen",
+   "frames": 81,
+   "gen": 0.25,
+   "mu": 0.4495238095238095,
+   "sd": 0.24668229404440709,
+   "impostors": 78
+  },
+  {
+   "id": "cinenen-in995070-i1",
+   "species": "cinenen",
+   "frames": 81,
+   "gen": 0.25,
+   "mu": 0.4495238095238095,
+   "sd": 0.24668229404440709,
+   "impostors": 78
+  },
+  {
+   "id": "cinenen-in996861-i1",
+   "species": "cinenen",
+   "frames": 81,
+   "gen": 0.25,
+   "mu": 0.4495238095238095,
+   "sd": 0.24668229404440709,
+   "impostors": 78
+  },
+  {
+   "id": "cinenen-in312809-i1",
+   "species": "cinenen",
+   "frames": 73,
+   "gen": 0.24,
+   "mu": 0.49666666666666653,
+   "sd": 0.21227415636463487,
+   "impostors": 78
+  },
+  {
+   "id": "cinenen-in1394815-i1",
+   "species": "cinenen",
+   "frames": 112,
+   "gen": 0.28,
+   "mu": 0.6785714285714286,
+   "sd": 0.3148839904435309,
+   "impostors": 78
+  },
+  {
+   "id": "cinenen-in1839725-i1",
+   "species": "cinenen",
+   "frames": 134,
+   "gen": 0.21999999999999997,
+   "mu": 0.6792063492063491,
+   "sd": 0.3222061924232339,
+   "impostors": 78
+  },
+  {
+   "id": "cinenen-in761379-i1",
+   "species": "cinenen",
+   "frames": 52,
+   "gen": 0.13,
+   "mu": 0.3096825396825397,
+   "sd": 0.17226749459818974,
+   "impostors": 78
+  }
+ ]
+}

@@ -43,7 +43,7 @@ export function LibraryScreen() {
       {data.catalog.tracks.length === 0 && <p className="notice">{t('catalogEmpty')}</p>}
       <p className="muted small">{t('standardNote', { v: data.catalog.standardVersion })}</p>
       {groups.map(([role, label]) => {
-        const list = data.catalog.tracks.filter((x) => x.role === role).sort((a, b) => a.nameId.localeCompare(b.nameId));
+        const list = data.catalog.tracks.filter((x) => x.role === role).sort((a, b) => a.nameId.localeCompare(b.nameId) || a.id.localeCompare(b.id));
         if (list.length === 0) return null;
         return (
           <section key={role} className="stack">
@@ -62,6 +62,10 @@ export function LibraryScreen() {
                     aria-label={`${tr.nameId} – ${t('details')}`}
                   >
                     <strong>{lang === 'id' ? tr.nameId : tr.nameEn}</strong> <em className="muted small">{tr.sci}</em>
+                    {(() => {
+                      const same = list.filter((x) => x.species === tr.species);
+                      return same.length > 1 ? <span className="chip">{t('clipN', { n: same.indexOf(tr) + 1, of: same.length })}</span> : null;
+                    })()}
                     <span className="muted small block">
                       {fmtDuration(tr.durationSec)} · {t('isianCount', { n: tr.isian.length })} · {tr.license}
                       {isInstalled && <> · ✓ {t('installed')}</>}

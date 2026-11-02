@@ -74,3 +74,5 @@ See the build report in `public/catalog/catalog.json` (`packs[].missingSpecies`)
 * No synthetic, sample or dummy media anywhere in the product; synthetic signals exist only as unit-test fixtures.
 
 > **Update (v0.3):** publishing is now gated by the content standard and named expert approval — see [06-curation-standard.md](06-curation-standard.md). The auto-selected tracks from the first build were withdrawn.
+
+> **Update (v0.4):** iNaturalist is now a keyless primary source (community-verified IDs, per-sound licences). Coverage is data-driven (36 species in `content/species.json`), packs are generated per target species, and non-commercial recordings feed a **written-permission request list** (`review/candidates/PERMISSIONS.md`) instead of being discarded. See [07-species-coverage.md](07-species-coverage.md) for the capacity numbers and the three levers to close gaps: (1) xeno-canto API key, (2) permission requests to recordists, (3) partner recordings.

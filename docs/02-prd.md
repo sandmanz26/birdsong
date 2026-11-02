@@ -1,6 +1,6 @@
 # PRD: Kicau Coach MVP (two testable features)
 
-*Status: v0.3 — curated catalogue gated by the content standard and expert approval ([06-curation-standard.md](06-curation-standard.md)); no dummy data. v0.2 replaced user uploads ([04-content-strategy.md](04-content-strategy.md)). MVP built and ready for user testing. Owner: Product/Eng. Research basis: [01-research.md](01-research.md), referenced below as R1–R14.*
+*Status: v0.4 — 36-species data-driven registry, iNaturalist source, multi-clip species, auto-generated packs, recording quality gate ([07-species-coverage.md](07-species-coverage.md)). v0.3 — curated catalogue gated by the content standard and expert approval ([06-curation-standard.md](06-curation-standard.md)); no dummy data. v0.2 replaced user uploads ([04-content-strategy.md](04-content-strategy.md)). MVP built and ready for user testing. Owner: Product/Eng. Research basis: [01-research.md](01-research.md), referenced below as R1–R14.*
 
 ## Problem
 

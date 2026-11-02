@@ -45,14 +45,16 @@ export function MasteranTab({ bird }: { bird: Bird }) {
     void db.put('programs', p);
   };
 
-  const toggleTrack = (trackId: string) => {
+  /** Toggle a whole species (all its clips) on or off. */
+  const toggleTracks = (ids: string[]) => {
     const age = daysBetween(program.materialChangedAt, Date.now());
     // Guardrail (R6): warn when changing material that the bird has been hearing for < 2 weeks.
     // Only once it has actually been played, so initial setup isn't nagged.
     const inUse = program.trackIds.length > 0 && data.sessions.some((s) => s.startedAt >= program.materialChangedAt);
     const warn = inUse && age < MIN_MATERIAL_DAYS;
     if (warn && !confirm(t('materialChangeWarn', { n: age }))) return;
-    const trackIds = program.trackIds.includes(trackId) ? program.trackIds.filter((x) => x !== trackId) : [...program.trackIds, trackId];
+    const allOn = ids.every((id) => program.trackIds.includes(id));
+    const trackIds = allOn ? program.trackIds.filter((x) => !ids.includes(x)) : [...new Set([...program.trackIds, ...ids])];
     persist({ ...program, trackIds, materialChangedAt: inUse || program.trackIds.length === 0 ? Date.now() : program.materialChangedAt });
     logEvent('material_changed', { count: trackIds.length, daysSinceLast: age, warned: warn });
   };
@@ -118,18 +120,32 @@ export function MasteranTab({ bird }: { bird: Bird }) {
             </div>
             <p className="muted small">{t('tracksInPackHint')}</p>
             <ul className="checklist">
-              {data.tracks.map((tr) => (
-                <li key={tr.id}>
-                  <label>
-                    <input type="checkbox" checked={program.trackIds.includes(tr.id)} onChange={() => toggleTrack(tr.id)} />
-                    <span className="grow">
-                      {tr.species === bird.species ? '★ ' : ''}
-                      {tr.name}
-                    </span>
-                    <span className="muted small">{fmtDuration(tr.durationSec)}</span>
-                  </label>
-                </li>
-              ))}
+              {[...new Set(data.tracks.map((tr) => tr.species ?? tr.id))].map((sp) => {
+                const clips = data.tracks.filter((tr) => (tr.species ?? tr.id) === sp);
+                const ids = clips.map((c) => c.id);
+                const on = ids.filter((id) => program.trackIds.includes(id)).length;
+                return (
+                  <li key={sp}>
+                    <label>
+                      <input
+                        type="checkbox"
+                        checked={on === ids.length}
+                        ref={(el) => {
+                          if (el) el.indeterminate = on > 0 && on < ids.length;
+                        }}
+                        onChange={() => toggleTracks(ids)}
+                      />
+                      <span className="grow">
+                        {sp === bird.species ? '★ ' : ''}
+                        {clips[0].name}
+                      </span>
+                      <span className="muted small">
+                        {t('clipsCount', { n: clips.length })} · {fmtDuration(clips.reduce((a, c) => a + c.durationSec, 0))}
+                      </span>
+                    </label>
+                  </li>
+                );
+              })}
             </ul>
           </>
         ) : (

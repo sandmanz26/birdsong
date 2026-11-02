@@ -1,8 +1,10 @@
 import { describe, expect, it } from 'vitest';
-import { autoChecks, publishBlockers, type Approval, type Measurements } from '../scripts/standard';
+import { autoChecks, publishBlockers, speciesTotalOk, type Approval, type Measurements } from '../scripts/standard';
 
 const good: Measurements = {
   licenseAllowed: true,
+  taxonomyOk: true,
+  communityVerified: true,
   attribution: { title: 'XC123', author: 'A. Recordist', sourceUrl: 'https://xeno-canto.org/123', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/' },
   durationSec: 90,
   integratedLufs: -20.2,
@@ -39,7 +41,7 @@ describe('content standard', () => {
   });
 
   it('blocks hard technical/legal failures even with an approval', () => {
-    for (const bad of [{ durationSec: 13 }, { licenseAllowed: false }, { snrDb: 12 }, { clippedFraction: 0.01 }, { integratedLufs: -30 }, { sourceSampleRate: 22050 }]) {
+    for (const bad of [{ durationSec: 5 }, { taxonomyOk: false }, { licenseAllowed: false }, { snrDb: 12 }, { clippedFraction: 0.01 }, { integratedLufs: -30 }, { sourceSampleRate: 22050 }]) {
       const b = publishBlockers(autoChecks({ ...good, ...bad }), approval);
       expect(b.length).toBeGreaterThan(0);
     }
@@ -54,6 +56,19 @@ describe('content standard', () => {
     expect(publishBlockers(unknown, approval)).toEqual([]);
   });
 
+  it('lets the expert cover an unknown community ID, but never a taxonomy mismatch', () => {
+    const noCommunity = autoChecks({ ...good, communityVerified: null });
+    expect(noCommunity.M4.status).toBe('human');
+    expect(publishBlockers(noCommunity, approval)).toEqual([]);
+    expect(publishBlockers(noCommunity, { ...approval, checks: { ...approval.checks, H1: false } })).toContain('M4 needs H1 sign-off');
+    expect(publishBlockers(autoChecks({ ...good, taxonomyOk: false }), approval)).toContain('T1 failed');
+  });
+
+  it('requires enough material per species across clips (P1)', () => {
+    expect(speciesTotalOk([20, 20])).toBe(false);
+    expect(speciesTotalOk([20, 30])).toBe(true);
+  });
+
   it('rejects a B-grade or background-species recording outright', () => {
     expect(publishBlockers(autoChecks({ ...good, sourceGrade: 'B' }), approval)).toContain('M1 failed');
     expect(publishBlockers(autoChecks({ ...good, backgroundSpecies: 2 }), approval)).toContain('M2 failed');
@@ -63,7 +78,8 @@ describe('content standard', () => {
     const a = autoChecks(good);
     expect(publishBlockers(a, { ...approval, curator: '' })).toContain('approval missing curator/role/date');
     expect(publishBlockers(a, { ...approval, checks: { ...approval.checks, H4: false } })).toContain('H4 not confirmed');
-    expect(publishBlockers(a, { ...approval, isian: {} })).toContain('no named isian');
+    expect(publishBlockers(a, { ...approval, isian: {} })).toEqual([]); // playable material, no isian target
+    expect(publishBlockers(a, { ...approval, isian: { x: { nameId: '', nameEn: 'n' } } })).toContain('isian x unnamed');
     expect(publishBlockers(a, { ...approval, decision: 'reject' })).toContain('rejected by curator');
   });
 });

@@ -6,7 +6,7 @@
 import { StrictMode, useEffect, useMemo, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import type { Candidate, CandidateFile } from '../../scripts/candidate-types';
-import { CHECKS, publishBlockers, STANDARD_VERSION, type Approval } from '../../scripts/standard';
+import { CHECKS, LIMITS, publishBlockers, STANDARD_VERSION, type Approval } from '../../scripts/standard';
 import { decodeMono } from '../audio/decode';
 import { seriesColor } from '../components/Charts';
 import { Spectrogram } from '../components/Spectrogram';
@@ -48,6 +48,7 @@ function App() {
   const [approvals, setApprovals] = useState<Record<string, Approval>>(draft?.approvals ?? {});
   const [exclude, setExclude] = useState<string[]>(draft?.exclude ?? []);
   const [species, setSpecies] = useState<string>('all');
+  const [onlyPassing, setOnlyPassing] = useState(true);
 
   useEffect(() => {
     Promise.all([fetch(BASE + 'candidates.json').then((r) => r.json()), fetch('/content/curation.json').then((r) => r.json())])
@@ -74,7 +75,16 @@ function App() {
   if (error) return <p className="pad warn">Tidak bisa memuat kandidat: {error}. Jalankan dulu <code>npm run catalog:candidates</code>.</p>;
   if (!file || !base) return <p className="pad">Memuat…</p>;
 
-  const list = file.candidates.filter((c) => species === 'all' || c.species === species);
+  // M3 (region) and M4 (community ID) can be accepted by the expert; everything else must pass.
+  const autoOk = (c: Candidate) => Object.entries(c.auto).every(([k, v]) => v.status !== 'fail' || k === 'M3' || k === 'M4');
+  const list = file.candidates
+    .filter((c) => (species === 'all' || c.species === species) && (!onlyPassing || autoOk(c)))
+    .sort((a, b) => a.species.localeCompare(b.species) || Number(autoOk(b)) - Number(autoOk(a)));
+  // P1 progress: approved, publishable seconds per species vs the minimum.
+  const approvedSec = new Map<string, number>();
+  for (const c of file.candidates) {
+    if (publishBlockers(c.auto, approvals[c.id] ? { ...approvals[c.id], curator, role } : undefined).length === 0) approvedSec.set(c.species, (approvedSec.get(c.species) ?? 0) + c.durationSec);
+  }
   const speciesList = [...new Set(file.candidates.map((c) => c.species))];
   const decided = Object.keys(approvals).filter((id) => file.candidates.some((c) => c.id === id));
   const publishable = file.candidates.filter((c) => publishBlockers(c.auto, approvals[c.id]).length === 0);
@@ -104,9 +114,16 @@ function App() {
               {speciesList.map((s) => <option key={s} value={s}>{s}</option>)}
             </select>
           </label>
-          <span className="small">Diputuskan: <strong>{decided.length}</strong> · Siap terbit: <strong>{publishable.length}</strong></span>
+          <label className="check-row small"><input type="checkbox" checked={onlyPassing} onChange={(e) => setOnlyPassing(e.target.checked)} /> Hanya yang lolos cek otomatis ({file.candidates.filter(autoOk).length})</label>
+          <span className="small">Diputuskan: <strong>{decided.length}</strong> · Klip siap terbit: <strong>{publishable.length}</strong></span>
           <button className="btn primary" onClick={exportCuration}>⤓ Ekspor curation.json</button>
         </div>
+        {species !== 'all' && (
+          <p className="small">
+            Materi disetujui untuk <strong>{species}</strong>: {Math.round(approvedSec.get(species) ?? 0)} / {LIMITS.minSpeciesSec} dtk
+            {(approvedSec.get(species) ?? 0) >= LIMITS.minSpeciesSec ? ' ✓ cukup untuk terbit' : ' — jenis ini belum bisa terbit'}
+          </p>
+        )}
         {!curator.trim() || !role.trim() ? <p className="warn small">Isi nama dan peran kurator sebelum menilai — persetujuan tanpa identitas tidak akan diterbitkan.</p> : null}
       </header>
       {list.map((c) => (
@@ -167,7 +184,8 @@ function CandidateCard({ c, approval, excluded, onChange, onExclude, curator, ro
           <h2>{c.nameId} <em className="muted small">{c.sci}</em></h2>
           <p className="small">
             “{c.title}” · {c.recordist} · {c.country ?? 'lokasi ?'} · <a href={c.sourceUrl} target="_blank" rel="noreferrer">{c.source}</a> ·{' '}
-            <a href={c.licenseUrl} target="_blank" rel="noreferrer">{c.license}</a> · <code>{c.id}</code>
+            <a href={c.licenseUrl} target="_blank" rel="noreferrer">{c.license}</a>
+            {c.permission && <> · izin tertulis: {c.permission.grantedBy} ({c.permission.date})</>} · taksa sumber: <em>{c.sourceTaxon || '—'}</em> · <code>{c.id}</code>
           </p>
         </div>
         <span className={'status ' + (blockers.length === 0 ? 'status-masuk' : 'status-belum')}>{blockers.length === 0 ? '✓ Siap terbit' : `${blockers.length} hambatan`}</span>

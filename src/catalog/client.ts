@@ -3,13 +3,14 @@
  * masteran keeps working offline. Catalogue ids map to stable app ids ('cat:<id>'), which makes
  * installs idempotent and lets several birds share the same downloaded tracks.
  */
-import { MIN_MATERIAL_DAYS, PRESETS, getProgram } from '../actions';
+import { ensureTemplates, MIN_MATERIAL_DAYS, PRESETS, getProgram } from '../actions';
 import { db, logEvent } from '../db';
 import type { Isian, Program, Species, Track } from '../types';
 import { daysBetween, uid } from '../util';
 import type { Catalog, CatalogPack, CatalogTrack } from './types';
 
 const BASE = './catalog/';
+const DEFAULT_ISIAN_PER_SPECIES = 2;
 let cached: Promise<Catalog> | null = null;
 
 export function loadCatalog(): Promise<Catalog> {
@@ -69,10 +70,12 @@ export async function installTrack(t: CatalogTrack): Promise<Track> {
   };
   await db.putBlob('track:' + id, blob);
   await db.put('tracks', track);
-  for (const [i, m] of t.isian.entries()) {
-    const isian: Isian = { id: appIsianId(m.id), trackId: id, name: m.nameId, startSec: m.startSec, endSec: m.endSec, createdAt: track.createdAt + i };
-    await db.put('isian', isian);
-  }
+  const isianList: Isian[] = t.isian.map((m, i) => ({
+    id: appIsianId(m.id), trackId: id, name: m.nameId, startSec: m.startSec, endSec: m.endSec, createdAt: track.createdAt + i, cohort: m.cohort,
+  }));
+  for (const isian of isianList) await db.put('isian', isian);
+  // Precompute matching templates now, so isian checks never have to decode tutor audio.
+  await ensureTemplates(isianList);
   logEvent('catalog_track_installed', { track: t.id, bytes: blob.size });
   return track;
 }
@@ -110,7 +113,10 @@ export async function applyPack(birdId: string, pack: CatalogPack, catalog: Cata
     ...before,
     packId: pack.id,
     trackIds: tracks.map((t) => appTrackId(t.id)),
-    isianIds: tracks.flatMap((t) => t.isian.map((m) => appIsianId(m.id))),
+    // Focused default targets: up to 2 isian per species (the curator orders them), not every marker.
+    isianIds: [...new Set(tracks.map((t) => t.species))].flatMap((sp) =>
+      tracks.filter((t) => t.species === sp).flatMap((t) => t.isian.map((m) => appIsianId(m.id))).slice(0, DEFAULT_ISIAN_PER_SPECIES),
+    ),
     sessions: before.packId ? before.sessions : PRESETS[pack.preset].map((s) => ({ ...s, id: uid() })),
     materialChangedAt: Date.now(),
   };

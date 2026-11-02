@@ -1,7 +1,8 @@
 /** Domain operations shared by screens. */
 import { decodeCached, decodeMono, MAX_EDITABLE_SEC } from './audio/decode';
 import { db, logEvent } from './db';
-import { workerAnalyze } from './dsp/client';
+import { workerAnalyzePrepared, workerPrepare } from './dsp/client';
+import type { PreparedTemplate } from './dsp/analyze';
 import { SR } from './dsp/spectrogram';
 import type { Bird, Check, Isian, Program, SessionSlot, Track } from './types';
 import { startOfDay, uid } from './util';
@@ -75,6 +76,27 @@ export async function playedTodaySec(birdId: string): Promise<number> {
   return (await db.byBird('sessions', birdId)).filter((s) => s.startedAt >= since).reduce((n, s) => n + s.playedSec, 0);
 }
 
+/**
+ * Make sure every isian has a precomputed template (decoding each tutor track at most once), and
+ * persist it, so later checks don't decode tutor audio at all.
+ */
+export async function ensureTemplates(list: Isian[]): Promise<void> {
+  const missing = list.filter((i) => !i.template);
+  const byTrack = new Map<string, Isian[]>();
+  for (const i of missing) byTrack.set(i.trackId, [...(byTrack.get(i.trackId) ?? []), i]);
+  for (const [trackId, items] of byTrack) {
+    const track = await db.get('tracks', trackId);
+    if (!track) continue;
+    const samples = await trackSamples(track);
+    const prepared = await workerPrepare(items.map((i) => ({ id: i.id, track: samples, startSec: i.startSec, endSec: i.endSec })));
+    for (const p of prepared) {
+      const isian = items.find((i) => i.id === p.id)!;
+      isian.template = p.features;
+      await db.put('isian', isian);
+    }
+  }
+}
+
 /** Run "Cek Isian" on a recording and store the result (PRD F2). */
 export async function runCheck(birdId: string, blob: Blob, source: Check['source']): Promise<Check> {
   const program = await getProgram(birdId);
@@ -82,14 +104,12 @@ export async function runCheck(birdId: string, blob: Blob, source: Check['source
   const allIsian = await db.all('isian');
   const tracks = new Map((await db.all('tracks')).map((t) => [t.id, t]));
   const targets: Isian[] = program.isianIds.map((id) => allIsian.find((i) => i.id === id)).filter((i): i is Isian => !!i);
-  const templates = [];
-  for (const isian of targets) {
-    const track = tracks.get(isian.trackId);
-    if (!track) continue;
-    templates.push({ id: isian.id, track: await trackSamples(track), startSec: isian.startSec, endSec: isian.endSec });
-  }
+  await ensureTemplates(targets);
+  const templates: PreparedTemplate[] = targets
+    .filter((i) => i.template && tracks.has(i.trackId))
+    .map((i) => ({ id: i.id, features: i.template!, cohort: i.cohort }));
   const t0 = performance.now();
-  const result = await workerAnalyze(samples, templates);
+  const result = await workerAnalyzePrepared(samples, templates);
   const check: Check = {
     id: uid(),
     birdId,
@@ -108,6 +128,8 @@ export async function runCheck(birdId: string, blob: Blob, source: Check['source
     targets: templates.length,
     ms: Math.round(performance.now() - t0),
     statuses: result.matches.map((m) => m.status),
+    reliability: result.quality?.reliability,
+    issues: result.quality?.issues,
   });
   return check;
 }

@@ -5,7 +5,7 @@ import { Spectrogram, type Region } from '../components/Spectrogram';
 import { db, logEvent } from '../db';
 import { workerSpectrogram, type DisplaySpec } from '../dsp/client';
 import type { IsianMatch, IsianStatus } from '../dsp/analyze';
-import { useI18n } from '../i18n';
+import { useI18n, type TKey } from '../i18n';
 import type { Check, Isian } from '../types';
 import { fmtDateTime, fmtDuration } from '../util';
 
@@ -121,6 +121,14 @@ export function CheckResult({ check, allIsian, onChanged }: { check: Check; allI
         ariaLabel={t('result')}
       />
       <p className="muted small">{t('legendHint')}</p>
+      {r.quality && r.quality.issues.length > 0 && (
+        <div className={'notice quality-notice ' + (r.quality.reliability === 'low' ? 'warn-notice' : '')} role="status">
+          <strong>{r.quality.reliability === 'low' ? `⚠ ${t('qualityLow')}` : `ⓘ ${t('qualityNote')}`}</strong>
+          <ul>
+            {r.quality.issues.map((i) => <li key={i}>{t(`qi_${i}` as TKey)}</li>)}
+          </ul>
+        </div>
+      )}
 
       <ul className="isian-results">
         {r.matches.map((match) => {

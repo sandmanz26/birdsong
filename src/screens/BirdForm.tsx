@@ -3,10 +3,10 @@ import { deleteBird, saveBird } from '../actions';
 import { db } from '../db';
 import { useI18n, type TKey } from '../i18n';
 import { useNav } from '../nav';
-import type { Bird, Origin, Phase, Species } from '../types';
+import { SpeciesPicker } from '../components/SpeciesPicker';
+import type { Bird, Origin, Phase } from '../types';
 import { uid } from '../util';
 
-const SPECIES: Species[] = ['murai_batu', 'kenari', 'lovebird', 'cucak_ijo', 'kacer', 'pleci', 'chao_mao', 'other'];
 const PHASES: Phase[] = ['trotolan', 'muda', 'dewasa', 'mabung'];
 const ORIGINS: Origin[] = ['tangkaran', 'tangkapan', 'unknown'];
 
@@ -35,12 +35,7 @@ export function BirdForm({ id }: { id?: string }) {
         <span>{t('birdName')}</span>
         <input required value={bird.name} onChange={(e) => set('name', e.target.value)} autoFocus maxLength={40} />
       </label>
-      <label className="field">
-        <span>{t('species')}</span>
-        <select value={bird.species} onChange={(e) => set('species', e.target.value as Species)}>
-          {SPECIES.map((s) => <option key={s} value={s}>{t(`sp_${s}` as TKey)}</option>)}
-        </select>
-      </label>
+      <SpeciesPicker value={bird.species} onChange={(s) => set('species', s)} />
       <fieldset className="field">
         <legend>{t('phase')}</legend>
         <div className="seg">

@@ -1,11 +1,12 @@
 import { playedTodaySec, getProgram } from '../actions';
 import { db } from '../db';
+import { speciesName } from '../species';
 import { useI18n, type TKey } from '../i18n';
 import { useLoad, useNav } from '../nav';
 import { StatusChips } from './CheckResult';
 
 export function BirdsScreen() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const nav = useNav();
   const { data } = useLoad(async () => {
     const birds = (await db.all('birds')).sort((a, b) => b.createdAt - a.createdAt);
@@ -39,7 +40,7 @@ export function BirdsScreen() {
             <h3>{bird.name}</h3>
             <span className="chip">{t(`ph_${bird.phase}` as TKey)}</span>
           </div>
-          <p className="muted small">{t(`sp_${bird.species}` as TKey)}</p>
+          <p className="muted small">{speciesName(bird.species, lang)}</p>
           <div className="meter" aria-label={`${t('todayMasteran')} ${playedMin}/${program.dailyCapMin}`}>
             <div className="meter-fill" style={{ width: `${Math.min(100, (100 * playedMin) / program.dailyCapMin)}%` }} />
           </div>

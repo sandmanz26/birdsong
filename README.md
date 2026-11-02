@@ -11,7 +11,7 @@ In Indonesia alone, about a third of Java's households keep cage birds (66–84 
 
 The UI is in Bahasa Indonesia by default, with an English toggle. Everything runs offline, on the device, with no backend.
 
-📄 **Product docs:** [Research](docs/01-research.md) · [PRD](docs/02-prd.md) · [User-testing plan](docs/03-user-testing-plan.md) · [Content strategy](docs/04-content-strategy.md) · [Content standard](docs/06-curation-standard.md)
+📄 **Product docs:** [Research](docs/01-research.md) · [PRD](docs/02-prd.md) · [User-testing plan](docs/03-user-testing-plan.md) · [Content strategy](docs/04-content-strategy.md) · [Content standard](docs/06-curation-standard.md) · [Species coverage (v0.4)](docs/07-species-coverage.md)
 
 ## Try it
 
@@ -20,16 +20,17 @@ npm install
 npm run dev        # http://localhost:5173
 npm test           # unit tests (DSP + planner)
 npm run build      # static PWA in dist/, deploy on any HTTPS host
-XC_API_KEY=... npm run catalog:candidates   # 1. find, process & measure candidates → review/ (never shipped)
+[XC_API_KEY=...] npm run catalog:candidates # 1. iNaturalist (+ xeno-canto with key) + Commons → review/ (never shipped)
 npm run review                               # 2. expert curator listens & signs off (dev-only tool)
 npm run catalog:publish                      # 3. publish ONLY approved, standard-compliant tracks
+npm run calibrate                            # research: matcher accuracy on real candidates
 ```
 
 ## Curated catalogue
 
 Owners never upload music, and **the product contains no dummy, sample or synthetic media.** Every published sound is a real, licence-cleared field recording that passes the [Kicau Coach content standard](docs/06-curation-standard.md) (licence & TASL attribution, ≥ 45 s, BS.1770 loudness, SNR, no clipping, full bandwidth, archive grade, region) **and** is signed off by a named expert (judge / senior trainer) who also names the isian. The candidate builder only produces review material; `catalog:publish` is the single gate into `public/catalog/` and re-validates everything. Credits (title, author, source, licence, modifications, curator) are in `public/catalog/ATTRIBUTION.md` and inside the app.
 
-**Current state:** 0 tracks published — none has expert approval yet ([audit](docs/06-curation-standard.md#audit-of-the-current-candidates-nov-2026)). The app shows an honest "being curated" state until then.
+**Coverage (v0.4):** 36 species in a data-driven registry (25 trainable target birds, 21 isian sources), GBIF-verified names, legal/conservation notices, up to 4 clips per species and an auto-generated basic pack per target bird. See [species coverage](docs/07-species-coverage.md) for what is available, what needs permission, and what is still missing. **Published today: 0 tracks** until an expert approves.
 
 
 ## How the isian check works

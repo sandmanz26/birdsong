@@ -1,4 +1,5 @@
 import { db } from '../db';
+import { speciesName } from '../species';
 import { useI18n, type TKey } from '../i18n';
 import { useLoad, useNav, type BirdTab } from '../nav';
 import { CheckTab } from './CheckTab';
@@ -6,7 +7,7 @@ import { MasteranTab } from './MasteranTab';
 import { ProgressTab } from './ProgressTab';
 
 export function BirdDetail({ id, tab, checkId }: { id: string; tab: BirdTab; checkId?: string }) {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const nav = useNav();
   const { data: bird } = useLoad(() => db.get('birds', id), [id]);
   if (!bird) return <p className="muted pad">{t('loading')}</p>;
@@ -22,7 +23,7 @@ export function BirdDetail({ id, tab, checkId }: { id: string; tab: BirdTab; che
         <div>
           <h2 className="title">{bird.name}</h2>
           <p className="muted small">
-            {t(`sp_${bird.species}` as TKey)} · {t(`ph_${bird.phase}` as TKey)} · {t(`or_${bird.origin}` as TKey)}
+            {speciesName(bird.species, lang)} · {t(`ph_${bird.phase}` as TKey)} · {t(`or_${bird.origin}` as TKey)}
             {bird.ring ? ` · ${bird.ring}` : ''}
           </p>
         </div>

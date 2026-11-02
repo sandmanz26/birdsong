@@ -1,6 +1,7 @@
 import type { AnalysisResult } from './dsp/analyze';
 
-export type Species = 'murai_batu' | 'kenari' | 'lovebird' | 'cucak_ijo' | 'kacer' | 'pleci' | 'chao_mao' | 'other';
+/** content/species.json id (or 'other'); data-driven so new species need no code change. */
+export type Species = string;
 /** trotolan = juvenile; muda = young; dewasa = adult; mabung = moulting */
 export type Phase = 'trotolan' | 'muda' | 'dewasa' | 'mabung';
 /** tangkaran = captive-bred (ideally ringed); tangkapan = wild-caught */
@@ -42,6 +43,10 @@ export interface Isian {
   startSec: number;
   endSec: number;
   createdAt: number;
+  /** Precomputed matching template (computed once at install / first use). */
+  template?: { frames: number; dims: number; data: Float32Array };
+  /** Cohort statistics from the catalogue (for cohort-normalised scoring). */
+  cohort?: { mu: number; sd: number };
 }
 
 export interface SessionSlot {

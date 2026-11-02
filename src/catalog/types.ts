@@ -8,6 +8,8 @@ export interface CatalogIsian {
   nameEn: string;
   startSec: number;
   endSec: number;
+  /** Cost statistics against other species' recordings (for cohort-normalised scoring). */
+  cohort?: { mu: number; sd: number };
 }
 
 export interface CatalogTrack {
@@ -25,7 +27,7 @@ export interface CatalogTrack {
   /** TASL attribution. */
   title: string;
   recordist: string;
-  source: 'xeno-canto' | 'wikimedia-commons';
+  source: 'inaturalist' | 'xeno-canto' | 'wikimedia-commons';
   sourceUrl: string;
   license: string;
   licenseUrl: string;

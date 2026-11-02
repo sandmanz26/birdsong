@@ -1,23 +1,919 @@
 {
-  "$comment": "Curated species registry for the masteran catalogue. 'role': master = same-species reference song for that bird; isian = phrase source taught to other birds. 'country' lists preferred recording regions (local dialects matter, e.g. murai 'medan/aceh'). 'types' restricts xeno-canto sound types (empty = any).",
-  "species": [
-    { "id": "murai_batu", "sci": "Copsychus malabaricus", "nameId": "Murai batu", "nameEn": "White-rumped shama", "roles": ["master", "isian"], "types": ["song"], "country": ["Indonesia", "Malaysia", "Thailand", "Brunei", "Singapore"] },
-    { "id": "kacer", "sci": "Copsychus saularis", "nameId": "Kacer", "nameEn": "Oriental magpie-robin", "roles": ["master", "isian"], "types": ["song"], "country": ["Indonesia", "Malaysia", "Thailand", "Singapore"] },
-    { "id": "cucak_ijo", "sci": "Chloropsis sonnerati", "nameId": "Cucak ijo", "nameEn": "Greater green leafbird", "roles": ["master"], "types": [], "country": ["Indonesia", "Malaysia", "Thailand", "Brunei"] },
-    { "id": "kenari", "sci": "Serinus canaria", "nameId": "Kenari", "nameEn": "Canary", "roles": ["master", "isian"], "types": ["song"], "country": [] },
-    { "id": "lovebird", "sci": "Agapornis fischeri", "nameId": "Lovebird", "nameEn": "Fischer's lovebird", "roles": ["master"], "types": [], "country": [] },
-    { "id": "pleci", "sci": "Zosterops simplex", "nameId": "Pleci", "nameEn": "Swinhoe's white-eye", "roles": ["master"], "types": ["song"], "country": [] },
-    { "id": "chao_mao", "sci": "Pycnonotus jocosus", "nameId": "Cucak kutilang jambul (chào mào)", "nameEn": "Red-whiskered bulbul", "roles": ["master"], "types": ["song"], "country": ["Vietnam", "Thailand", "Malaysia", "Singapore"] },
-    { "id": "cililin", "sci": "Platylophus galericulatus", "nameId": "Cililin", "nameEn": "Crested jay", "roles": ["isian"], "types": [], "country": ["Indonesia", "Malaysia", "Brunei"] },
-    { "id": "cucak_jenggot", "sci": "Alophoixus bres", "nameId": "Cucak jenggot", "nameEn": "Grey-cheeked bulbul", "roles": ["isian"], "types": [], "country": ["Indonesia", "Malaysia"] },
-    { "id": "ciblek", "sci": "Prinia familiaris", "nameId": "Ciblek", "nameEn": "Bar-winged prinia", "roles": ["isian"], "types": [], "country": ["Indonesia"] },
-    { "id": "tledekan", "sci": "Cyornis banyumas", "nameId": "Tledekan", "nameEn": "Hill blue flycatcher", "roles": ["isian"], "types": ["song"], "country": ["Indonesia", "Malaysia", "Thailand"] },
-    { "id": "gereja", "sci": "Passer montanus", "nameId": "Gereja (tarung)", "nameEn": "Eurasian tree sparrow", "roles": ["isian"], "types": [], "country": ["Indonesia", "Malaysia", "Thailand", "Singapore"] },
-    { "id": "cendet", "sci": "Lanius schach", "nameId": "Cendet", "nameEn": "Long-tailed shrike", "roles": ["isian"], "types": [], "country": ["Indonesia", "Malaysia", "Thailand", "Singapore"] },
-    { "id": "belibis", "sci": "Dendrocygna javanica", "nameId": "Belibis", "nameEn": "Lesser whistling duck", "roles": ["isian"], "types": [], "country": ["Indonesia", "Malaysia", "Thailand", "Singapore"] },
-    { "id": "tengkek_buto", "sci": "Todiramphus chloris", "nameId": "Tengkek buto", "nameEn": "Collared kingfisher", "roles": ["isian"], "types": [], "country": ["Indonesia", "Malaysia", "Singapore", "Thailand"] },
-    { "id": "kapas_tembak", "sci": "Pycnonotus simplex", "nameId": "Kapas tembak", "nameEn": "Cream-vented bulbul", "roles": ["isian"], "types": [], "country": ["Indonesia", "Malaysia", "Brunei"] },
-    { "id": "trucukan", "sci": "Pycnonotus goiavier", "nameId": "Trucukan", "nameEn": "Yellow-vented bulbul", "roles": ["isian"], "types": [], "country": ["Indonesia", "Malaysia", "Singapore"] },
-    { "id": "prenjak", "sci": "Prinia inornata", "nameId": "Prenjak", "nameEn": "Plain prinia", "roles": ["isian"], "types": [], "country": ["Indonesia", "Thailand", "Malaysia"] }
-  ]
+ "$comment": "Species registry v2 (research: docs/07-species-coverage.md). roles: master = reference song for keepers of that species (target bird); isian = phrase source for other birds. recommendedIsian = research-proposed pack composition for target birds (to be confirmed by the curator). legal.status: protected | delisted_2018 | permit_reported (sourced; NOT legal advice). Scientific names are verified against the GBIF Backbone by the candidate builder (check T1).",
+ "version": 2,
+ "species": [
+  {
+   "id": "murai_batu",
+   "sci": "Copsychus malabaricus",
+   "nameId": "Murai batu",
+   "nameEn": "White-rumped shama",
+   "roles": [
+    "master",
+    "isian"
+   ],
+   "aliases": [
+    "kucica hutan",
+    "murai medan",
+    "murai aceh",
+    "murai borneo",
+    "shama"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [
+    "song"
+   ],
+   "group": "kicau",
+   "recommendedIsian": [
+    "cililin",
+    "cucak_jenggot",
+    "ciblek",
+    "tledekan",
+    "gereja",
+    "tengkek_buto",
+    "srigunting",
+    "belibis",
+    "kenari",
+    "cendet"
+   ],
+   "legal": {
+    "status": "delisted_2018",
+    "source": "https://www.cnnindonesia.com/nasional/20180906141940-20-328180/murai-jalak-dan-cucak-rowo-bukan-lagi-satwa-dilindungi"
+   }
+  },
+  {
+   "id": "kacer",
+   "sci": "Copsychus saularis",
+   "nameId": "Kacer",
+   "nameEn": "Oriental magpie-robin",
+   "roles": [
+    "master",
+    "isian"
+   ],
+   "aliases": [
+    "kucica kampung",
+    "chích chòe",
+    "magpie robin"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [
+    "song"
+   ],
+   "group": "kicau",
+   "recommendedIsian": [
+    "ciblek",
+    "cililin",
+    "cendet",
+    "gereja",
+    "srigunting",
+    "tengkek_buto"
+   ]
+  },
+  {
+   "id": "cucak_ijo",
+   "sci": "Chloropsis sonnerati",
+   "nameId": "Cucak ijo",
+   "nameEn": "Greater green leafbird",
+   "roles": [
+    "master"
+   ],
+   "aliases": [
+    "cica daun besar",
+    "cucak hijau"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [],
+   "group": "kicau",
+   "recommendedIsian": [
+    "ciblek",
+    "cililin",
+    "kenari",
+    "cendet",
+    "tledekan",
+    "srigunting"
+   ],
+   "legal": {
+    "status": "protected",
+    "source": "https://www.ayosemarang.com/semarang-raya/pr-77795089/Cucak-Ijo-Masuk-Hewan-Dilindungi-Wajib-Punya-Izin-Pemeliharaan"
+   },
+   "taxonNote": "Several Chloropsis spp. are traded as 'cucak ijo'; expert must confirm species per recording."
+  },
+  {
+   "id": "kenari",
+   "sci": "Serinus canaria",
+   "nameId": "Kenari",
+   "nameEn": "Atlantic canary (domestic)",
+   "roles": [
+    "master",
+    "isian"
+   ],
+   "aliases": [
+    "canary",
+    "kenari f1",
+    "kenari lokal"
+   ],
+   "country": [],
+   "types": [
+    "song"
+   ],
+   "group": "kicau",
+   "recommendedIsian": [
+    "ciblek",
+    "prenjak",
+    "sanger",
+    "blackthroat",
+    "cinenen"
+   ]
+  },
+  {
+   "id": "lovebird",
+   "sci": "Agapornis fischeri",
+   "nameId": "Lovebird",
+   "nameEn": "Fischer's lovebird",
+   "roles": [
+    "master"
+   ],
+   "aliases": [
+    "lovebird ngekek",
+    "love bird"
+   ],
+   "country": [],
+   "types": [],
+   "group": "kicau",
+   "recommendedIsian": [
+    "kenari"
+   ]
+  },
+  {
+   "id": "pleci",
+   "sci": "Zosterops palpebrosus",
+   "nameId": "Pleci",
+   "nameEn": "Indian white-eye",
+   "roles": [
+    "master",
+    "isian"
+   ],
+   "aliases": [
+    "kacamata",
+    "pleci dakun",
+    "pleci kacamata"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [
+    "song"
+   ],
+   "group": "kicau",
+   "recommendedIsian": [
+    "ciblek",
+    "kenari",
+    "cinenen"
+   ],
+   "taxonNote": "'Pleci' covers several Zosterops spp. (incl. Z. montanus, Z. melanurus). Taxonomy of the traded birds to be confirmed by expert."
+  },
+  {
+   "id": "cucak_rawa",
+   "sci": "Pycnonotus zeylanicus",
+   "nameId": "Cucak rawa",
+   "nameEn": "Straw-headed bulbul",
+   "roles": [
+    "master"
+   ],
+   "aliases": [
+    "cucak rowo"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [
+    "song"
+   ],
+   "group": "kicau",
+   "legal": {
+    "status": "delisted_2018",
+    "source": "https://www.cnnindonesia.com/nasional/20180906141940-20-328180/murai-jalak-dan-cucak-rowo-bukan-lagi-satwa-dilindungi"
+   },
+   "conservation": "IUCN Critically Endangered: only captive-bred, ringed birds."
+  },
+  {
+   "id": "jalak_suren",
+   "sci": "Gracupica jalla",
+   "nameId": "Jalak suren",
+   "nameEn": "Javan pied starling",
+   "roles": [
+    "master"
+   ],
+   "aliases": [
+    "jalak uren",
+    "jalak putih"
+   ],
+   "country": [
+    "Indonesia"
+   ],
+   "types": [],
+   "group": "kicau",
+   "recommendedIsian": [
+    "cendet",
+    "gereja",
+    "srigunting"
+   ],
+   "legal": {
+    "status": "delisted_2018",
+    "source": "https://www.cnnindonesia.com/nasional/20180906141940-20-328180/murai-jalak-dan-cucak-rowo-bukan-lagi-satwa-dilindungi"
+   },
+   "conservation": "Extinct in the wild (Javan population): only captive-bred birds.",
+   "taxonNote": "Split from Gracupica contra; GBIF/older lists may use G. contra.",
+   "gbifSynonymOf": "Gracupica contra"
+  },
+  {
+   "id": "anis_merah",
+   "sci": "Geokichla citrina",
+   "nameId": "Anis merah",
+   "nameEn": "Orange-headed thrush",
+   "roles": [
+    "master"
+   ],
+   "aliases": [
+    "punglor merah"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [
+    "song"
+   ],
+   "group": "kicau",
+   "recommendedIsian": [
+    "cililin",
+    "cendet",
+    "ciblek",
+    "tengkek_buto"
+   ]
+  },
+  {
+   "id": "anis_kembang",
+   "sci": "Geokichla interpres",
+   "nameId": "Anis kembang",
+   "nameEn": "Chestnut-capped thrush",
+   "roles": [
+    "master"
+   ],
+   "aliases": [
+    "punglor kembang"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [
+    "song"
+   ],
+   "group": "kicau",
+   "recommendedIsian": [
+    "cililin",
+    "cendet",
+    "ciblek"
+   ]
+  },
+  {
+   "id": "cendet",
+   "sci": "Lanius schach",
+   "nameId": "Cendet",
+   "nameEn": "Long-tailed shrike",
+   "roles": [
+    "master",
+    "isian"
+   ],
+   "aliases": [
+    "pentet",
+    "bentet"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [],
+   "group": "kicau",
+   "recommendedIsian": [
+    "ciblek",
+    "gereja",
+    "cililin",
+    "prenjak"
+   ]
+  },
+  {
+   "id": "branjangan",
+   "sci": "Mirafra javanica",
+   "nameId": "Branjangan",
+   "nameEn": "Horsfield's bush lark",
+   "roles": [
+    "master"
+   ],
+   "aliases": [
+    "branjangan jawa"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [
+    "song"
+   ],
+   "group": "kicau",
+   "recommendedIsian": [
+    "ciblek",
+    "prenjak",
+    "gereja"
+   ]
+  },
+  {
+   "id": "kolibri_ninja",
+   "sci": "Leptocoma sperata",
+   "nameId": "Kolibri ninja",
+   "nameEn": "Van Hasselt's sunbird",
+   "roles": [
+    "master"
+   ],
+   "aliases": [
+    "konin",
+    "burung madu"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [],
+   "group": "kicau",
+   "recommendedIsian": [
+    "ciblek",
+    "cinenen"
+   ],
+   "legal": {
+    "status": "permit_reported",
+    "source": "https://www.ayosemarang.com/semarang-raya/pr-77795089/Cucak-Ijo-Masuk-Hewan-Dilindungi-Wajib-Punya-Izin-Pemeliharaan"
+   },
+   "taxonNote": "Some lists use Leptocoma brasiliana for the Sundaic form."
+  },
+  {
+   "id": "kapas_tembak",
+   "sci": "Pycnonotus simplex",
+   "nameId": "Kapas tembak",
+   "nameEn": "Cream-vented bulbul",
+   "roles": [
+    "master",
+    "isian"
+   ],
+   "aliases": [
+    "merbah corok"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [],
+   "group": "kicau",
+   "recommendedIsian": [
+    "ciblek",
+    "kenari",
+    "cililin"
+   ]
+  },
+  {
+   "id": "cucak_kutilang",
+   "sci": "Pycnonotus aurigaster",
+   "nameId": "Cucak kutilang",
+   "nameEn": "Sooty-headed bulbul",
+   "roles": [
+    "master"
+   ],
+   "aliases": [
+    "kutilang",
+    "cucak cungkok"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [],
+   "group": "kicau",
+   "recommendedIsian": [
+    "ciblek",
+    "prenjak"
+   ]
+  },
+  {
+   "id": "chao_mao",
+   "sci": "Pycnonotus jocosus",
+   "nameId": "Cucak jambul merah (chào mào)",
+   "nameEn": "Red-whiskered bulbul",
+   "roles": [
+    "master"
+   ],
+   "aliases": [
+    "chào mào",
+    "nok krong hua juk",
+    "merbah jambul"
+   ],
+   "country": [
+    "Vietnam",
+    "Thailand",
+    "Malaysia",
+    "Singapore",
+    "Indonesia"
+   ],
+   "types": [
+    "song"
+   ],
+   "group": "kicau"
+  },
+  {
+   "id": "poksai_mandarin",
+   "sci": "Leiothrix lutea",
+   "nameId": "Poksai mandarin",
+   "nameEn": "Red-billed leiothrix",
+   "roles": [
+    "master"
+   ],
+   "aliases": [
+    "robin mandarin",
+    "pekin robin"
+   ],
+   "country": [],
+   "types": [
+    "song"
+   ],
+   "group": "kicau",
+   "recommendedIsian": [
+    "kenari",
+    "ciblek"
+   ]
+  },
+  {
+   "id": "hwamei",
+   "sci": "Garrulax canorus",
+   "nameId": "Hwamei (wambi)",
+   "nameEn": "Chinese hwamei",
+   "roles": [
+    "master"
+   ],
+   "aliases": [
+    "wambi",
+    "hoạ mi",
+    "画眉"
+   ],
+   "country": [],
+   "types": [
+    "song"
+   ],
+   "group": "kicau",
+   "recommendedIsian": [
+    "kenari",
+    "ciblek"
+   ]
+  },
+  {
+   "id": "decu",
+   "sci": "Saxicola caprata",
+   "nameId": "Decu",
+   "nameEn": "Pied bushchat",
+   "roles": [
+    "master"
+   ],
+   "aliases": [
+    "decu kembang"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [
+    "song"
+   ],
+   "group": "kicau",
+   "recommendedIsian": [
+    "ciblek",
+    "prenjak"
+   ]
+  },
+  {
+   "id": "gelatik_batu",
+   "sci": "Parus cinereus",
+   "nameId": "Gelatik batu",
+   "nameEn": "Cinereous tit",
+   "roles": [
+    "master"
+   ],
+   "aliases": [
+    "gelatik wingko"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [
+    "song"
+   ],
+   "group": "kicau",
+   "recommendedIsian": [
+    "ciblek",
+    "kenari"
+   ]
+  },
+  {
+   "id": "perkutut",
+   "sci": "Geopelia striata",
+   "nameId": "Perkutut",
+   "nameEn": "Zebra dove",
+   "roles": [
+    "master"
+   ],
+   "aliases": [
+    "merbok",
+    "nok khao chawa"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Thailand"
+   ],
+   "types": [
+    "song"
+   ],
+   "group": "perkutut"
+  },
+  {
+   "id": "sanger",
+   "sci": "Crithagra mozambica",
+   "nameId": "Sanger",
+   "nameEn": "Yellow-fronted canary",
+   "roles": [
+    "master",
+    "isian"
+   ],
+   "aliases": [
+    "kenari sanger"
+   ],
+   "country": [],
+   "types": [
+    "song"
+   ],
+   "group": "kicau",
+   "recommendedIsian": [
+    "kenari",
+    "ciblek"
+   ]
+  },
+  {
+   "id": "blackthroat",
+   "sci": "Crithagra atrogularis",
+   "nameId": "Blackthroat",
+   "nameEn": "Black-throated canary",
+   "roles": [
+    "master",
+    "isian"
+   ],
+   "aliases": [
+    "black throat"
+   ],
+   "country": [],
+   "types": [
+    "song"
+   ],
+   "group": "kicau",
+   "recommendedIsian": [
+    "kenari",
+    "sanger"
+   ]
+  },
+  {
+   "id": "cipoh",
+   "sci": "Aegithina tiphia",
+   "nameId": "Cipoh",
+   "nameEn": "Common iora",
+   "roles": [
+    "master",
+    "isian"
+   ],
+   "aliases": [
+    "sirtu"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [],
+   "group": "kicau",
+   "recommendedIsian": [
+    "ciblek",
+    "cinenen"
+   ]
+  },
+  {
+   "id": "kepodang",
+   "sci": "Oriolus chinensis",
+   "nameId": "Kepodang",
+   "nameEn": "Black-naped oriole",
+   "roles": [
+    "master",
+    "isian"
+   ],
+   "aliases": [
+    "kepodang emas"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [],
+   "group": "kicau",
+   "recommendedIsian": [
+    "cililin",
+    "ciblek"
+   ]
+  },
+  {
+   "id": "cililin",
+   "sci": "Platylophus galericulatus",
+   "nameId": "Cililin",
+   "nameEn": "Crested jay",
+   "roles": [
+    "isian"
+   ],
+   "aliases": [
+    "tangkar ongklet"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Thailand"
+   ],
+   "types": [],
+   "group": "kicau"
+  },
+  {
+   "id": "cucak_jenggot",
+   "sci": "Alophoixus bres",
+   "nameId": "Cucak jenggot",
+   "nameEn": "Grey-cheeked bulbul",
+   "roles": [
+    "isian"
+   ],
+   "aliases": [],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei"
+   ],
+   "types": [],
+   "group": "kicau"
+  },
+  {
+   "id": "ciblek",
+   "sci": "Prinia familiaris",
+   "nameId": "Ciblek",
+   "nameEn": "Bar-winged prinia",
+   "roles": [
+    "isian"
+   ],
+   "aliases": [
+    "prenjak jawa"
+   ],
+   "country": [
+    "Indonesia"
+   ],
+   "types": [],
+   "group": "kicau"
+  },
+  {
+   "id": "tledekan",
+   "sci": "Cyornis banyumas",
+   "nameId": "Tledekan",
+   "nameEn": "Hill blue flycatcher",
+   "roles": [
+    "isian"
+   ],
+   "aliases": [
+    "tledekan gunung",
+    "sulingan"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Thailand"
+   ],
+   "types": [
+    "song"
+   ],
+   "group": "kicau"
+  },
+  {
+   "id": "gereja",
+   "sci": "Passer montanus",
+   "nameId": "Gereja (tarung)",
+   "nameEn": "Eurasian tree sparrow",
+   "roles": [
+    "isian"
+   ],
+   "aliases": [
+    "gereja tarung",
+    "burung gereja"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [],
+   "group": "kicau"
+  },
+  {
+   "id": "belibis",
+   "sci": "Dendrocygna javanica",
+   "nameId": "Belibis",
+   "nameEn": "Lesser whistling duck",
+   "roles": [
+    "isian"
+   ],
+   "aliases": [
+    "belibis kembang"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [],
+   "group": "kicau"
+  },
+  {
+   "id": "tengkek_buto",
+   "sci": "Todiramphus chloris",
+   "nameId": "Tengkek buto",
+   "nameEn": "Collared kingfisher",
+   "roles": [
+    "isian"
+   ],
+   "aliases": [
+    "cekakak sungai"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [],
+   "group": "kicau"
+  },
+  {
+   "id": "trucukan",
+   "sci": "Pycnonotus goiavier",
+   "nameId": "Trucukan",
+   "nameEn": "Yellow-vented bulbul",
+   "roles": [
+    "isian"
+   ],
+   "aliases": [
+    "merbah cerukcuk"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [],
+   "group": "kicau"
+  },
+  {
+   "id": "prenjak",
+   "sci": "Prinia inornata",
+   "nameId": "Prenjak",
+   "nameEn": "Plain prinia",
+   "roles": [
+    "isian"
+   ],
+   "aliases": [
+    "prenjak padi"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [],
+   "group": "kicau"
+  },
+  {
+   "id": "srigunting",
+   "sci": "Dicrurus leucophaeus",
+   "nameId": "Srigunting",
+   "nameEn": "Ashy drongo",
+   "roles": [
+    "isian"
+   ],
+   "aliases": [
+    "srigunting kelabu"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [],
+   "group": "kicau"
+  },
+  {
+   "id": "cinenen",
+   "sci": "Orthotomus sutorius",
+   "nameId": "Cinenen",
+   "nameEn": "Common tailorbird",
+   "roles": [
+    "isian"
+   ],
+   "aliases": [
+    "cinenen pisang"
+   ],
+   "country": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Singapore",
+    "Thailand"
+   ],
+   "types": [],
+   "group": "kicau"
+  }
+ ]
 }
