@@ -1,7 +1,4409 @@
 {
  "version": 2,
  "standardVersion": 2,
- "generatedAt": "2026-11-02T04:42:21.482Z",
- "tracks": [],
- "packs": []
+ "generatedAt": "2026-11-02T07:09:12.226Z",
+ "tracks": [
+  {
+   "id": "murai_batu-in796207",
+   "species": "murai_batu",
+   "role": "master",
+   "nameId": "Murai batu",
+   "nameEn": "White-rumped shama",
+   "sci": "Copsychus malabaricus",
+   "file": "audio/murai_batu-in796207.mp3",
+   "bytes": 98473,
+   "durationSec": 12.24,
+   "title": "iNaturalist observation 179277342, sound 796207 (2023-08-20)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Heidi Meudt",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/179277342",
+   "country": "Singapore",
+   "modified": "Excerpt 0–12.2 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "murai_batu-in796207-i1",
+     "startSec": 8.905,
+     "endSec": 9.973,
+     "nameId": "Murai batu – frasa 1",
+     "nameEn": "White-rumped shama – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "murai_batu-in1799491",
+   "species": "murai_batu",
+   "role": "master",
+   "nameId": "Murai batu",
+   "nameEn": "White-rumped shama",
+   "sci": "Copsychus malabaricus",
+   "file": "audio/murai_batu-in1799491.mp3",
+   "bytes": 75067,
+   "durationSec": 9.3,
+   "title": "iNaturalist observation 342185777, sound 1799491 (2026-03-10)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "MIMI",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/342185777",
+   "country": "Taiwan",
+   "modified": "Excerpt 0–9.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "murai_batu-in1052320",
+   "species": "murai_batu",
+   "role": "master",
+   "nameId": "Murai batu",
+   "nameEn": "White-rumped shama",
+   "sci": "Copsychus malabaricus",
+   "file": "audio/murai_batu-in1052320.mp3",
+   "bytes": 614235,
+   "durationSec": 76.71,
+   "title": "iNaturalist observation 217426464, sound 1052320 (2024-05-22)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Gerard Chartier",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/217426464",
+   "country": "Cambodia",
+   "modified": "Excerpt 0–76.7 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "murai_batu-in1052320-i1",
+     "startSec": 55.171,
+     "endSec": 57.678,
+     "nameId": "Murai batu – frasa 1",
+     "nameEn": "White-rumped shama – phrase 1"
+    },
+    {
+     "id": "murai_batu-in1052320-i2",
+     "startSec": 51.328,
+     "endSec": 51.966,
+     "nameId": "Murai batu – frasa 2",
+     "nameEn": "White-rumped shama – phrase 2"
+    },
+    {
+     "id": "murai_batu-in1052320-i3",
+     "startSec": 74.524,
+     "endSec": 76.289,
+     "nameId": "Murai batu – frasa 3",
+     "nameEn": "White-rumped shama – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "murai_batu-in2085199",
+   "species": "murai_batu",
+   "role": "master",
+   "nameId": "Murai batu",
+   "nameEn": "White-rumped shama",
+   "sci": "Copsychus malabaricus",
+   "file": "audio/murai_batu-in2085199.mp3",
+   "bytes": 74858,
+   "durationSec": 9.3,
+   "title": "iNaturalist observation 384441972, sound 2085199 (2026-07-23)",
+   "license": "CC0",
+   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "recordist": "Damien Wallace",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/384441972",
+   "country": "USA",
+   "modified": "Excerpt 0–9.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "murai_batu-in1295641",
+   "species": "murai_batu",
+   "role": "master",
+   "nameId": "Murai batu",
+   "nameEn": "White-rumped shama",
+   "sci": "Copsychus malabaricus",
+   "file": "audio/murai_batu-in1295641.mp3",
+   "bytes": 117490,
+   "durationSec": 14.6,
+   "title": "iNaturalist observation 260025576, sound 1295641 (2025-01-29)",
+   "license": "CC0",
+   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "recordist": "Damien Wallace",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/260025576",
+   "country": "USA",
+   "modified": "Excerpt 0–14.6 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "murai_batu-in1295641-i1",
+     "startSec": 2.241,
+     "endSec": 2.961,
+     "nameId": "Murai batu – frasa 1",
+     "nameEn": "White-rumped shama – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "murai_batu-in1363395",
+   "species": "murai_batu",
+   "role": "master",
+   "nameId": "Murai batu",
+   "nameEn": "White-rumped shama",
+   "sci": "Copsychus malabaricus",
+   "file": "audio/murai_batu-in1363395.mp3",
+   "bytes": 73494,
+   "durationSec": 9.1,
+   "title": "iNaturalist observation 268849646, sound 1363395 (2025-04-05)",
+   "license": "CC0",
+   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "recordist": "Hunter Stevens",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/268849646",
+   "country": "United States",
+   "modified": "Excerpt 0–9.1 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "murai_batu-in1363395-i1",
+     "startSec": 6.304,
+     "endSec": 8.394,
+     "nameId": "Murai batu – frasa 1",
+     "nameEn": "White-rumped shama – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "kacer-in1418920",
+   "species": "kacer",
+   "role": "master",
+   "nameId": "Kacer",
+   "nameEn": "Oriental magpie-robin",
+   "sci": "Copsychus saularis",
+   "file": "audio/kacer-in1418920.mp3",
+   "bytes": 227050,
+   "durationSec": 24.99,
+   "title": "iNaturalist observation 275590330, sound 1418920 (2025-04-28)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Wich’yanan (Jay) Limparungpatthanakij",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/275590330",
+   "country": "Thailand",
+   "modified": "Excerpt 0–25.0 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "kacer-in1418920-i1",
+     "startSec": 1.811,
+     "endSec": 4.098,
+     "nameId": "Kacer – frasa 1",
+     "nameEn": "Oriental magpie-robin – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "kacer-in858460",
+   "species": "kacer",
+   "role": "master",
+   "nameId": "Kacer",
+   "nameEn": "Oriental magpie-robin",
+   "sci": "Copsychus saularis",
+   "file": "audio/kacer-in858460.mp3",
+   "bytes": 200664,
+   "durationSec": 25.02,
+   "title": "iNaturalist observation 193585829, sound 858460 (2023-12-10)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Sam Hambly",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/193585829",
+   "country": "Thailand",
+   "modified": "Excerpt 0–25.0 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "kacer-in858460-i1",
+     "startSec": 4.807,
+     "endSec": 5.341,
+     "nameId": "Kacer – frasa 1",
+     "nameEn": "Oriental magpie-robin – phrase 1"
+    },
+    {
+     "id": "kacer-in858460-i2",
+     "startSec": 2.566,
+     "endSec": 3.425,
+     "nameId": "Kacer – frasa 2",
+     "nameEn": "Oriental magpie-robin – phrase 2"
+    },
+    {
+     "id": "kacer-in858460-i3",
+     "startSec": 6.757,
+     "endSec": 7.872,
+     "nameId": "Kacer – frasa 3",
+     "nameEn": "Oriental magpie-robin – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "kacer-in753687",
+   "species": "kacer",
+   "role": "master",
+   "nameId": "Kacer",
+   "nameEn": "Oriental magpie-robin",
+   "sci": "Copsychus saularis",
+   "file": "audio/kacer-in753687.mp3",
+   "bytes": 106260,
+   "durationSec": 9.89,
+   "title": "iNaturalist observation 169886102, sound 753687 (2023-06-28)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Wich’yanan (Jay) Limparungpatthanakij",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/169886102",
+   "country": "Thailand",
+   "modified": "Excerpt 0–9.9 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "kacer-in753687-i1",
+     "startSec": 6.687,
+     "endSec": 8.533,
+     "nameId": "Kacer – frasa 1",
+     "nameEn": "Oriental magpie-robin – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "kacer-in21295",
+   "species": "kacer",
+   "role": "master",
+   "nameId": "Kacer",
+   "nameEn": "Oriental magpie-robin",
+   "sci": "Copsychus saularis",
+   "file": "audio/kacer-in21295.mp3",
+   "bytes": 323544,
+   "durationSec": 40.37,
+   "title": "iNaturalist observation 10609382, sound 21295 (2018-04-01)",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "recordist": "portioid",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/10609382",
+   "country": "Hong Kong",
+   "modified": "Excerpt 0–40.4 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "kacer-in21295-i1",
+     "startSec": 33.785,
+     "endSec": 36.119,
+     "nameId": "Kacer – frasa 1",
+     "nameEn": "Oriental magpie-robin – phrase 1"
+    },
+    {
+     "id": "kacer-in21295-i2",
+     "startSec": 23.011,
+     "endSec": 25.159,
+     "nameId": "Kacer – frasa 2",
+     "nameEn": "Oriental magpie-robin – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "kacer-in990376",
+   "species": "kacer",
+   "role": "master",
+   "nameId": "Kacer",
+   "nameEn": "Oriental magpie-robin",
+   "sci": "Copsychus saularis",
+   "file": "audio/kacer-in990376.mp3",
+   "bytes": 81964,
+   "durationSec": 10.18,
+   "title": "iNaturalist observation 210159179, sound 990376 (2024-04-27)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Ashwin A",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/210159179",
+   "country": "India",
+   "modified": "Excerpt 0–10.2 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "kacer-in990376-i1",
+     "startSec": 2.647,
+     "endSec": 3.204,
+     "nameId": "Kacer – frasa 1",
+     "nameEn": "Oriental magpie-robin – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "kacer-in1856358",
+   "species": "kacer",
+   "role": "master",
+   "nameId": "Kacer",
+   "nameEn": "Oriental magpie-robin",
+   "sci": "Copsychus saularis",
+   "file": "audio/kacer-in1856358.mp3",
+   "bytes": 116654,
+   "durationSec": 14.51,
+   "title": "iNaturalist observation 349474295, sound 1856358 (2026-04-08)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Arbor Chetia",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/349474295",
+   "country": "India",
+   "modified": "Excerpt 0–14.5 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "kacer-in1856358-i1",
+     "startSec": 11.738,
+     "endSec": 13.711,
+     "nameId": "Kacer – frasa 1",
+     "nameEn": "Oriental magpie-robin – phrase 1"
+    },
+    {
+     "id": "kacer-in1856358-i2",
+     "startSec": 7.593,
+     "endSec": 9.497,
+     "nameId": "Kacer – frasa 2",
+     "nameEn": "Oriental magpie-robin – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "cucak_ijo-in585261",
+   "species": "cucak_ijo",
+   "role": "master",
+   "nameId": "Cucak ijo",
+   "nameEn": "Greater green leafbird",
+   "sci": "Chloropsis sonnerati",
+   "file": "audio/cucak_ijo-in585261.mp3",
+   "bytes": 311896,
+   "durationSec": 35.59,
+   "title": "iNaturalist observation 146670038, sound 585261 (2022-12-30)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Wich’yanan (Jay) Limparungpatthanakij",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/146670038",
+   "country": "Thailand",
+   "modified": "Excerpt 0–35.6 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "cucak_ijo-in585261-i1",
+     "startSec": 33.332,
+     "endSec": 33.924,
+     "nameId": "Cucak ijo – frasa 1",
+     "nameEn": "Greater green leafbird – phrase 1"
+    },
+    {
+     "id": "cucak_ijo-in585261-i2",
+     "startSec": 5.178,
+     "endSec": 5.724,
+     "nameId": "Cucak ijo – frasa 2",
+     "nameEn": "Greater green leafbird – phrase 2"
+    },
+    {
+     "id": "cucak_ijo-in585261-i3",
+     "startSec": 7.779,
+     "endSec": 8.371,
+     "nameId": "Cucak ijo – frasa 3",
+     "nameEn": "Greater green leafbird – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "cucak_ijo-in1308088",
+   "species": "cucak_ijo",
+   "role": "master",
+   "nameId": "Cucak ijo",
+   "nameEn": "Greater green leafbird",
+   "sci": "Chloropsis sonnerati",
+   "file": "audio/cucak_ijo-in1308088.mp3",
+   "bytes": 239815,
+   "durationSec": 29.87,
+   "title": "iNaturalist observation 261851274, sound 1308088 (2025-02-15)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Sam Hambly",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/261851274",
+   "country": "Thailand",
+   "modified": "Excerpt 0–29.9 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "cucak_ijo-in1308088-i1",
+     "startSec": 21.757,
+     "endSec": 23.046,
+     "nameId": "Cucak ijo – frasa 1",
+     "nameEn": "Greater green leafbird – phrase 1"
+    },
+    {
+     "id": "cucak_ijo-in1308088-i2",
+     "startSec": 17.078,
+     "endSec": 17.74,
+     "nameId": "Cucak ijo – frasa 2",
+     "nameEn": "Greater green leafbird – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "kenari-in1105301",
+   "species": "kenari",
+   "role": "master",
+   "nameId": "Kenari",
+   "nameEn": "Atlantic canary (domestic)",
+   "sci": "Serinus canaria",
+   "file": "audio/kenari-in1105301.mp3",
+   "bytes": 180702,
+   "durationSec": 22.51,
+   "title": "iNaturalist observation 224532226, sound 1105301 (2023-05-23)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Naelin",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/224532226",
+   "country": "Argentina",
+   "modified": "Excerpt 0–22.5 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "kenari-in523487",
+   "species": "kenari",
+   "role": "master",
+   "nameId": "Kenari",
+   "nameEn": "Atlantic canary (domestic)",
+   "sci": "Serinus canaria",
+   "file": "audio/kenari-in523487.mp3",
+   "bytes": 137134,
+   "durationSec": 17.07,
+   "title": "iNaturalist observation 131563678, sound 523487 (2022-08-08)",
+   "license": "CC0",
+   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "recordist": "Oriol Sastre",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/131563678",
+   "country": "Espanya",
+   "modified": "Excerpt 0–17.1 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "kenari-in523487-i1",
+     "startSec": 11.854,
+     "endSec": 12.399,
+     "nameId": "Kenari – frasa 1",
+     "nameEn": "Atlantic canary (domestic) – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "kenari-in1754893",
+   "species": "kenari",
+   "role": "master",
+   "nameId": "Kenari",
+   "nameEn": "Atlantic canary (domestic)",
+   "sci": "Serinus canaria",
+   "file": "audio/kenari-in1754893.mp3",
+   "bytes": 212785,
+   "durationSec": 26.54,
+   "title": "iNaturalist observation 336864485, sound 1754893 (2026-01-31)",
+   "license": "CC0",
+   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "recordist": "Paweł Sadkowski",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/336864485",
+   "country": "Portugalia",
+   "modified": "Excerpt 0–26.5 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "kenari-in825002",
+   "species": "kenari",
+   "role": "master",
+   "nameId": "Kenari",
+   "nameEn": "Atlantic canary (domestic)",
+   "sci": "Serinus canaria",
+   "file": "audio/kenari-in825002.mp3",
+   "bytes": 78620,
+   "durationSec": 9.76,
+   "title": "iNaturalist observation 186189090, sound 825002 (2023-10-04)",
+   "license": "CC0",
+   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "recordist": "Neil Clark",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/186189090",
+   "country": "Portugal",
+   "modified": "Excerpt 0–9.8 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "kenari-wc411699834",
+   "species": "kenari",
+   "role": "master",
+   "nameId": "Kenari",
+   "nameEn": "Atlantic canary (domestic)",
+   "sci": "Serinus canaria",
+   "file": "audio/kenari-wc411699834.mp3",
+   "bytes": 720605,
+   "durationSec": 90,
+   "title": "Serinus canaria forma domestica - audio 01 ies.ogg",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "recordist": "Frank Vincentz",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Serinus_canaria_forma_domestica_-_audio_01_ies.ogg",
+   "modified": "Excerpt 224.01–314.0 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "kenari-wc411699834-i1",
+     "startSec": 48.588,
+     "endSec": 50.422,
+     "nameId": "Kenari – frasa 1",
+     "nameEn": "Atlantic canary (domestic) – phrase 1"
+    },
+    {
+     "id": "kenari-wc411699834-i2",
+     "startSec": 68.615,
+     "endSec": 69.37,
+     "nameId": "Kenari – frasa 2",
+     "nameEn": "Atlantic canary (domestic) – phrase 2"
+    },
+    {
+     "id": "kenari-wc411699834-i3",
+     "startSec": 82.361,
+     "endSec": 84.405,
+     "nameId": "Kenari – frasa 3",
+     "nameEn": "Atlantic canary (domestic) – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "cucak_rawa-in2015874",
+   "species": "cucak_rawa",
+   "role": "master",
+   "nameId": "Cucak rawa",
+   "nameEn": "Straw-headed bulbul",
+   "sci": "Pycnonotus zeylanicus",
+   "file": "audio/cucak_rawa-in2015874.mp3",
+   "bytes": 100931,
+   "durationSec": 12.5,
+   "title": "iNaturalist observation 370638788, sound 2015874 (2026-06-06)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "grass_0",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/370638788",
+   "modified": "Excerpt 0–12.5 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "cucak_rawa-in2015875",
+   "species": "cucak_rawa",
+   "role": "master",
+   "nameId": "Cucak rawa",
+   "nameEn": "Straw-headed bulbul",
+   "sci": "Pycnonotus zeylanicus",
+   "file": "audio/cucak_rawa-in2015875.mp3",
+   "bytes": 81078,
+   "durationSec": 10.03,
+   "title": "iNaturalist observation 370638788, sound 2015875 (2026-06-06)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "grass_0",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/370638788",
+   "modified": "Excerpt 0–10.0 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "cucak_rawa-in796125",
+   "species": "cucak_rawa",
+   "role": "master",
+   "nameId": "Cucak rawa",
+   "nameEn": "Straw-headed bulbul",
+   "sci": "Pycnonotus zeylanicus",
+   "file": "audio/cucak_rawa-in796125.mp3",
+   "bytes": 238698,
+   "durationSec": 29.76,
+   "title": "iNaturalist observation 179260318, sound 796125 (2023-08-20)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Heidi Meudt",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/179260318",
+   "modified": "Excerpt 0–29.8 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "cucak_rawa-in796125-i1",
+     "startSec": 26.413,
+     "endSec": 29.373,
+     "nameId": "Cucak rawa – frasa 1",
+     "nameEn": "Straw-headed bulbul – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "jalak_suren-in1636941",
+   "species": "jalak_suren",
+   "role": "master",
+   "nameId": "Jalak suren",
+   "nameEn": "Javan pied starling",
+   "sci": "Gracupica jalla",
+   "file": "audio/jalak_suren-in1636941.mp3",
+   "bytes": 387074,
+   "durationSec": 48.32,
+   "title": "iNaturalist observation 314034649, sound 1636941 (2025-08-18)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "ꦥꦤ꧀ꦗꦶꦒꦸꦱ꧀ꦠꦶꦄꦏ꧀ꦧꦂ",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/314034649",
+   "country": "Indonesia",
+   "modified": "Excerpt 0–48.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "jalak_suren-in1636941-i1",
+     "startSec": 39.033,
+     "endSec": 39.834,
+     "nameId": "Jalak suren – frasa 1",
+     "nameEn": "Javan pied starling – phrase 1"
+    },
+    {
+     "id": "jalak_suren-in1636941-i2",
+     "startSec": 4.679,
+     "endSec": 5.352,
+     "nameId": "Jalak suren – frasa 2",
+     "nameEn": "Javan pied starling – phrase 2"
+    },
+    {
+     "id": "jalak_suren-in1636941-i3",
+     "startSec": 29.002,
+     "endSec": 29.571,
+     "nameId": "Jalak suren – frasa 3",
+     "nameEn": "Javan pied starling – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "anis_merah-wc384666653",
+   "species": "anis_merah",
+   "role": "master",
+   "nameId": "Anis merah",
+   "nameEn": "Orange-headed thrush",
+   "sci": "Geokichla citrina",
+   "file": "audio/anis_merah-wc384666653.mp3",
+   "bytes": 264403,
+   "durationSec": 32.97,
+   "title": "Zoothera citrina cyanotus.ogg",
+   "license": "CC0",
+   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "recordist": "Raghu",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zoothera_citrina_cyanotus.ogg",
+   "modified": "Excerpt 0–33.0 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "anis_merah-wc384666653-i1",
+     "startSec": 9.404,
+     "endSec": 11.784,
+     "nameId": "Anis merah – frasa 1",
+     "nameEn": "Orange-headed thrush – phrase 1"
+    },
+    {
+     "id": "anis_merah-wc384666653-i2",
+     "startSec": 24.869,
+     "endSec": 26.099,
+     "nameId": "Anis merah – frasa 2",
+     "nameEn": "Orange-headed thrush – phrase 2"
+    },
+    {
+     "id": "anis_merah-wc384666653-i3",
+     "startSec": 27.69,
+     "endSec": 28.688,
+     "nameId": "Anis merah – frasa 3",
+     "nameEn": "Orange-headed thrush – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "anis_merah-wc1935780918",
+   "species": "anis_merah",
+   "role": "master",
+   "nameId": "Anis merah",
+   "nameEn": "Orange-headed thrush",
+   "sci": "Geokichla citrina",
+   "file": "audio/anis_merah-wc1935780918.mp3",
+   "bytes": 253745,
+   "durationSec": 31.66,
+   "title": "Geokichla citrina - Orange-headed Thrush XC129570.ogg",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "recordist": "Sudipto Roy",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Geokichla_citrina_-_Orange-headed_Thrush_XC129570.ogg",
+   "modified": "Excerpt 0–31.7 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "anis_merah-wc1935780918-i1",
+     "startSec": 26.622,
+     "endSec": 27.876,
+     "nameId": "Anis merah – frasa 1",
+     "nameEn": "Orange-headed thrush – phrase 1"
+    },
+    {
+     "id": "anis_merah-wc1935780918-i2",
+     "startSec": 15.871,
+     "endSec": 17.415,
+     "nameId": "Anis merah – frasa 2",
+     "nameEn": "Orange-headed thrush – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "anis_merah-wc1672419801",
+   "species": "anis_merah",
+   "role": "master",
+   "nameId": "Anis merah",
+   "nameEn": "Orange-headed thrush",
+   "sci": "Geokichla citrina",
+   "file": "audio/anis_merah-wc1672419801.mp3",
+   "bytes": 720605,
+   "durationSec": 90,
+   "title": "White-throated Ground Thrush.ogg",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "recordist": "Shajiarikkad",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:White-throated_Ground_Thrush.ogg",
+   "modified": "Excerpt 1.2–91.2 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "anis_merah-wc1672419801-i1",
+     "startSec": 64.923,
+     "endSec": 66.061,
+     "nameId": "Anis merah – frasa 1",
+     "nameEn": "Orange-headed thrush – phrase 1"
+    },
+    {
+     "id": "anis_merah-wc1672419801-i2",
+     "startSec": 69.033,
+     "endSec": 71.993,
+     "nameId": "Anis merah – frasa 2",
+     "nameEn": "Orange-headed thrush – phrase 2"
+    },
+    {
+     "id": "anis_merah-wc1672419801-i3",
+     "startSec": 67.303,
+     "endSec": 67.849,
+     "nameId": "Anis merah – frasa 3",
+     "nameEn": "Orange-headed thrush – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "anis_merah-in672966",
+   "species": "anis_merah",
+   "role": "master",
+   "nameId": "Anis merah",
+   "nameEn": "Orange-headed thrush",
+   "sci": "Geokichla citrina",
+   "file": "audio/anis_merah-in672966.mp3",
+   "bytes": 287808,
+   "durationSec": 35.9,
+   "title": "iNaturalist observation 158569015, sound 672966 (2023-04-05)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Afsar Nayakkan",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/158569015",
+   "country": "Kattampally",
+   "modified": "Excerpt 0–35.9 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "anis_merah-in672966-i1",
+     "startSec": 1.022,
+     "endSec": 3.355,
+     "nameId": "Anis merah – frasa 1",
+     "nameEn": "Orange-headed thrush – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "anis_merah-in391817",
+   "species": "anis_merah",
+   "role": "master",
+   "nameId": "Anis merah",
+   "nameEn": "Orange-headed thrush",
+   "sci": "Geokichla citrina",
+   "file": "audio/anis_merah-in391817.mp3",
+   "bytes": 346000,
+   "durationSec": 43.17,
+   "title": "iNaturalist observation 111268698, sound 391817 (2022-04-08)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Seema Merchant",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/111268698",
+   "country": "India",
+   "modified": "Excerpt 0–43.2 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "anis_merah-in391817-i1",
+     "startSec": 14.222,
+     "endSec": 15.523,
+     "nameId": "Anis merah – frasa 1",
+     "nameEn": "Orange-headed thrush – phrase 1"
+    },
+    {
+     "id": "anis_merah-in391817-i2",
+     "startSec": 7.396,
+     "endSec": 9.125,
+     "nameId": "Anis merah – frasa 2",
+     "nameEn": "Orange-headed thrush – phrase 2"
+    },
+    {
+     "id": "anis_merah-in391817-i3",
+     "startSec": 37.105,
+     "endSec": 37.651,
+     "nameId": "Anis merah – frasa 3",
+     "nameEn": "Orange-headed thrush – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "cendet-in1312580",
+   "species": "cendet",
+   "role": "master",
+   "nameId": "Cendet",
+   "nameEn": "Long-tailed shrike",
+   "sci": "Lanius schach",
+   "file": "audio/cendet-in1312580.mp3",
+   "bytes": 398036,
+   "durationSec": 49.67,
+   "title": "iNaturalist observation 262622164, sound 1312580 (2025-02-22)",
+   "license": "CC0",
+   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "recordist": "JIN Pin-Tsen",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/262622164",
+   "country": "China",
+   "modified": "Excerpt 0–49.7 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "cendet-in1312580-i1",
+     "startSec": 37.152,
+     "endSec": 37.965,
+     "nameId": "Cendet – frasa 1",
+     "nameEn": "Long-tailed shrike – phrase 1"
+    },
+    {
+     "id": "cendet-in1312580-i2",
+     "startSec": 16.173,
+     "endSec": 16.776,
+     "nameId": "Cendet – frasa 2",
+     "nameEn": "Long-tailed shrike – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "cucak_kutilang-in1995188",
+   "species": "cucak_kutilang",
+   "role": "master",
+   "nameId": "Cucak kutilang",
+   "nameEn": "Sooty-headed bulbul",
+   "sci": "Pycnonotus aurigaster",
+   "file": "audio/cucak_kutilang-in1995188.mp3",
+   "bytes": 228839,
+   "durationSec": 28.5,
+   "title": "iNaturalist observation 367416446, sound 1995188 (2026-05-06)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "abidanimallover",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/367416446",
+   "country": "Indonesia",
+   "modified": "Excerpt 0–28.5 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "cucak_kutilang-in1995188-i1",
+     "startSec": 3.982,
+     "endSec": 4.54,
+     "nameId": "Cucak kutilang – frasa 1",
+     "nameEn": "Sooty-headed bulbul – phrase 1"
+    },
+    {
+     "id": "cucak_kutilang-in1995188-i2",
+     "startSec": 22.071,
+     "endSec": 23.835,
+     "nameId": "Cucak kutilang – frasa 2",
+     "nameEn": "Sooty-headed bulbul – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "cucak_kutilang-in111929",
+   "species": "cucak_kutilang",
+   "role": "master",
+   "nameId": "Cucak kutilang",
+   "nameEn": "Sooty-headed bulbul",
+   "sci": "Pycnonotus aurigaster",
+   "file": "audio/cucak_kutilang-in111929.mp3",
+   "bytes": 451291,
+   "durationSec": 56.32,
+   "title": "iNaturalist observation 50953474, sound 111929 (2020-06-26)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "ꦥꦤ꧀ꦗꦶꦒꦸꦱ꧀ꦠꦶꦄꦏ꧀ꦧꦂ",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/50953474",
+   "country": "Indonesia",
+   "modified": "Excerpt 0–56.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "cucak_kutilang-in111929-i1",
+     "startSec": 36.769,
+     "endSec": 37.616,
+     "nameId": "Cucak kutilang – frasa 1",
+     "nameEn": "Sooty-headed bulbul – phrase 1"
+    },
+    {
+     "id": "cucak_kutilang-in111929-i2",
+     "startSec": 23.696,
+     "endSec": 25.728,
+     "nameId": "Cucak kutilang – frasa 2",
+     "nameEn": "Sooty-headed bulbul – phrase 2"
+    },
+    {
+     "id": "cucak_kutilang-in111929-i3",
+     "startSec": 5.77,
+     "endSec": 7.558,
+     "nameId": "Cucak kutilang – frasa 3",
+     "nameEn": "Sooty-headed bulbul – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "chao_mao-in1565588",
+   "species": "chao_mao",
+   "role": "master",
+   "nameId": "Cucak jambul merah (chào mào)",
+   "nameEn": "Red-whiskered bulbul",
+   "sci": "Pycnonotus jocosus",
+   "file": "audio/chao_mao-in1565588.mp3",
+   "bytes": 179420,
+   "durationSec": 22.33,
+   "title": "iNaturalist observation 297289093, sound 1565588 (2025-07-12)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Sam Hambly",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/297289093",
+   "country": "Thailand",
+   "modified": "Excerpt 0–22.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "chao_mao-in1565588-i1",
+     "startSec": 10.275,
+     "endSec": 11.088,
+     "nameId": "Cucak jambul merah (chào mào) – frasa 1",
+     "nameEn": "Red-whiskered bulbul – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "chao_mao-in1694697",
+   "species": "chao_mao",
+   "role": "master",
+   "nameId": "Cucak jambul merah (chào mào)",
+   "nameEn": "Red-whiskered bulbul",
+   "sci": "Pycnonotus jocosus",
+   "file": "audio/chao_mao-in1694697.mp3",
+   "bytes": 490832,
+   "durationSec": 61.28,
+   "title": "iNaturalist observation 326637718, sound 1694697 (2025-08-02)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Ram Dayal Vaishnav",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/326637718",
+   "country": "India",
+   "modified": "Excerpt 0–61.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "chao_mao-in1694697-i1",
+     "startSec": 24.311,
+     "endSec": 25.31,
+     "nameId": "Cucak jambul merah (chào mào) – frasa 1",
+     "nameEn": "Red-whiskered bulbul – phrase 1"
+    },
+    {
+     "id": "chao_mao-in1694697-i2",
+     "startSec": 49.389,
+     "endSec": 50.004,
+     "nameId": "Cucak jambul merah (chào mào) – frasa 2",
+     "nameEn": "Red-whiskered bulbul – phrase 2"
+    },
+    {
+     "id": "chao_mao-in1694697-i3",
+     "startSec": 29.083,
+     "endSec": 30.859,
+     "nameId": "Cucak jambul merah (chào mào) – frasa 3",
+     "nameEn": "Red-whiskered bulbul – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "chao_mao-in397095",
+   "species": "chao_mao",
+   "role": "master",
+   "nameId": "Cucak jambul merah (chào mào)",
+   "nameEn": "Red-whiskered bulbul",
+   "sci": "Pycnonotus jocosus",
+   "file": "audio/chao_mao-in397095.mp3",
+   "bytes": 194490,
+   "durationSec": 24.22,
+   "title": "iNaturalist observation 111897060, sound 397095 (2022-04-16)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Seema Merchant",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/111897060",
+   "country": "India",
+   "modified": "Excerpt 0–24.2 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "chao_mao-in397095-i1",
+     "startSec": 5.642,
+     "endSec": 7.372,
+     "nameId": "Cucak jambul merah (chào mào) – frasa 1",
+     "nameEn": "Red-whiskered bulbul – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "chao_mao-in319389",
+   "species": "chao_mao",
+   "role": "master",
+   "nameId": "Cucak jambul merah (chào mào)",
+   "nameEn": "Red-whiskered bulbul",
+   "sci": "Pycnonotus jocosus",
+   "file": "audio/chao_mao-in319389.mp3",
+   "bytes": 184250,
+   "durationSec": 22.94,
+   "title": "iNaturalist observation 98962050, sound 319389 (2021-10-22)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Thomas Mesaglio",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/98962050",
+   "country": "New South Wales",
+   "modified": "Excerpt 0–22.9 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "chao_mao-in319389-i1",
+     "startSec": 0.882,
+     "endSec": 3.553,
+     "nameId": "Cucak jambul merah (chào mào) – frasa 1",
+     "nameEn": "Red-whiskered bulbul – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "chao_mao-in1601889",
+   "species": "chao_mao",
+   "role": "master",
+   "nameId": "Cucak jambul merah (chào mào)",
+   "nameEn": "Red-whiskered bulbul",
+   "sci": "Pycnonotus jocosus",
+   "file": "audio/chao_mao-in1601889.mp3",
+   "bytes": 90950,
+   "durationSec": 11.31,
+   "title": "iNaturalist observation 305767246, sound 1601889 (2022-06-22)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "nebrooks",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/305767246",
+   "country": "USA",
+   "modified": "Excerpt 0–11.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "chao_mao-in1601889-i1",
+     "startSec": 8.557,
+     "endSec": 9.729,
+     "nameId": "Cucak jambul merah (chào mào) – frasa 1",
+     "nameEn": "Red-whiskered bulbul – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "poksai_mandarin-in2108811",
+   "species": "poksai_mandarin",
+   "role": "master",
+   "nameId": "Poksai mandarin",
+   "nameEn": "Red-billed leiothrix",
+   "sci": "Leiothrix lutea",
+   "file": "audio/poksai_mandarin-in2108811.mp3",
+   "bytes": 298675,
+   "durationSec": 37.27,
+   "title": "iNaturalist observation 389074324, sound 2108811 (2026-07-21)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Daniela Costa",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/389074324",
+   "country": "Portugal",
+   "modified": "Excerpt 0–37.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "poksai_mandarin-in2116840",
+   "species": "poksai_mandarin",
+   "role": "master",
+   "nameId": "Poksai mandarin",
+   "nameEn": "Red-billed leiothrix",
+   "sci": "Leiothrix lutea",
+   "file": "audio/poksai_mandarin-in2116840.mp3",
+   "bytes": 120724,
+   "durationSec": 15,
+   "title": "iNaturalist observation 390794214, sound 2116840 (2026-08-13)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "りなべる",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/390794214",
+   "country": "Japan",
+   "modified": "Excerpt 0–15.0 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "poksai_mandarin-in2116840-i1",
+     "startSec": 11.076,
+     "endSec": 11.598,
+     "nameId": "Poksai mandarin – frasa 1",
+     "nameEn": "Red-billed leiothrix – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "poksai_mandarin-in1708772",
+   "species": "poksai_mandarin",
+   "role": "master",
+   "nameId": "Poksai mandarin",
+   "nameEn": "Red-billed leiothrix",
+   "sci": "Leiothrix lutea",
+   "file": "audio/poksai_mandarin-in1708772.mp3",
+   "bytes": 74440,
+   "durationSec": 9.25,
+   "title": "iNaturalist observation 329415762, sound 1708772 (2025-12-03)",
+   "license": "CC0",
+   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "recordist": "Damien Wallace",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/329415762",
+   "country": "USA",
+   "modified": "Excerpt 0–9.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "poksai_mandarin-in1546491",
+   "species": "poksai_mandarin",
+   "role": "master",
+   "nameId": "Poksai mandarin",
+   "nameEn": "Red-billed leiothrix",
+   "sci": "Leiothrix lutea",
+   "file": "audio/poksai_mandarin-in1546491.mp3",
+   "bytes": 123759,
+   "durationSec": 15.4,
+   "title": "iNaturalist observation 293650482, sound 1546491 (2025-06-24)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Rajan Rao",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/293650482",
+   "country": "Japan",
+   "modified": "Excerpt 0–15.4 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "poksai_mandarin-in1090820",
+   "species": "poksai_mandarin",
+   "role": "master",
+   "nameId": "Poksai mandarin",
+   "nameEn": "Red-billed leiothrix",
+   "sci": "Leiothrix lutea",
+   "file": "audio/poksai_mandarin-in1090820.mp3",
+   "bytes": 269627,
+   "durationSec": 33.62,
+   "title": "iNaturalist observation 222232736, sound 1090820 (2024-06-12)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "anasacuta",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/222232736",
+   "country": "Italy",
+   "modified": "Excerpt 0–33.6 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "poksai_mandarin-in1090820-i1",
+     "startSec": 0.337,
+     "endSec": 1.904,
+     "nameId": "Poksai mandarin – frasa 1",
+     "nameEn": "Red-billed leiothrix – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "poksai_mandarin-in1092676",
+   "species": "poksai_mandarin",
+   "role": "master",
+   "nameId": "Poksai mandarin",
+   "nameEn": "Red-billed leiothrix",
+   "sci": "Leiothrix lutea",
+   "file": "audio/poksai_mandarin-in1092676.mp3",
+   "bytes": 220308,
+   "durationSec": 27.47,
+   "title": "iNaturalist observation 222583912, sound 1092676 (2024-06-12)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "WATANABE Hitoshi 渡辺仁",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/222583912",
+   "country": "日本 〒206-0021",
+   "modified": "Excerpt 0–27.5 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "poksai_mandarin-in1092676-i1",
+     "startSec": 21.014,
+     "endSec": 21.908,
+     "nameId": "Poksai mandarin – frasa 1",
+     "nameEn": "Red-billed leiothrix – phrase 1"
+    },
+    {
+     "id": "poksai_mandarin-in1092676-i2",
+     "startSec": 10.867,
+     "endSec": 11.413,
+     "nameId": "Poksai mandarin – frasa 2",
+     "nameEn": "Red-billed leiothrix – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "hwamei-in2033787",
+   "species": "hwamei",
+   "role": "master",
+   "nameId": "Hwamei (wambi)",
+   "nameEn": "Chinese hwamei",
+   "sci": "Garrulax canorus",
+   "file": "audio/hwamei-in2033787.mp3",
+   "bytes": 122814,
+   "durationSec": 15.27,
+   "title": "iNaturalist observation 373777648, sound 2033787 (2026-06-21)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "IMORI MIHO",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/373777648",
+   "country": "日本 〒206-0021",
+   "modified": "Excerpt 0–15.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "hwamei-in1242071",
+   "species": "hwamei",
+   "role": "master",
+   "nameId": "Hwamei (wambi)",
+   "nameEn": "Chinese hwamei",
+   "sci": "Garrulax canorus",
+   "file": "audio/hwamei-in1242071.mp3",
+   "bytes": 87701,
+   "durationSec": 10.88,
+   "title": "iNaturalist observation 249963595, sound 1242071 (2024-11-01)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "WATANABE Hitoshi 渡辺仁",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/249963595",
+   "country": "日本、〒206-0012 東京都多摩市貝取",
+   "modified": "Excerpt 0–10.9 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "hwamei-in1242071-i1",
+     "startSec": 4.876,
+     "endSec": 5.654,
+     "nameId": "Hwamei (wambi) – frasa 1",
+     "nameEn": "Chinese hwamei – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "hwamei-in858205",
+   "species": "hwamei",
+   "role": "master",
+   "nameId": "Hwamei (wambi)",
+   "nameEn": "Chinese hwamei",
+   "sci": "Garrulax canorus",
+   "file": "audio/hwamei-in858205.mp3",
+   "bytes": 289575,
+   "durationSec": 36.11,
+   "title": "iNaturalist observation 193534008, sound 858205 (2023-12-10)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Yoshihiro Tokue",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/193534008",
+   "country": "Japan",
+   "modified": "Excerpt 0–36.1 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "hwamei-in858205-i1",
+     "startSec": 16.8,
+     "endSec": 17.508,
+     "nameId": "Hwamei (wambi) – frasa 1",
+     "nameEn": "Chinese hwamei – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "hwamei-in1234685",
+   "species": "hwamei",
+   "role": "master",
+   "nameId": "Hwamei (wambi)",
+   "nameEn": "Chinese hwamei",
+   "sci": "Garrulax canorus",
+   "file": "audio/hwamei-in1234685.mp3",
+   "bytes": 100449,
+   "durationSec": 12.48,
+   "title": "iNaturalist observation 248413346, sound 1234685 (2024-10-21)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "WATANABE Hitoshi 渡辺仁",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/248413346",
+   "country": "日本 〒206-0011",
+   "modified": "Excerpt 0–12.5 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "hwamei-in1755312",
+   "species": "hwamei",
+   "role": "master",
+   "nameId": "Hwamei (wambi)",
+   "nameEn": "Chinese hwamei",
+   "sci": "Garrulax canorus",
+   "file": "audio/hwamei-in1755312.mp3",
+   "bytes": 482577,
+   "durationSec": 60.26,
+   "title": "iNaturalist observation 336933600, sound 1755312 (2021-10-27)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Timur Kalininsky",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/336933600",
+   "country": "Япония",
+   "modified": "Excerpt 0–60.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "hwamei-in1755312-i1",
+     "startSec": 27.632,
+     "endSec": 28.537,
+     "nameId": "Hwamei (wambi) – frasa 1",
+     "nameEn": "Chinese hwamei – phrase 1"
+    },
+    {
+     "id": "hwamei-in1755312-i2",
+     "startSec": 38.139,
+     "endSec": 39.056,
+     "nameId": "Hwamei (wambi) – frasa 2",
+     "nameEn": "Chinese hwamei – phrase 2"
+    },
+    {
+     "id": "hwamei-in1755312-i3",
+     "startSec": 52.384,
+     "endSec": 55.008,
+     "nameId": "Hwamei (wambi) – frasa 3",
+     "nameEn": "Chinese hwamei – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "hwamei-in1846756",
+   "species": "hwamei",
+   "role": "master",
+   "nameId": "Hwamei (wambi)",
+   "nameEn": "Chinese hwamei",
+   "sci": "Garrulax canorus",
+   "file": "audio/hwamei-in1846756.mp3",
+   "bytes": 150190,
+   "durationSec": 18.69,
+   "title": "iNaturalist observation 348211173, sound 1846756 (2026-04-04)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "David Anderson",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/348211173",
+   "country": "USA",
+   "modified": "Excerpt 0–18.7 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "gelatik_batu-wc174380311",
+   "species": "gelatik_batu",
+   "role": "master",
+   "nameId": "Gelatik batu",
+   "nameEn": "Cinereous tit",
+   "sci": "Parus cinereus",
+   "file": "audio/gelatik_batu-wc174380311.mp3",
+   "bytes": 323086,
+   "durationSec": 40.28,
+   "title": "Poecile montanus - Willow Tit XC107686.mp3",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "recordist": "Alexander Kurthy",
+   "source": "wikimedia-commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Poecile_montanus_-_Willow_Tit_XC107686.mp3",
+   "modified": "Excerpt 0–40.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "gelatik_batu-wc174380311-i1",
+     "startSec": 35.143,
+     "endSec": 37.326,
+     "nameId": "Gelatik batu – frasa 1",
+     "nameEn": "Cinereous tit – phrase 1"
+    },
+    {
+     "id": "gelatik_batu-wc174380311-i2",
+     "startSec": 37.547,
+     "endSec": 38.58,
+     "nameId": "Gelatik batu – frasa 2",
+     "nameEn": "Cinereous tit – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "gelatik_batu-in703219",
+   "species": "gelatik_batu",
+   "role": "master",
+   "nameId": "Gelatik batu",
+   "nameEn": "Cinereous tit",
+   "sci": "Parus cinereus",
+   "file": "audio/gelatik_batu-in703219.mp3",
+   "bytes": 320086,
+   "durationSec": 39.93,
+   "title": "iNaturalist observation 162418739, sound 703219 (2023-05-17)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Seema Merchant",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/162418739",
+   "country": "India",
+   "modified": "Excerpt 0–40.0 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "gelatik_batu-in703219-i1",
+     "startSec": 5.213,
+     "endSec": 6.142,
+     "nameId": "Gelatik batu – frasa 1",
+     "nameEn": "Cinereous tit – phrase 1"
+    },
+    {
+     "id": "gelatik_batu-in703219-i2",
+     "startSec": 12.214,
+     "endSec": 13.421,
+     "nameId": "Gelatik batu – frasa 2",
+     "nameEn": "Cinereous tit – phrase 2"
+    },
+    {
+     "id": "gelatik_batu-in703219-i3",
+     "startSec": 21.606,
+     "endSec": 22.744,
+     "nameId": "Gelatik batu – frasa 3",
+     "nameEn": "Cinereous tit – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "gelatik_batu-in2167551",
+   "species": "gelatik_batu",
+   "role": "master",
+   "nameId": "Gelatik batu",
+   "nameEn": "Cinereous tit",
+   "sci": "Parus cinereus",
+   "file": "audio/gelatik_batu-in2167551.mp3",
+   "bytes": 171924,
+   "durationSec": 21.42,
+   "title": "iNaturalist observation 402325031, sound 2167551 (2026-09-22)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "IMORI MIHO",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/402325031",
+   "country": "日本 〒206-0021",
+   "modified": "Excerpt 0–21.4 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "gelatik_batu-in2167551-i1",
+     "startSec": 4.679,
+     "endSec": 5.294,
+     "nameId": "Gelatik batu – frasa 1",
+     "nameEn": "Cinereous tit – phrase 1"
+    },
+    {
+     "id": "gelatik_batu-in2167551-i2",
+     "startSec": 6.594,
+     "endSec": 8.29,
+     "nameId": "Gelatik batu – frasa 2",
+     "nameEn": "Cinereous tit – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "gelatik_batu-in53844",
+   "species": "gelatik_batu",
+   "role": "master",
+   "nameId": "Gelatik batu",
+   "nameEn": "Cinereous tit",
+   "sci": "Parus cinereus",
+   "file": "audio/gelatik_batu-in53844.mp3",
+   "bytes": 170989,
+   "durationSec": 21.32,
+   "title": "iNaturalist observation 37155626, sound 53844 (2020-01-01)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Takaaki Hattori",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/37155626",
+   "country": "日本、〒905-1422 沖縄県国頭郡国頭村字宜名真",
+   "modified": "Excerpt 0–21.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "gelatik_batu-in53844-i1",
+     "startSec": 3.646,
+     "endSec": 4.412,
+     "nameId": "Gelatik batu – frasa 1",
+     "nameEn": "Cinereous tit – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "gelatik_batu-in2000619",
+   "species": "gelatik_batu",
+   "role": "master",
+   "nameId": "Gelatik batu",
+   "nameEn": "Cinereous tit",
+   "sci": "Parus cinereus",
+   "file": "audio/gelatik_batu-in2000619.mp3",
+   "bytes": 314448,
+   "durationSec": 39.22,
+   "title": "iNaturalist observation 368233886, sound 2000619 (2026-06-04)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "mami_t_t",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/368233886",
+   "country": "日本 〒206-0021",
+   "modified": "Excerpt 0–39.2 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "gelatik_batu-in2000619-i1",
+     "startSec": 20.852,
+     "endSec": 22.825,
+     "nameId": "Gelatik batu – frasa 1",
+     "nameEn": "Cinereous tit – phrase 1"
+    },
+    {
+     "id": "gelatik_batu-in2000619-i2",
+     "startSec": 17.45,
+     "endSec": 19.412,
+     "nameId": "Gelatik batu – frasa 2",
+     "nameEn": "Cinereous tit – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "gelatik_batu-in1684436",
+   "species": "gelatik_batu",
+   "role": "master",
+   "nameId": "Gelatik batu",
+   "nameEn": "Cinereous tit",
+   "sci": "Parus cinereus",
+   "file": "audio/gelatik_batu-in1684436.mp3",
+   "bytes": 192096,
+   "durationSec": 23.93,
+   "title": "iNaturalist observation 324494683, sound 1684436 (2025-10-30)",
+   "license": "CC0",
+   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "recordist": "Kalvin Chan",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/324494683",
+   "country": "Hong Kong",
+   "modified": "Excerpt 0–23.9 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "gelatik_batu-in1684436-i1",
+     "startSec": 12.26,
+     "endSec": 13.142,
+     "nameId": "Gelatik batu – frasa 1",
+     "nameEn": "Cinereous tit – phrase 1"
+    },
+    {
+     "id": "gelatik_batu-in1684436-i2",
+     "startSec": 0.685,
+     "endSec": 1.637,
+     "nameId": "Gelatik batu – frasa 2",
+     "nameEn": "Cinereous tit – phrase 2"
+    },
+    {
+     "id": "gelatik_batu-in1684436-i3",
+     "startSec": 22.442,
+     "endSec": 22.999,
+     "nameId": "Gelatik batu – frasa 3",
+     "nameEn": "Cinereous tit – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "perkutut-in892603",
+   "species": "perkutut",
+   "role": "master",
+   "nameId": "Perkutut",
+   "nameEn": "Zebra dove",
+   "sci": "Geopelia striata",
+   "file": "audio/perkutut-in892603.mp3",
+   "bytes": 137415,
+   "durationSec": 17.06,
+   "title": "iNaturalist observation 198800393, sound 892603 (2024-02-09)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Sam Hambly",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/198800393",
+   "country": "Thailand",
+   "modified": "Excerpt 0–17.1 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "perkutut-in892603-i1",
+     "startSec": 10.716,
+     "endSec": 11.378,
+     "nameId": "Perkutut – frasa 1",
+     "nameEn": "Zebra dove – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "perkutut-in1928436",
+   "species": "perkutut",
+   "role": "master",
+   "nameId": "Perkutut",
+   "nameEn": "Zebra dove",
+   "sci": "Geopelia striata",
+   "file": "audio/perkutut-in1928436.mp3",
+   "bytes": 165445,
+   "durationSec": 20.6,
+   "title": "iNaturalist observation 358567303, sound 1928436 (2026-05-05)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "smathichong",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/358567303",
+   "country": "Thailand",
+   "modified": "Excerpt 0–20.6 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "perkutut-in1928436-i1",
+     "startSec": 14.617,
+     "endSec": 17.125,
+     "nameId": "Perkutut – frasa 1",
+     "nameEn": "Zebra dove – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "perkutut-in585074",
+   "species": "perkutut",
+   "role": "master",
+   "nameId": "Perkutut",
+   "nameEn": "Zebra dove",
+   "sci": "Geopelia striata",
+   "file": "audio/perkutut-in585074.mp3",
+   "bytes": 72768,
+   "durationSec": 9.02,
+   "title": "iNaturalist observation 146623658, sound 585074 (2023-01-15)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Rupert Clayton",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/146623658",
+   "country": "USA",
+   "modified": "Excerpt 0–9.0 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "perkutut-in572197",
+   "species": "perkutut",
+   "role": "master",
+   "nameId": "Perkutut",
+   "nameEn": "Zebra dove",
+   "sci": "Geopelia striata",
+   "file": "audio/perkutut-in572197.mp3",
+   "bytes": 65131,
+   "durationSec": 8.06,
+   "title": "iNaturalist observation 144211143, sound 572197 (2022-12-11)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Jeff Ward",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/144211143",
+   "country": "United States",
+   "modified": "Excerpt 0–8.1 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "perkutut-in572197-i1",
+     "startSec": 2.287,
+     "endSec": 2.902,
+     "nameId": "Perkutut – frasa 1",
+     "nameEn": "Zebra dove – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "perkutut-in122679",
+   "species": "perkutut",
+   "role": "master",
+   "nameId": "Perkutut",
+   "nameEn": "Zebra dove",
+   "sci": "Geopelia striata",
+   "file": "audio/perkutut-in122679.mp3",
+   "bytes": 235032,
+   "durationSec": 29.3,
+   "title": "iNaturalist observation 53699876, sound 122679 (2020-07-20)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "nmnmnm",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/53699876",
+   "modified": "Excerpt 0–29.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "perkutut-in122679-i1",
+     "startSec": 7.43,
+     "endSec": 7.976,
+     "nameId": "Perkutut – frasa 1",
+     "nameEn": "Zebra dove – phrase 1"
+    },
+    {
+     "id": "perkutut-in122679-i2",
+     "startSec": 0.592,
+     "endSec": 1.997,
+     "nameId": "Perkutut – frasa 2",
+     "nameEn": "Zebra dove – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "perkutut-in1305319",
+   "species": "perkutut",
+   "role": "master",
+   "nameId": "Perkutut",
+   "nameEn": "Zebra dove",
+   "sci": "Geopelia striata",
+   "file": "audio/perkutut-in1305319.mp3",
+   "bytes": 356354,
+   "durationSec": 44.49,
+   "title": "iNaturalist observation 261419400, sound 1305319 (2025-01-19)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Gerard Chartier",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/261419400",
+   "country": "Cambodia",
+   "modified": "Excerpt 0–44.5 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "perkutut-in1305319-i1",
+     "startSec": 18.982,
+     "endSec": 19.505,
+     "nameId": "Perkutut – frasa 1",
+     "nameEn": "Zebra dove – phrase 1"
+    },
+    {
+     "id": "perkutut-in1305319-i2",
+     "startSec": 30.685,
+     "endSec": 32.334,
+     "nameId": "Perkutut – frasa 2",
+     "nameEn": "Zebra dove – phrase 2"
+    },
+    {
+     "id": "perkutut-in1305319-i3",
+     "startSec": 41.018,
+     "endSec": 41.587,
+     "nameId": "Perkutut – frasa 3",
+     "nameEn": "Zebra dove – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "cipoh-in906141",
+   "species": "cipoh",
+   "role": "master",
+   "nameId": "Cipoh",
+   "nameEn": "Common iora",
+   "sci": "Aegithina tiphia",
+   "file": "audio/cipoh-in906141.mp3",
+   "bytes": 317556,
+   "durationSec": 39.59,
+   "title": "iNaturalist observation 200250026, sound 906141 (2024-02-24)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Sam Hambly",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/200250026",
+   "country": "Thailand",
+   "modified": "Excerpt 0–39.6 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "cipoh-in906141-i1",
+     "startSec": 23.406,
+     "endSec": 24.973,
+     "nameId": "Cipoh – frasa 1",
+     "nameEn": "Common iora – phrase 1"
+    },
+    {
+     "id": "cipoh-in906141-i2",
+     "startSec": 31.684,
+     "endSec": 33.181,
+     "nameId": "Cipoh – frasa 2",
+     "nameEn": "Common iora – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "cipoh-in1300310",
+   "species": "cipoh",
+   "role": "master",
+   "nameId": "Cipoh",
+   "nameEn": "Common iora",
+   "sci": "Aegithina tiphia",
+   "file": "audio/cipoh-in1300310.mp3",
+   "bytes": 129497,
+   "durationSec": 16.11,
+   "title": "iNaturalist observation 260649800, sound 1300310 (2025-02-05)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "John Witton",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/260649800",
+   "country": "Brunei",
+   "modified": "Excerpt 0–16.1 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "cipoh-in1300310-i1",
+     "startSec": 5.329,
+     "endSec": 6.827,
+     "nameId": "Cipoh – frasa 1",
+     "nameEn": "Common iora – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "cipoh-in269230",
+   "species": "cipoh",
+   "role": "master",
+   "nameId": "Cipoh",
+   "nameEn": "Common iora",
+   "sci": "Aegithina tiphia",
+   "file": "audio/cipoh-in269230.mp3",
+   "bytes": 213910,
+   "durationSec": 26.66,
+   "title": "iNaturalist observation 85864507, sound 269230 (2021-07-05)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "ꦥꦤ꧀ꦗꦶꦒꦸꦱ꧀ꦠꦶꦄꦏ꧀ꦧꦂ",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/85864507",
+   "country": "Indonesia",
+   "modified": "Excerpt 0–26.7 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "cipoh-in269230-i1",
+     "startSec": 8.348,
+     "endSec": 9.81,
+     "nameId": "Cipoh – frasa 1",
+     "nameEn": "Common iora – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "cipoh-in180526",
+   "species": "cipoh",
+   "role": "master",
+   "nameId": "Cipoh",
+   "nameEn": "Common iora",
+   "sci": "Aegithina tiphia",
+   "file": "audio/cipoh-in180526.mp3",
+   "bytes": 96060,
+   "durationSec": 11.93,
+   "title": "iNaturalist observation 72669365, sound 180526 (2021-04-02)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Samuel Lee",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/72669365",
+   "country": "Singapore",
+   "modified": "Excerpt 0–11.9 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "cipoh-in180526-i1",
+     "startSec": 7.814,
+     "endSec": 10.136,
+     "nameId": "Cipoh – frasa 1",
+     "nameEn": "Common iora – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "cipoh-in843657",
+   "species": "cipoh",
+   "role": "master",
+   "nameId": "Cipoh",
+   "nameEn": "Common iora",
+   "sci": "Aegithina tiphia",
+   "file": "audio/cipoh-in843657.mp3",
+   "bytes": 298257,
+   "durationSec": 37.22,
+   "title": "iNaturalist observation 190561434, sound 843657 (2023-11-10)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Sam Hambly",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/190561434",
+   "country": "Thailand",
+   "modified": "Excerpt 0–37.2 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "cipoh-in843657-i1",
+     "startSec": 35.306,
+     "endSec": 36.444,
+     "nameId": "Cipoh – frasa 1",
+     "nameEn": "Common iora – phrase 1"
+    },
+    {
+     "id": "cipoh-in843657-i2",
+     "startSec": 24.636,
+     "endSec": 25.902,
+     "nameId": "Cipoh – frasa 2",
+     "nameEn": "Common iora – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "cipoh-in1084418",
+   "species": "cipoh",
+   "role": "master",
+   "nameId": "Cipoh",
+   "nameEn": "Common iora",
+   "sci": "Aegithina tiphia",
+   "file": "audio/cipoh-in1084418.mp3",
+   "bytes": 75067,
+   "durationSec": 9.31,
+   "title": "iNaturalist observation 221454894, sound 1084418 (2024-06-09)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Ashwin A",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/221454894",
+   "country": "India",
+   "modified": "Excerpt 0–9.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "kepodang-in922861",
+   "species": "kepodang",
+   "role": "master",
+   "nameId": "Kepodang",
+   "nameEn": "Black-naped oriole",
+   "sci": "Oriolus chinensis",
+   "file": "audio/kepodang-in922861.mp3",
+   "bytes": 410969,
+   "durationSec": 51.27,
+   "title": "iNaturalist observation 201773570, sound 922861 (2024-03-09)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Sam Hambly",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/201773570",
+   "country": "Thailand",
+   "modified": "Excerpt 0–51.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "kepodang-in922861-i1",
+     "startSec": 16.184,
+     "endSec": 17.218,
+     "nameId": "Kepodang – frasa 1",
+     "nameEn": "Black-naped oriole – phrase 1"
+    },
+    {
+     "id": "kepodang-in922861-i2",
+     "startSec": 0.697,
+     "endSec": 1.451,
+     "nameId": "Kepodang – frasa 2",
+     "nameEn": "Black-naped oriole – phrase 2"
+    },
+    {
+     "id": "kepodang-in922861-i3",
+     "startSec": 1.718,
+     "endSec": 3.843,
+     "nameId": "Kepodang – frasa 3",
+     "nameEn": "Black-naped oriole – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "kepodang-in1315176",
+   "species": "kepodang",
+   "role": "master",
+   "nameId": "Kepodang",
+   "nameEn": "Black-naped oriole",
+   "sci": "Oriolus chinensis",
+   "file": "audio/kepodang-in1315176.mp3",
+   "bytes": 227508,
+   "durationSec": 28.35,
+   "title": "iNaturalist observation 262904570, sound 1315176 (2025-02-24)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Jeff Ward",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/262904570",
+   "country": "Singapore",
+   "modified": "Excerpt 0–28.4 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "kepodang-in1315176-i1",
+     "startSec": 14.164,
+     "endSec": 15.569,
+     "nameId": "Kepodang – frasa 1",
+     "nameEn": "Black-naped oriole – phrase 1"
+    },
+    {
+     "id": "kepodang-in1315176-i2",
+     "startSec": 25.612,
+     "endSec": 26.378,
+     "nameId": "Kepodang – frasa 2",
+     "nameEn": "Black-naped oriole – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "kepodang-in988848",
+   "species": "kepodang",
+   "role": "master",
+   "nameId": "Kepodang",
+   "nameEn": "Black-naped oriole",
+   "sci": "Oriolus chinensis",
+   "file": "audio/kepodang-in988848.mp3",
+   "bytes": 215084,
+   "durationSec": 26.82,
+   "title": "iNaturalist observation 210026762, sound 988848 (2024-04-27)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Utain Pummarin",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/210026762",
+   "country": "Thailand",
+   "modified": "Excerpt 0–26.8 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "kepodang-in988848-i1",
+     "startSec": 16.091,
+     "endSec": 17.868,
+     "nameId": "Kepodang – frasa 1",
+     "nameEn": "Black-naped oriole – phrase 1"
+    },
+    {
+     "id": "kepodang-in988848-i2",
+     "startSec": 5.074,
+     "endSec": 5.631,
+     "nameId": "Kepodang – frasa 2",
+     "nameEn": "Black-naped oriole – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "kepodang-in1679500",
+   "species": "kepodang",
+   "role": "master",
+   "nameId": "Kepodang",
+   "nameEn": "Black-naped oriole",
+   "sci": "Oriolus chinensis",
+   "file": "audio/kepodang-in1679500.mp3",
+   "bytes": 234728,
+   "durationSec": 29.28,
+   "title": "iNaturalist observation 323453673, sound 1679500 (2025-10-24)",
+   "license": "CC0",
+   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "recordist": "Kalvin Chan",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/323453673",
+   "country": "Singapore",
+   "modified": "Excerpt 0–29.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "kepodang-in1679500-i1",
+     "startSec": 0.615,
+     "endSec": 1.486,
+     "nameId": "Kepodang – frasa 1",
+     "nameEn": "Black-naped oriole – phrase 1"
+    },
+    {
+     "id": "kepodang-in1679500-i2",
+     "startSec": 18.262,
+     "endSec": 20.91,
+     "nameId": "Kepodang – frasa 2",
+     "nameEn": "Black-naped oriole – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "kepodang-in2074255",
+   "species": "kepodang",
+   "role": "master",
+   "nameId": "Kepodang",
+   "nameEn": "Black-naped oriole",
+   "sci": "Oriolus chinensis",
+   "file": "audio/kepodang-in2074255.mp3",
+   "bytes": 331067,
+   "durationSec": 41.31,
+   "title": "iNaturalist observation 381897866, sound 2074255 (2026-07-16)",
+   "license": "CC0",
+   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "recordist": "steve b",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/381897866",
+   "country": "South Korea",
+   "modified": "Excerpt 0–41.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "kepodang-in2074255-i1",
+     "startSec": 14.559,
+     "endSec": 16.01,
+     "nameId": "Kepodang – frasa 1",
+     "nameEn": "Black-naped oriole – phrase 1"
+    },
+    {
+     "id": "kepodang-in2074255-i2",
+     "startSec": 39.172,
+     "endSec": 40.298,
+     "nameId": "Kepodang – frasa 2",
+     "nameEn": "Black-naped oriole – phrase 2"
+    },
+    {
+     "id": "kepodang-in2074255-i3",
+     "startSec": 32.763,
+     "endSec": 33.739,
+     "nameId": "Kepodang – frasa 3",
+     "nameEn": "Black-naped oriole – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "kepodang-in562388",
+   "species": "kepodang",
+   "role": "master",
+   "nameId": "Kepodang",
+   "nameEn": "Black-naped oriole",
+   "sci": "Oriolus chinensis",
+   "file": "audio/kepodang-in562388.mp3",
+   "bytes": 70470,
+   "durationSec": 8.75,
+   "title": "iNaturalist observation 141764800, sound 562388 (2022-11-12)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Donald Davesne",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/141764800",
+   "country": "Thaïlande",
+   "modified": "Excerpt 0–8.8 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "kepodang-in562388-i1",
+     "startSec": 6.606,
+     "endSec": 7.14,
+     "nameId": "Kepodang – frasa 1",
+     "nameEn": "Black-naped oriole – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "gereja-in2009238",
+   "species": "gereja",
+   "role": "isian",
+   "nameId": "Gereja (tarung)",
+   "nameEn": "Eurasian tree sparrow",
+   "sci": "Passer montanus",
+   "file": "audio/gereja-in2009238.mp3",
+   "bytes": 91995,
+   "durationSec": 11.42,
+   "title": "iNaturalist observation 369574028, sound 2009238 (2026-06-08)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Aurelijus Narbutas",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/369574028",
+   "country": "Lietuva",
+   "modified": "Excerpt 0–11.4 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "gereja-in1519745",
+   "species": "gereja",
+   "role": "isian",
+   "nameId": "Gereja (tarung)",
+   "nameEn": "Eurasian tree sparrow",
+   "sci": "Passer montanus",
+   "file": "audio/gereja-in1519745.mp3",
+   "bytes": 70778,
+   "durationSec": 8.78,
+   "title": "iNaturalist observation 288956956, sound 1519745 (2025-06-12)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Wilhelm Joshua Tan",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/288956956",
+   "country": "Taytay",
+   "modified": "Excerpt 0–8.8 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "gereja-in1519745-i1",
+     "startSec": 6.873,
+     "endSec": 7.674,
+     "nameId": "Gereja (tarung) – frasa 1",
+     "nameEn": "Eurasian tree sparrow – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "gereja-in382657",
+   "species": "gereja",
+   "role": "isian",
+   "nameId": "Gereja (tarung)",
+   "nameEn": "Eurasian tree sparrow",
+   "sci": "Passer montanus",
+   "file": "audio/gereja-in382657.mp3",
+   "bytes": 71433,
+   "durationSec": 8.85,
+   "title": "iNaturalist observation 110077852, sound 382657 (2022-04-01)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "E. A.",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/110077852",
+   "country": "Österreich",
+   "modified": "Excerpt 0–8.8 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "gereja-in382657-i1",
+     "startSec": 1.683,
+     "endSec": 2.473,
+     "nameId": "Gereja (tarung) – frasa 1",
+     "nameEn": "Eurasian tree sparrow – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "gereja-in1116436",
+   "species": "gereja",
+   "role": "isian",
+   "nameId": "Gereja (tarung)",
+   "nameEn": "Eurasian tree sparrow",
+   "sci": "Passer montanus",
+   "file": "audio/gereja-in1116436.mp3",
+   "bytes": 153853,
+   "durationSec": 19.16,
+   "title": "iNaturalist observation 226405013, sound 1116436 (2024-07-01)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Radu Teodoreanu",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/226405013",
+   "country": "Romania",
+   "modified": "Excerpt 0–19.2 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "belibis-in306159",
+   "species": "belibis",
+   "role": "isian",
+   "nameId": "Belibis",
+   "nameEn": "Lesser whistling duck",
+   "sci": "Dendrocygna javanica",
+   "file": "audio/belibis-in306159.mp3",
+   "bytes": 98251,
+   "durationSec": 12.2,
+   "title": "iNaturalist observation 95049487, sound 306159 (2021-09-12)",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "recordist": "Manoj Karingamadathil",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/95049487",
+   "country": "Kuniyan Wetland",
+   "modified": "Excerpt 0–12.2 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "belibis-in306154",
+   "species": "belibis",
+   "role": "isian",
+   "nameId": "Belibis",
+   "nameEn": "Lesser whistling duck",
+   "sci": "Dendrocygna javanica",
+   "file": "audio/belibis-in306154.mp3",
+   "bytes": 89265,
+   "durationSec": 11.05,
+   "title": "iNaturalist observation 95049487, sound 306154 (2021-09-12)",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "recordist": "Manoj Karingamadathil",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/95049487",
+   "country": "Kuniyan Wetland",
+   "modified": "Excerpt 0–11.1 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "belibis-in306154-i1",
+     "startSec": 3.158,
+     "endSec": 4.481,
+     "nameId": "Belibis – frasa 1",
+     "nameEn": "Lesser whistling duck – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "belibis-in1396428",
+   "species": "belibis",
+   "role": "isian",
+   "nameId": "Belibis",
+   "nameEn": "Lesser whistling duck",
+   "sci": "Dendrocygna javanica",
+   "file": "audio/belibis-in1396428.mp3",
+   "bytes": 83008,
+   "durationSec": 10.3,
+   "title": "iNaturalist observation 273045592, sound 1396428 (2025-04-25)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Ashwin A",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/273045592",
+   "country": "India",
+   "modified": "Excerpt 0–10.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "belibis-in1158167",
+   "species": "belibis",
+   "role": "isian",
+   "nameId": "Belibis",
+   "nameEn": "Lesser whistling duck",
+   "sci": "Dendrocygna javanica",
+   "file": "audio/belibis-in1158167.mp3",
+   "bytes": 178512,
+   "durationSec": 22.25,
+   "title": "iNaturalist observation 235000735, sound 1158167 (2024-08-11)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Ashwin A",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/235000735",
+   "country": "India",
+   "modified": "Excerpt 0–22.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "belibis-in1158167-i1",
+     "startSec": 10.67,
+     "endSec": 11.331,
+     "nameId": "Belibis – frasa 1",
+     "nameEn": "Lesser whistling duck – phrase 1"
+    },
+    {
+     "id": "belibis-in1158167-i2",
+     "startSec": 8.301,
+     "endSec": 8.951,
+     "nameId": "Belibis – frasa 2",
+     "nameEn": "Lesser whistling duck – phrase 2"
+    },
+    {
+     "id": "belibis-in1158167-i3",
+     "startSec": 7.105,
+     "endSec": 7.686,
+     "nameId": "Belibis – frasa 3",
+     "nameEn": "Lesser whistling duck – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "belibis-in1394783",
+   "species": "belibis",
+   "role": "isian",
+   "nameId": "Belibis",
+   "nameEn": "Lesser whistling duck",
+   "sci": "Dendrocygna javanica",
+   "file": "audio/belibis-in1394783.mp3",
+   "bytes": 296168,
+   "durationSec": 36.96,
+   "title": "iNaturalist observation 272845370, sound 1394783 (2025-04-25)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Ashwin A",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/272845370",
+   "country": "India",
+   "modified": "Excerpt 0–37.0 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "belibis-in1394783-i1",
+     "startSec": 25.681,
+     "endSec": 26.227,
+     "nameId": "Belibis – frasa 1",
+     "nameEn": "Lesser whistling duck – phrase 1"
+    },
+    {
+     "id": "belibis-in1394783-i2",
+     "startSec": 28.735,
+     "endSec": 29.373,
+     "nameId": "Belibis – frasa 2",
+     "nameEn": "Lesser whistling duck – phrase 2"
+    },
+    {
+     "id": "belibis-in1394783-i3",
+     "startSec": 14.129,
+     "endSec": 14.896,
+     "nameId": "Belibis – frasa 3",
+     "nameEn": "Lesser whistling duck – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "tengkek_buto-in596432",
+   "species": "tengkek_buto",
+   "role": "isian",
+   "nameId": "Tengkek buto",
+   "nameEn": "Collared kingfisher",
+   "sci": "Todiramphus chloris",
+   "file": "audio/tengkek_buto-in596432.mp3",
+   "bytes": 126780,
+   "durationSec": 15.77,
+   "title": "iNaturalist observation 148598076, sound 596432 (2023-02-12)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Sam Hambly",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/148598076",
+   "country": "Thailand",
+   "modified": "Excerpt 0–15.8 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "tengkek_buto-in596432-i1",
+     "startSec": 7.349,
+     "endSec": 9.16,
+     "nameId": "Tengkek buto – frasa 1",
+     "nameEn": "Collared kingfisher – phrase 1"
+    },
+    {
+     "id": "tengkek_buto-in596432-i2",
+     "startSec": 9.961,
+     "endSec": 10.623,
+     "nameId": "Tengkek buto – frasa 2",
+     "nameEn": "Collared kingfisher – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "tengkek_buto-in1682697",
+   "species": "tengkek_buto",
+   "role": "isian",
+   "nameId": "Tengkek buto",
+   "nameEn": "Collared kingfisher",
+   "sci": "Todiramphus chloris",
+   "file": "audio/tengkek_buto-in1682697.mp3",
+   "bytes": 141732,
+   "durationSec": 17.64,
+   "title": "iNaturalist observation 324140730, sound 1682697 (2025-10-31)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Ben Costamagna",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/324140730",
+   "country": "Malaysia",
+   "modified": "Excerpt 0–17.6 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "tengkek_buto-in1682697-i1",
+     "startSec": 10.321,
+     "endSec": 11.076,
+     "nameId": "Tengkek buto – frasa 1",
+     "nameEn": "Collared kingfisher – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "tengkek_buto-in2010327",
+   "species": "tengkek_buto",
+   "role": "isian",
+   "nameId": "Tengkek buto",
+   "nameEn": "Collared kingfisher",
+   "sci": "Todiramphus chloris",
+   "file": "audio/tengkek_buto-in2010327.mp3",
+   "bytes": 76321,
+   "durationSec": 9.46,
+   "title": "iNaturalist observation 369747711, sound 2010327 (2026-06-07)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "lunarjade",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/369747711",
+   "country": "Malaysia",
+   "modified": "Excerpt 0–9.5 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "tengkek_buto-in2010327-i1",
+     "startSec": 4.029,
+     "endSec": 4.586,
+     "nameId": "Tengkek buto – frasa 1",
+     "nameEn": "Collared kingfisher – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "tengkek_buto-in1831902",
+   "species": "tengkek_buto",
+   "role": "isian",
+   "nameId": "Tengkek buto",
+   "nameEn": "Collared kingfisher",
+   "sci": "Todiramphus chloris",
+   "file": "audio/tengkek_buto-in1831902.mp3",
+   "bytes": 454228,
+   "durationSec": 56.66,
+   "title": "iNaturalist observation 346321459, sound 1831902 (2026-03-30)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Sam Hambly",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/346321459",
+   "country": "Thailand",
+   "modified": "Excerpt 0–56.7 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "tengkek_buto-in1831902-i1",
+     "startSec": 49.9,
+     "endSec": 51.246,
+     "nameId": "Tengkek buto – frasa 1",
+     "nameEn": "Collared kingfisher – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "tengkek_buto-in320402",
+   "species": "tengkek_buto",
+   "role": "isian",
+   "nameId": "Tengkek buto",
+   "nameEn": "Collared kingfisher",
+   "sci": "Todiramphus chloris",
+   "file": "audio/tengkek_buto-in320402.mp3",
+   "bytes": 77252,
+   "durationSec": 9.58,
+   "title": "iNaturalist observation 99161169, sound 320402 (2021-10-24)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Samuel Lee",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/99161169",
+   "country": "Singapore",
+   "modified": "Excerpt 0–9.6 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "tengkek_buto-in320402-i1",
+     "startSec": 6.362,
+     "endSec": 7.152,
+     "nameId": "Tengkek buto – frasa 1",
+     "nameEn": "Collared kingfisher – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "tengkek_buto-in1288928",
+   "species": "tengkek_buto",
+   "role": "isian",
+   "nameId": "Tengkek buto",
+   "nameEn": "Collared kingfisher",
+   "sci": "Todiramphus chloris",
+   "file": "audio/tengkek_buto-in1288928.mp3",
+   "bytes": 126058,
+   "durationSec": 15.67,
+   "title": "iNaturalist observation 258985419, sound 1288928 (2025-01-18)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Svend Hansen",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/258985419",
+   "country": "Singapore",
+   "modified": "Excerpt 0–15.7 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "tengkek_buto-in1288928-i1",
+     "startSec": 6.56,
+     "endSec": 8.231,
+     "nameId": "Tengkek buto – frasa 1",
+     "nameEn": "Collared kingfisher – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "prenjak-in415069",
+   "species": "prenjak",
+   "role": "isian",
+   "nameId": "Prenjak",
+   "nameEn": "Plain prinia",
+   "sci": "Prinia inornata",
+   "file": "audio/prenjak-in415069.mp3",
+   "bytes": 175432,
+   "durationSec": 18.53,
+   "title": "iNaturalist observation 114098803, sound 415069 (2022-05-01)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Wich’yanan (Jay) Limparungpatthanakij",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/114098803",
+   "country": "Thailand",
+   "modified": "Excerpt 0–18.5 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "prenjak-in415069-i1",
+     "startSec": 2.961,
+     "endSec": 4.818,
+     "nameId": "Prenjak – frasa 1",
+     "nameEn": "Plain prinia – phrase 1"
+    },
+    {
+     "id": "prenjak-in415069-i2",
+     "startSec": 10.658,
+     "endSec": 11.297,
+     "nameId": "Prenjak – frasa 2",
+     "nameEn": "Plain prinia – phrase 2"
+    },
+    {
+     "id": "prenjak-in415069-i3",
+     "startSec": 12.701,
+     "endSec": 13.56,
+     "nameId": "Prenjak – frasa 3",
+     "nameEn": "Plain prinia – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "prenjak-in1950992",
+   "species": "prenjak",
+   "role": "isian",
+   "nameId": "Prenjak",
+   "nameEn": "Plain prinia",
+   "sci": "Prinia inornata",
+   "file": "audio/prenjak-in1950992.mp3",
+   "bytes": 110693,
+   "durationSec": 13.75,
+   "title": "iNaturalist observation 361565219, sound 1950992 (2026-05-15)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "smathichong",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/361565219",
+   "country": "Thailand",
+   "modified": "Excerpt 0–13.8 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "prenjak-in1399170",
+   "species": "prenjak",
+   "role": "isian",
+   "nameId": "Prenjak",
+   "nameEn": "Plain prinia",
+   "sci": "Prinia inornata",
+   "file": "audio/prenjak-in1399170.mp3",
+   "bytes": 120416,
+   "durationSec": 14.97,
+   "title": "iNaturalist observation 273052091, sound 1399170 (2025-04-25)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Ashwin A",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/273052091",
+   "country": "India",
+   "modified": "Excerpt 0–15.0 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "prenjak-in871108",
+   "species": "prenjak",
+   "role": "isian",
+   "nameId": "Prenjak",
+   "nameEn": "Plain prinia",
+   "sci": "Prinia inornata",
+   "file": "audio/prenjak-in871108.mp3",
+   "bytes": 196556,
+   "durationSec": 24.46,
+   "title": "iNaturalist observation 195813615, sound 871108 (2024-01-05)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Sam Hambly",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/195813615",
+   "country": "Teochew Cemetery",
+   "modified": "Excerpt 0–24.5 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "prenjak-in871108-i1",
+     "startSec": 13.92,
+     "endSec": 16.196,
+     "nameId": "Prenjak – frasa 1",
+     "nameEn": "Plain prinia – phrase 1"
+    },
+    {
+     "id": "prenjak-in871108-i2",
+     "startSec": 22.965,
+     "endSec": 23.661,
+     "nameId": "Prenjak – frasa 2",
+     "nameEn": "Plain prinia – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "prenjak-in922878",
+   "species": "prenjak",
+   "role": "isian",
+   "nameId": "Prenjak",
+   "nameEn": "Plain prinia",
+   "sci": "Prinia inornata",
+   "file": "audio/prenjak-in922878.mp3",
+   "bytes": 121347,
+   "durationSec": 15.08,
+   "title": "iNaturalist observation 201774302, sound 922878 (2024-03-04)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "胡正恆(Jackson Hu)",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/201774302",
+   "country": "961台灣台東縣成功鎮",
+   "modified": "Excerpt 0–15.1 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "prenjak-in922878-i1",
+     "startSec": 6.861,
+     "endSec": 8.208,
+     "nameId": "Prenjak – frasa 1",
+     "nameEn": "Plain prinia – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "prenjak-in871106",
+   "species": "prenjak",
+   "role": "isian",
+   "nameId": "Prenjak",
+   "nameEn": "Plain prinia",
+   "sci": "Prinia inornata",
+   "file": "audio/prenjak-in871106.mp3",
+   "bytes": 134071,
+   "durationSec": 16.66,
+   "title": "iNaturalist observation 195813613, sound 871106 (2024-01-05)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Sam Hambly",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/195813613",
+   "country": "Teochew Cemetery",
+   "modified": "Excerpt 0–16.7 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "srigunting-in1224802",
+   "species": "srigunting",
+   "role": "isian",
+   "nameId": "Srigunting",
+   "nameEn": "Ashy drongo",
+   "sci": "Dicrurus leucophaeus",
+   "file": "audio/srigunting-in1224802.mp3",
+   "bytes": 277640,
+   "durationSec": 34.61,
+   "title": "iNaturalist observation 246301525, sound 1224802 (2024-10-08)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Sam Hambly",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/246301525",
+   "country": "Thailand",
+   "modified": "Excerpt 0–34.6 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "srigunting-in1960219",
+   "species": "srigunting",
+   "role": "isian",
+   "nameId": "Srigunting",
+   "nameEn": "Ashy drongo",
+   "sci": "Dicrurus leucophaeus",
+   "file": "audio/srigunting-in1960219.mp3",
+   "bytes": 107322,
+   "durationSec": 13.31,
+   "title": "iNaturalist observation 362758172, sound 1960219 (2026-05-18)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Sam Hambly",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/362758172",
+   "country": "Thailand",
+   "modified": "Excerpt 0–13.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "srigunting-in1960219-i1",
+     "startSec": 0.755,
+     "endSec": 1.277,
+     "nameId": "Srigunting – frasa 1",
+     "nameEn": "Ashy drongo – phrase 1"
+    },
+    {
+     "id": "srigunting-in1960219-i2",
+     "startSec": 9.718,
+     "endSec": 10.437,
+     "nameId": "Srigunting – frasa 2",
+     "nameEn": "Ashy drongo – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "srigunting-in1300561",
+   "species": "srigunting",
+   "role": "isian",
+   "nameId": "Srigunting",
+   "nameEn": "Ashy drongo",
+   "sci": "Dicrurus leucophaeus",
+   "file": "audio/srigunting-in1300561.mp3",
+   "bytes": 114845,
+   "durationSec": 14.26,
+   "title": "iNaturalist observation 260697770, sound 1300561 (2025-02-05)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Sam Hambly",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/260697770",
+   "country": "Thailand",
+   "modified": "Excerpt 0–14.3 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "srigunting-in2210661",
+   "species": "srigunting",
+   "role": "isian",
+   "nameId": "Srigunting",
+   "nameEn": "Ashy drongo",
+   "sci": "Dicrurus leucophaeus",
+   "file": "audio/srigunting-in2210661.mp3",
+   "bytes": 410134,
+   "durationSec": 51.15,
+   "title": "iNaturalist observation 411141488, sound 2210661 (2026-10-27)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Sam Hambly",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/411141488",
+   "country": "Thailand",
+   "modified": "Excerpt 0–51.1 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "srigunting-in2210661-i1",
+     "startSec": 5.863,
+     "endSec": 6.478,
+     "nameId": "Srigunting – frasa 1",
+     "nameEn": "Ashy drongo – phrase 1"
+    },
+    {
+     "id": "srigunting-in2210661-i2",
+     "startSec": 38.023,
+     "endSec": 38.882,
+     "nameId": "Srigunting – frasa 2",
+     "nameEn": "Ashy drongo – phrase 2"
+    },
+    {
+     "id": "srigunting-in2210661-i3",
+     "startSec": 14.919,
+     "endSec": 15.511,
+     "nameId": "Srigunting – frasa 3",
+     "nameEn": "Ashy drongo – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "srigunting-in2208626",
+   "species": "srigunting",
+   "role": "isian",
+   "nameId": "Srigunting",
+   "nameEn": "Ashy drongo",
+   "sci": "Dicrurus leucophaeus",
+   "file": "audio/srigunting-in2208626.mp3",
+   "bytes": 77229,
+   "durationSec": 9.55,
+   "title": "iNaturalist observation 410726242, sound 2208626 (2026-10-25)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Sam Hambly",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/410726242",
+   "country": "Thailand",
+   "modified": "Excerpt 0–9.6 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": []
+  },
+  {
+   "id": "srigunting-in1234678",
+   "species": "srigunting",
+   "role": "isian",
+   "nameId": "Srigunting",
+   "nameEn": "Ashy drongo",
+   "sci": "Dicrurus leucophaeus",
+   "file": "audio/srigunting-in1234678.mp3",
+   "bytes": 222607,
+   "durationSec": 27.76,
+   "title": "iNaturalist observation 248412942, sound 1234678 (2024-10-20)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Wich’yanan (Jay) Limparungpatthanakij",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/248412942",
+   "country": "ตำบล ทรงคนอง อำเภอพระประแดง สมุทรปราการ 10130 ประเทศไทย",
+   "modified": "Excerpt 0–27.8 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "srigunting-in1234678-i1",
+     "startSec": 17.682,
+     "endSec": 18.646,
+     "nameId": "Srigunting – frasa 1",
+     "nameEn": "Ashy drongo – phrase 1"
+    },
+    {
+     "id": "srigunting-in1234678-i2",
+     "startSec": 0.882,
+     "endSec": 2.264,
+     "nameId": "Srigunting – frasa 2",
+     "nameEn": "Ashy drongo – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "cinenen-in1246726",
+   "species": "cinenen",
+   "role": "isian",
+   "nameId": "Cinenen",
+   "nameEn": "Common tailorbird",
+   "sci": "Orthotomus sutorius",
+   "file": "audio/cinenen-in1246726.mp3",
+   "bytes": 116726,
+   "durationSec": 14.48,
+   "title": "iNaturalist observation 250898022, sound 1246726 (2024-11-08)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Sam Hambly",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/250898022",
+   "country": "Thailand",
+   "modified": "Excerpt 0–14.5 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "cinenen-in1246726-i1",
+     "startSec": 10.368,
+     "endSec": 11.076,
+     "nameId": "Cinenen – frasa 1",
+     "nameEn": "Common tailorbird – phrase 1"
+    },
+    {
+     "id": "cinenen-in1246726-i2",
+     "startSec": 11.564,
+     "endSec": 12.283,
+     "nameId": "Cinenen – frasa 2",
+     "nameEn": "Common tailorbird – phrase 2"
+    }
+   ]
+  },
+  {
+   "id": "cinenen-in317420",
+   "species": "cinenen",
+   "role": "isian",
+   "nameId": "Cinenen",
+   "nameEn": "Common tailorbird",
+   "sci": "Orthotomus sutorius",
+   "file": "audio/cinenen-in317420.mp3",
+   "bytes": 547570,
+   "durationSec": 68.38,
+   "title": "iNaturalist observation 98484226, sound 317420 (2021-10-17)",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "recordist": "Vihansith Kulatunga",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/98484226",
+   "country": "Sri Lanka",
+   "modified": "Excerpt 0–68.4 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "cinenen-in317420-i1",
+     "startSec": 16.858,
+     "endSec": 17.496,
+     "nameId": "Cinenen – frasa 1",
+     "nameEn": "Common tailorbird – phrase 1"
+    },
+    {
+     "id": "cinenen-in317420-i2",
+     "startSec": 39.102,
+     "endSec": 39.66,
+     "nameId": "Cinenen – frasa 2",
+     "nameEn": "Common tailorbird – phrase 2"
+    },
+    {
+     "id": "cinenen-in317420-i3",
+     "startSec": 19.423,
+     "endSec": 20.016,
+     "nameId": "Cinenen – frasa 3",
+     "nameEn": "Common tailorbird – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "cinenen-in21304",
+   "species": "cinenen",
+   "role": "isian",
+   "nameId": "Cinenen",
+   "nameEn": "Common tailorbird",
+   "sci": "Orthotomus sutorius",
+   "file": "audio/cinenen-in21304.mp3",
+   "bytes": 492399,
+   "durationSec": 61.49,
+   "title": "iNaturalist observation 10506666, sound 21304 (2018-03-30)",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "recordist": "portioid",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/10506666",
+   "country": "Hong Kong",
+   "modified": "Excerpt 0–61.5 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "cinenen-in21304-i1",
+     "startSec": 34.598,
+     "endSec": 35.387,
+     "nameId": "Cinenen – frasa 1",
+     "nameEn": "Common tailorbird – phrase 1"
+    },
+    {
+     "id": "cinenen-in21304-i2",
+     "startSec": 36.606,
+     "endSec": 37.198,
+     "nameId": "Cinenen – frasa 2",
+     "nameEn": "Common tailorbird – phrase 2"
+    },
+    {
+     "id": "cinenen-in21304-i3",
+     "startSec": 42.249,
+     "endSec": 42.783,
+     "nameId": "Cinenen – frasa 3",
+     "nameEn": "Common tailorbird – phrase 3"
+    }
+   ]
+  },
+  {
+   "id": "cinenen-in312809",
+   "species": "cinenen",
+   "role": "isian",
+   "nameId": "Cinenen",
+   "nameEn": "Common tailorbird",
+   "sci": "Orthotomus sutorius",
+   "file": "audio/cinenen-in312809.mp3",
+   "bytes": 108073,
+   "durationSec": 13.42,
+   "title": "iNaturalist observation 97151879, sound 312809 (2021-10-03)",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "recordist": "Manoj Karingamadathil",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/97151879",
+   "country": "Bambrana Wetlands",
+   "modified": "Excerpt 0–13.4 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "cinenen-in312809-i1",
+     "startSec": 1.614,
+     "endSec": 2.45,
+     "nameId": "Cinenen – frasa 1",
+     "nameEn": "Common tailorbird – phrase 1"
+    }
+   ]
+  },
+  {
+   "id": "cinenen-in1394815",
+   "species": "cinenen",
+   "role": "isian",
+   "nameId": "Cinenen",
+   "nameEn": "Common tailorbird",
+   "sci": "Orthotomus sutorius",
+   "file": "audio/cinenen-in1394815.mp3",
+   "bytes": 73186,
+   "durationSec": 9.08,
+   "title": "iNaturalist observation 272847952, sound 1394815 (2025-04-25)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "recordist": "Ashwin A",
+   "source": "inaturalist",
+   "sourceUrl": "https://www.inaturalist.org/observations/272847952",
+   "country": "India",
+   "modified": "Excerpt 0–9.1 s; high-pass 400 Hz; loudness-normalised to −20 LUFS; fades; mono MP3 64kbps.",
+   "curation": {
+    "curator": "Pemilik produk",
+    "role": "Kurator sementara (belum diverifikasi juri)",
+    "date": "2026-11-02",
+    "standardVersion": 2,
+    "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+   },
+   "isian": [
+    {
+     "id": "cinenen-in1394815-i1",
+     "startSec": 2.101,
+     "endSec": 3.39,
+     "nameId": "Cinenen – frasa 1",
+     "nameEn": "Common tailorbird – phrase 1"
+    }
+   ]
+  }
+ ],
+ "packs": [
+  {
+   "id": "murai_batu_dasar",
+   "target": [
+    "murai_batu"
+   ],
+   "nameId": "Murai batu – Paket dasar",
+   "nameEn": "White-rumped shama – Basic pack",
+   "descId": "Suara Murai batu sebagai master, plus isian: Cililin, Cucak jenggot, Ciblek, Tledekan, Gereja (tarung), Tengkek buto, Srigunting, Belibis, Kenari, Cendet.",
+   "descEn": "White-rumped shama reference song, plus isian: Crested jay, Grey-cheeked bulbul, Bar-winged prinia, Hill blue flycatcher, Eurasian tree sparrow, Collared kingfisher, Ashy drongo, Lesser whistling duck, Atlantic canary (domestic), Long-tailed shrike.",
+   "preset": "pagiMalam",
+   "trackIds": [
+    "murai_batu-in796207",
+    "murai_batu-in1799491",
+    "murai_batu-in1052320",
+    "murai_batu-in2085199",
+    "murai_batu-in1295641",
+    "murai_batu-in1363395",
+    "gereja-in2009238",
+    "gereja-in1519745",
+    "gereja-in382657",
+    "gereja-in1116436",
+    "tengkek_buto-in596432",
+    "tengkek_buto-in1682697",
+    "tengkek_buto-in2010327",
+    "tengkek_buto-in1831902",
+    "tengkek_buto-in320402",
+    "tengkek_buto-in1288928",
+    "srigunting-in1224802",
+    "srigunting-in1960219",
+    "srigunting-in1300561",
+    "srigunting-in2210661",
+    "srigunting-in2208626",
+    "srigunting-in1234678",
+    "belibis-in306159",
+    "belibis-in306154",
+    "belibis-in1396428",
+    "belibis-in1158167",
+    "belibis-in1394783",
+    "kenari-in1105301",
+    "kenari-in523487",
+    "kenari-in1754893",
+    "kenari-in825002",
+    "kenari-wc411699834",
+    "cendet-in1312580"
+   ],
+   "missingSpecies": [
+    "cililin",
+    "cucak_jenggot",
+    "ciblek",
+    "tledekan"
+   ]
+  },
+  {
+   "id": "kacer_dasar",
+   "target": [
+    "kacer"
+   ],
+   "nameId": "Kacer – Paket dasar",
+   "nameEn": "Oriental magpie-robin – Basic pack",
+   "descId": "Suara Kacer sebagai master, plus isian: Ciblek, Cililin, Cendet, Gereja (tarung), Srigunting, Tengkek buto.",
+   "descEn": "Oriental magpie-robin reference song, plus isian: Bar-winged prinia, Crested jay, Long-tailed shrike, Eurasian tree sparrow, Ashy drongo, Collared kingfisher.",
+   "preset": "pagiMalam",
+   "trackIds": [
+    "kacer-in1418920",
+    "kacer-in858460",
+    "kacer-in753687",
+    "kacer-in21295",
+    "kacer-in990376",
+    "kacer-in1856358",
+    "cendet-in1312580",
+    "gereja-in2009238",
+    "gereja-in1519745",
+    "gereja-in382657",
+    "gereja-in1116436",
+    "srigunting-in1224802",
+    "srigunting-in1960219",
+    "srigunting-in1300561",
+    "srigunting-in2210661",
+    "srigunting-in2208626",
+    "srigunting-in1234678",
+    "tengkek_buto-in596432",
+    "tengkek_buto-in1682697",
+    "tengkek_buto-in2010327",
+    "tengkek_buto-in1831902",
+    "tengkek_buto-in320402",
+    "tengkek_buto-in1288928"
+   ],
+   "missingSpecies": [
+    "ciblek",
+    "cililin"
+   ]
+  },
+  {
+   "id": "cucak_ijo_dasar",
+   "target": [
+    "cucak_ijo"
+   ],
+   "nameId": "Cucak ijo – Paket dasar",
+   "nameEn": "Greater green leafbird – Basic pack",
+   "descId": "Suara Cucak ijo sebagai master, plus isian: Ciblek, Cililin, Kenari, Cendet, Tledekan, Srigunting.",
+   "descEn": "Greater green leafbird reference song, plus isian: Bar-winged prinia, Crested jay, Atlantic canary (domestic), Long-tailed shrike, Hill blue flycatcher, Ashy drongo.",
+   "preset": "pagiMalam",
+   "trackIds": [
+    "cucak_ijo-in585261",
+    "cucak_ijo-in1308088",
+    "kenari-in1105301",
+    "kenari-in523487",
+    "kenari-in1754893",
+    "kenari-in825002",
+    "kenari-wc411699834",
+    "cendet-in1312580",
+    "srigunting-in1224802",
+    "srigunting-in1960219",
+    "srigunting-in1300561",
+    "srigunting-in2210661",
+    "srigunting-in2208626",
+    "srigunting-in1234678"
+   ],
+   "missingSpecies": [
+    "ciblek",
+    "cililin",
+    "tledekan"
+   ]
+  },
+  {
+   "id": "kenari_dasar",
+   "target": [
+    "kenari"
+   ],
+   "nameId": "Kenari – Paket dasar",
+   "nameEn": "Atlantic canary (domestic) – Basic pack",
+   "descId": "Suara Kenari sebagai master, plus isian: Ciblek, Prenjak, Sanger, Blackthroat, Cinenen.",
+   "descEn": "Atlantic canary (domestic) reference song, plus isian: Bar-winged prinia, Plain prinia, Yellow-fronted canary, Black-throated canary, Common tailorbird.",
+   "preset": "pagiMalam",
+   "trackIds": [
+    "kenari-in1105301",
+    "kenari-in523487",
+    "kenari-in1754893",
+    "kenari-in825002",
+    "kenari-wc411699834",
+    "prenjak-in415069",
+    "prenjak-in1950992",
+    "prenjak-in1399170",
+    "prenjak-in871108",
+    "prenjak-in922878",
+    "prenjak-in871106",
+    "cinenen-in1246726",
+    "cinenen-in317420",
+    "cinenen-in21304",
+    "cinenen-in312809",
+    "cinenen-in1394815"
+   ],
+   "missingSpecies": [
+    "ciblek",
+    "sanger",
+    "blackthroat"
+   ]
+  },
+  {
+   "id": "cucak_rawa_dasar",
+   "target": [
+    "cucak_rawa"
+   ],
+   "nameId": "Cucak rawa – Paket dasar",
+   "nameEn": "Straw-headed bulbul – Basic pack",
+   "descId": "Suara Cucak rawa sebagai master.",
+   "descEn": "Straw-headed bulbul reference song.",
+   "preset": "pagiMalam",
+   "trackIds": [
+    "cucak_rawa-in2015874",
+    "cucak_rawa-in2015875",
+    "cucak_rawa-in796125"
+   ],
+   "missingSpecies": []
+  },
+  {
+   "id": "jalak_suren_dasar",
+   "target": [
+    "jalak_suren"
+   ],
+   "nameId": "Jalak suren – Paket dasar",
+   "nameEn": "Javan pied starling – Basic pack",
+   "descId": "Suara Jalak suren sebagai master, plus isian: Cendet, Gereja (tarung), Srigunting.",
+   "descEn": "Javan pied starling reference song, plus isian: Long-tailed shrike, Eurasian tree sparrow, Ashy drongo.",
+   "preset": "pagiMalam",
+   "trackIds": [
+    "jalak_suren-in1636941",
+    "cendet-in1312580",
+    "gereja-in2009238",
+    "gereja-in1519745",
+    "gereja-in382657",
+    "gereja-in1116436",
+    "srigunting-in1224802",
+    "srigunting-in1960219",
+    "srigunting-in1300561",
+    "srigunting-in2210661",
+    "srigunting-in2208626",
+    "srigunting-in1234678"
+   ],
+   "missingSpecies": []
+  },
+  {
+   "id": "anis_merah_dasar",
+   "target": [
+    "anis_merah"
+   ],
+   "nameId": "Anis merah – Paket dasar",
+   "nameEn": "Orange-headed thrush – Basic pack",
+   "descId": "Suara Anis merah sebagai master, plus isian: Cililin, Cendet, Ciblek, Tengkek buto.",
+   "descEn": "Orange-headed thrush reference song, plus isian: Crested jay, Long-tailed shrike, Bar-winged prinia, Collared kingfisher.",
+   "preset": "pagiMalam",
+   "trackIds": [
+    "anis_merah-wc384666653",
+    "anis_merah-wc1935780918",
+    "anis_merah-wc1672419801",
+    "anis_merah-in672966",
+    "anis_merah-in391817",
+    "cendet-in1312580",
+    "tengkek_buto-in596432",
+    "tengkek_buto-in1682697",
+    "tengkek_buto-in2010327",
+    "tengkek_buto-in1831902",
+    "tengkek_buto-in320402",
+    "tengkek_buto-in1288928"
+   ],
+   "missingSpecies": [
+    "cililin",
+    "ciblek"
+   ]
+  },
+  {
+   "id": "cendet_dasar",
+   "target": [
+    "cendet"
+   ],
+   "nameId": "Cendet – Paket dasar",
+   "nameEn": "Long-tailed shrike – Basic pack",
+   "descId": "Suara Cendet sebagai master, plus isian: Ciblek, Gereja (tarung), Cililin, Prenjak.",
+   "descEn": "Long-tailed shrike reference song, plus isian: Bar-winged prinia, Eurasian tree sparrow, Crested jay, Plain prinia.",
+   "preset": "pagiMalam",
+   "trackIds": [
+    "cendet-in1312580",
+    "gereja-in2009238",
+    "gereja-in1519745",
+    "gereja-in382657",
+    "gereja-in1116436",
+    "prenjak-in415069",
+    "prenjak-in1950992",
+    "prenjak-in1399170",
+    "prenjak-in871108",
+    "prenjak-in922878",
+    "prenjak-in871106"
+   ],
+   "missingSpecies": [
+    "ciblek",
+    "cililin"
+   ]
+  },
+  {
+   "id": "cucak_kutilang_dasar",
+   "target": [
+    "cucak_kutilang"
+   ],
+   "nameId": "Cucak kutilang – Paket dasar",
+   "nameEn": "Sooty-headed bulbul – Basic pack",
+   "descId": "Suara Cucak kutilang sebagai master, plus isian: Ciblek, Prenjak.",
+   "descEn": "Sooty-headed bulbul reference song, plus isian: Bar-winged prinia, Plain prinia.",
+   "preset": "pagiMalam",
+   "trackIds": [
+    "cucak_kutilang-in1995188",
+    "cucak_kutilang-in111929",
+    "prenjak-in415069",
+    "prenjak-in1950992",
+    "prenjak-in1399170",
+    "prenjak-in871108",
+    "prenjak-in922878",
+    "prenjak-in871106"
+   ],
+   "missingSpecies": [
+    "ciblek"
+   ]
+  },
+  {
+   "id": "chao_mao_dasar",
+   "target": [
+    "chao_mao"
+   ],
+   "nameId": "Cucak jambul merah (chào mào) – Paket dasar",
+   "nameEn": "Red-whiskered bulbul – Basic pack",
+   "descId": "Suara Cucak jambul merah (chào mào) sebagai master.",
+   "descEn": "Red-whiskered bulbul reference song.",
+   "preset": "pagiMalam",
+   "trackIds": [
+    "chao_mao-in1565588",
+    "chao_mao-in1694697",
+    "chao_mao-in397095",
+    "chao_mao-in319389",
+    "chao_mao-in1601889"
+   ],
+   "missingSpecies": []
+  },
+  {
+   "id": "poksai_mandarin_dasar",
+   "target": [
+    "poksai_mandarin"
+   ],
+   "nameId": "Poksai mandarin – Paket dasar",
+   "nameEn": "Red-billed leiothrix – Basic pack",
+   "descId": "Suara Poksai mandarin sebagai master, plus isian: Kenari, Ciblek.",
+   "descEn": "Red-billed leiothrix reference song, plus isian: Atlantic canary (domestic), Bar-winged prinia.",
+   "preset": "pagiMalam",
+   "trackIds": [
+    "poksai_mandarin-in2108811",
+    "poksai_mandarin-in2116840",
+    "poksai_mandarin-in1708772",
+    "poksai_mandarin-in1546491",
+    "poksai_mandarin-in1090820",
+    "poksai_mandarin-in1092676",
+    "kenari-in1105301",
+    "kenari-in523487",
+    "kenari-in1754893",
+    "kenari-in825002",
+    "kenari-wc411699834"
+   ],
+   "missingSpecies": [
+    "ciblek"
+   ]
+  },
+  {
+   "id": "hwamei_dasar",
+   "target": [
+    "hwamei"
+   ],
+   "nameId": "Hwamei (wambi) – Paket dasar",
+   "nameEn": "Chinese hwamei – Basic pack",
+   "descId": "Suara Hwamei (wambi) sebagai master, plus isian: Kenari, Ciblek.",
+   "descEn": "Chinese hwamei reference song, plus isian: Atlantic canary (domestic), Bar-winged prinia.",
+   "preset": "pagiMalam",
+   "trackIds": [
+    "hwamei-in2033787",
+    "hwamei-in1242071",
+    "hwamei-in858205",
+    "hwamei-in1234685",
+    "hwamei-in1755312",
+    "hwamei-in1846756",
+    "kenari-in1105301",
+    "kenari-in523487",
+    "kenari-in1754893",
+    "kenari-in825002",
+    "kenari-wc411699834"
+   ],
+   "missingSpecies": [
+    "ciblek"
+   ]
+  },
+  {
+   "id": "gelatik_batu_dasar",
+   "target": [
+    "gelatik_batu"
+   ],
+   "nameId": "Gelatik batu – Paket dasar",
+   "nameEn": "Cinereous tit – Basic pack",
+   "descId": "Suara Gelatik batu sebagai master, plus isian: Ciblek, Kenari.",
+   "descEn": "Cinereous tit reference song, plus isian: Bar-winged prinia, Atlantic canary (domestic).",
+   "preset": "pagiMalam",
+   "trackIds": [
+    "gelatik_batu-wc174380311",
+    "gelatik_batu-in703219",
+    "gelatik_batu-in2167551",
+    "gelatik_batu-in53844",
+    "gelatik_batu-in2000619",
+    "gelatik_batu-in1684436",
+    "kenari-in1105301",
+    "kenari-in523487",
+    "kenari-in1754893",
+    "kenari-in825002",
+    "kenari-wc411699834"
+   ],
+   "missingSpecies": [
+    "ciblek"
+   ]
+  },
+  {
+   "id": "perkutut_dasar",
+   "target": [
+    "perkutut"
+   ],
+   "nameId": "Perkutut – Paket dasar",
+   "nameEn": "Zebra dove – Basic pack",
+   "descId": "Suara Perkutut sebagai master.",
+   "descEn": "Zebra dove reference song.",
+   "preset": "pagiMalam",
+   "trackIds": [
+    "perkutut-in892603",
+    "perkutut-in1928436",
+    "perkutut-in585074",
+    "perkutut-in572197",
+    "perkutut-in122679",
+    "perkutut-in1305319"
+   ],
+   "missingSpecies": []
+  },
+  {
+   "id": "cipoh_dasar",
+   "target": [
+    "cipoh"
+   ],
+   "nameId": "Cipoh – Paket dasar",
+   "nameEn": "Common iora – Basic pack",
+   "descId": "Suara Cipoh sebagai master, plus isian: Ciblek, Cinenen.",
+   "descEn": "Common iora reference song, plus isian: Bar-winged prinia, Common tailorbird.",
+   "preset": "pagiMalam",
+   "trackIds": [
+    "cipoh-in906141",
+    "cipoh-in1300310",
+    "cipoh-in269230",
+    "cipoh-in180526",
+    "cipoh-in843657",
+    "cipoh-in1084418",
+    "cinenen-in1246726",
+    "cinenen-in317420",
+    "cinenen-in21304",
+    "cinenen-in312809",
+    "cinenen-in1394815"
+   ],
+   "missingSpecies": [
+    "ciblek"
+   ]
+  },
+  {
+   "id": "murai_variasi",
+   "target": [
+    "murai_batu",
+    "kacer",
+    "anis_merah",
+    "cucak_ijo"
+   ],
+   "nameId": "Variasi tambahan (murai, kacer, anis, cucak ijo)",
+   "nameEn": "Extra variety (shama, magpie-robin, thrushes, leafbird)",
+   "descId": "Tambahan variasi setelah isian dasar masuk: belibis, cendet, kenari, kapas tembak, trucukan.",
+   "descEn": "Extra variety once the core isian is in.",
+   "preset": "pagiMalam",
+   "trackIds": [
+    "belibis-in306159",
+    "belibis-in306154",
+    "belibis-in1396428",
+    "belibis-in1158167",
+    "belibis-in1394783",
+    "cendet-in1312580",
+    "kenari-in1105301",
+    "kenari-in523487",
+    "kenari-in1754893",
+    "kenari-in825002",
+    "kenari-wc411699834",
+    "srigunting-in1224802",
+    "srigunting-in1960219",
+    "srigunting-in1300561",
+    "srigunting-in2210661",
+    "srigunting-in2208626",
+    "srigunting-in1234678",
+    "kepodang-in922861",
+    "kepodang-in1315176",
+    "kepodang-in988848",
+    "kepodang-in1679500",
+    "kepodang-in2074255",
+    "kepodang-in562388",
+    "cinenen-in1246726",
+    "cinenen-in317420",
+    "cinenen-in21304",
+    "cinenen-in312809",
+    "cinenen-in1394815"
+   ],
+   "missingSpecies": [
+    "kapas_tembak",
+    "trucukan"
+   ]
+  },
+  {
+   "id": "umum",
+   "target": [
+    "other"
+   ],
+   "nameId": "Umum – Isian populer",
+   "nameEn": "General – popular isian",
+   "descId": "Isian populer untuk berbagai burung: ciblek, kenari, cililin, gereja tarung.",
+   "descEn": "Popular isian for most song birds.",
+   "preset": "pagiMalam",
+   "trackIds": [
+    "kenari-in1105301",
+    "kenari-in523487",
+    "kenari-in1754893",
+    "kenari-in825002",
+    "kenari-wc411699834",
+    "gereja-in2009238",
+    "gereja-in1519745",
+    "gereja-in382657",
+    "gereja-in1116436",
+    "prenjak-in415069",
+    "prenjak-in1950992",
+    "prenjak-in1399170",
+    "prenjak-in871108",
+    "prenjak-in922878",
+    "prenjak-in871106",
+    "cinenen-in1246726",
+    "cinenen-in317420",
+    "cinenen-in21304",
+    "cinenen-in312809",
+    "cinenen-in1394815"
+   ],
+   "missingSpecies": [
+    "ciblek",
+    "cililin"
+   ]
+  }
+ ]
 }
