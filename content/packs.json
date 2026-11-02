@@ -1,0 +1,48 @@
+{
+ "$comment": "Extra, cross-species packs. A basic pack per target species is generated automatically from content/species.json (own master song + recommendedIsian) by scripts/publish-catalog.ts.",
+ "packs": [
+  {
+   "id": "murai_variasi",
+   "target": [
+    "murai_batu",
+    "kacer",
+    "anis_merah",
+    "cucak_ijo"
+   ],
+   "nameId": "Variasi tambahan (murai, kacer, anis, cucak ijo)",
+   "nameEn": "Extra variety (shama, magpie-robin, thrushes, leafbird)",
+   "descId": "Tambahan variasi setelah isian dasar masuk: belibis, cendet, kenari, kapas tembak, trucukan.",
+   "descEn": "Extra variety once the core isian is in.",
+   "species": [
+    "belibis",
+    "cendet",
+    "kenari",
+    "kapas_tembak",
+    "trucukan",
+    "srigunting",
+    "kepodang",
+    "cinenen"
+   ],
+   "preset": "pagiMalam"
+  },
+  {
+   "id": "umum",
+   "target": [
+    "other"
+   ],
+   "nameId": "Umum – Isian populer",
+   "nameEn": "General – popular isian",
+   "descId": "Isian populer untuk berbagai burung: ciblek, kenari, cililin, gereja tarung.",
+   "descEn": "Popular isian for most song birds.",
+   "species": [
+    "ciblek",
+    "kenari",
+    "cililin",
+    "gereja",
+    "prenjak",
+    "cinenen"
+   ],
+   "preset": "pagiMalam"
+  }
+ ]
+}

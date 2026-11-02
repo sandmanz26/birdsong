@@ -1,0 +1,31 @@
+{
+  "name": "kicau-coach",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Structured masteran (song tutoring) and objective isian progress checks for song birds.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && tsc --noEmit -p tsconfig.scripts.json && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.scripts.json",
+    "catalog:candidates": "vite-node scripts/build-candidates.ts --",
+    "review": "vite --open /review.html",
+    "catalog:publish": "vite-node scripts/publish-catalog.ts --",
+    "calibrate": "vite-node scripts/calibrate.ts --"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}
