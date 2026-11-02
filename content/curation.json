@@ -1,6 +1,2512 @@
 {
   "$comment": "Expert curation (content standard v1, docs/06-curation-standard.md). 'approvals' is written by the review tool (npm run review): candidate id -> {decision, curator, role, date, checks{H1..H6}, isian{id:{nameId,nameEn}}, notes}. 'exclude': source keys never to use again (e.g. 'xc:123456'). 'permissions': source key -> {grantedBy, date, scope, evidence} for written permission to use a non-commercial recording commercially.",
   "exclude": [],
-  "approvals": {},
+  "approvals": {
+    "murai_batu-in796207": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "murai_batu-in796207-i1": {
+          "nameId": "Murai batu \u2013 frasa 1",
+          "nameEn": "White-rumped shama \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "murai_batu-in1799491": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "murai_batu-in1052320": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "murai_batu-in1052320-i1": {
+          "nameId": "Murai batu \u2013 frasa 1",
+          "nameEn": "White-rumped shama \u2013 phrase 1"
+        },
+        "murai_batu-in1052320-i2": {
+          "nameId": "Murai batu \u2013 frasa 2",
+          "nameEn": "White-rumped shama \u2013 phrase 2"
+        },
+        "murai_batu-in1052320-i3": {
+          "nameId": "Murai batu \u2013 frasa 3",
+          "nameEn": "White-rumped shama \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "murai_batu-in2085199": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "murai_batu-in1295641": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "murai_batu-in1295641-i1": {
+          "nameId": "Murai batu \u2013 frasa 1",
+          "nameEn": "White-rumped shama \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "murai_batu-in1363395": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "murai_batu-in1363395-i1": {
+          "nameId": "Murai batu \u2013 frasa 1",
+          "nameEn": "White-rumped shama \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "kacer-in1418920": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "kacer-in1418920-i1": {
+          "nameId": "Kacer \u2013 frasa 1",
+          "nameEn": "Oriental magpie-robin \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "kacer-in858460": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "kacer-in858460-i1": {
+          "nameId": "Kacer \u2013 frasa 1",
+          "nameEn": "Oriental magpie-robin \u2013 phrase 1"
+        },
+        "kacer-in858460-i2": {
+          "nameId": "Kacer \u2013 frasa 2",
+          "nameEn": "Oriental magpie-robin \u2013 phrase 2"
+        },
+        "kacer-in858460-i3": {
+          "nameId": "Kacer \u2013 frasa 3",
+          "nameEn": "Oriental magpie-robin \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "kacer-in753687": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "kacer-in753687-i1": {
+          "nameId": "Kacer \u2013 frasa 1",
+          "nameEn": "Oriental magpie-robin \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "kacer-in21295": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "kacer-in21295-i1": {
+          "nameId": "Kacer \u2013 frasa 1",
+          "nameEn": "Oriental magpie-robin \u2013 phrase 1"
+        },
+        "kacer-in21295-i2": {
+          "nameId": "Kacer \u2013 frasa 2",
+          "nameEn": "Oriental magpie-robin \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "kacer-in990376": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "kacer-in990376-i1": {
+          "nameId": "Kacer \u2013 frasa 1",
+          "nameEn": "Oriental magpie-robin \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "kacer-in1856358": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "kacer-in1856358-i1": {
+          "nameId": "Kacer \u2013 frasa 1",
+          "nameEn": "Oriental magpie-robin \u2013 phrase 1"
+        },
+        "kacer-in1856358-i2": {
+          "nameId": "Kacer \u2013 frasa 2",
+          "nameEn": "Oriental magpie-robin \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cucak_ijo-in585261": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "cucak_ijo-in585261-i1": {
+          "nameId": "Cucak ijo \u2013 frasa 1",
+          "nameEn": "Greater green leafbird \u2013 phrase 1"
+        },
+        "cucak_ijo-in585261-i2": {
+          "nameId": "Cucak ijo \u2013 frasa 2",
+          "nameEn": "Greater green leafbird \u2013 phrase 2"
+        },
+        "cucak_ijo-in585261-i3": {
+          "nameId": "Cucak ijo \u2013 frasa 3",
+          "nameEn": "Greater green leafbird \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cucak_ijo-in1308088": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "cucak_ijo-in1308088-i1": {
+          "nameId": "Cucak ijo \u2013 frasa 1",
+          "nameEn": "Greater green leafbird \u2013 phrase 1"
+        },
+        "cucak_ijo-in1308088-i2": {
+          "nameId": "Cucak ijo \u2013 frasa 2",
+          "nameEn": "Greater green leafbird \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "kenari-in1105301": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "kenari-in523487": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "kenari-in523487-i1": {
+          "nameId": "Kenari \u2013 frasa 1",
+          "nameEn": "Atlantic canary (domestic) \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "kenari-in1754893": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "kenari-in825002": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "kenari-wc411699834": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "kenari-wc411699834-i1": {
+          "nameId": "Kenari \u2013 frasa 1",
+          "nameEn": "Atlantic canary (domestic) \u2013 phrase 1"
+        },
+        "kenari-wc411699834-i2": {
+          "nameId": "Kenari \u2013 frasa 2",
+          "nameEn": "Atlantic canary (domestic) \u2013 phrase 2"
+        },
+        "kenari-wc411699834-i3": {
+          "nameId": "Kenari \u2013 frasa 3",
+          "nameEn": "Atlantic canary (domestic) \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "lovebird-wc1006001119": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "lovebird-wc1006001119-i1": {
+          "nameId": "Lovebird \u2013 frasa 1",
+          "nameEn": "Fischer's lovebird \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cucak_rawa-in2015874": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cucak_rawa-in2015875": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cucak_rawa-in796125": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "cucak_rawa-in796125-i1": {
+          "nameId": "Cucak rawa \u2013 frasa 1",
+          "nameEn": "Straw-headed bulbul \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "jalak_suren-in1636941": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "jalak_suren-in1636941-i1": {
+          "nameId": "Jalak suren \u2013 frasa 1",
+          "nameEn": "Javan pied starling \u2013 phrase 1"
+        },
+        "jalak_suren-in1636941-i2": {
+          "nameId": "Jalak suren \u2013 frasa 2",
+          "nameEn": "Javan pied starling \u2013 phrase 2"
+        },
+        "jalak_suren-in1636941-i3": {
+          "nameId": "Jalak suren \u2013 frasa 3",
+          "nameEn": "Javan pied starling \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "anis_merah-wc384666653": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "anis_merah-wc384666653-i1": {
+          "nameId": "Anis merah \u2013 frasa 1",
+          "nameEn": "Orange-headed thrush \u2013 phrase 1"
+        },
+        "anis_merah-wc384666653-i2": {
+          "nameId": "Anis merah \u2013 frasa 2",
+          "nameEn": "Orange-headed thrush \u2013 phrase 2"
+        },
+        "anis_merah-wc384666653-i3": {
+          "nameId": "Anis merah \u2013 frasa 3",
+          "nameEn": "Orange-headed thrush \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "anis_merah-wc1935780918": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "anis_merah-wc1935780918-i1": {
+          "nameId": "Anis merah \u2013 frasa 1",
+          "nameEn": "Orange-headed thrush \u2013 phrase 1"
+        },
+        "anis_merah-wc1935780918-i2": {
+          "nameId": "Anis merah \u2013 frasa 2",
+          "nameEn": "Orange-headed thrush \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "anis_merah-wc1672419801": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "anis_merah-wc1672419801-i1": {
+          "nameId": "Anis merah \u2013 frasa 1",
+          "nameEn": "Orange-headed thrush \u2013 phrase 1"
+        },
+        "anis_merah-wc1672419801-i2": {
+          "nameId": "Anis merah \u2013 frasa 2",
+          "nameEn": "Orange-headed thrush \u2013 phrase 2"
+        },
+        "anis_merah-wc1672419801-i3": {
+          "nameId": "Anis merah \u2013 frasa 3",
+          "nameEn": "Orange-headed thrush \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "anis_merah-in672966": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "anis_merah-in672966-i1": {
+          "nameId": "Anis merah \u2013 frasa 1",
+          "nameEn": "Orange-headed thrush \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "anis_merah-in391817": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "anis_merah-in391817-i1": {
+          "nameId": "Anis merah \u2013 frasa 1",
+          "nameEn": "Orange-headed thrush \u2013 phrase 1"
+        },
+        "anis_merah-in391817-i2": {
+          "nameId": "Anis merah \u2013 frasa 2",
+          "nameEn": "Orange-headed thrush \u2013 phrase 2"
+        },
+        "anis_merah-in391817-i3": {
+          "nameId": "Anis merah \u2013 frasa 3",
+          "nameEn": "Orange-headed thrush \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "anis_merah-wc222805653": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "anis_merah-wc222805653-i1": {
+          "nameId": "Anis merah \u2013 frasa 1",
+          "nameEn": "Orange-headed thrush \u2013 phrase 1"
+        },
+        "anis_merah-wc222805653-i2": {
+          "nameId": "Anis merah \u2013 frasa 2",
+          "nameEn": "Orange-headed thrush \u2013 phrase 2"
+        },
+        "anis_merah-wc222805653-i3": {
+          "nameId": "Anis merah \u2013 frasa 3",
+          "nameEn": "Orange-headed thrush \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cendet-in1312580": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "cendet-in1312580-i1": {
+          "nameId": "Cendet \u2013 frasa 1",
+          "nameEn": "Long-tailed shrike \u2013 phrase 1"
+        },
+        "cendet-in1312580-i2": {
+          "nameId": "Cendet \u2013 frasa 2",
+          "nameEn": "Long-tailed shrike \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cucak_kutilang-in1995188": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "cucak_kutilang-in1995188-i1": {
+          "nameId": "Cucak kutilang \u2013 frasa 1",
+          "nameEn": "Sooty-headed bulbul \u2013 phrase 1"
+        },
+        "cucak_kutilang-in1995188-i2": {
+          "nameId": "Cucak kutilang \u2013 frasa 2",
+          "nameEn": "Sooty-headed bulbul \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cucak_kutilang-in111929": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "cucak_kutilang-in111929-i1": {
+          "nameId": "Cucak kutilang \u2013 frasa 1",
+          "nameEn": "Sooty-headed bulbul \u2013 phrase 1"
+        },
+        "cucak_kutilang-in111929-i2": {
+          "nameId": "Cucak kutilang \u2013 frasa 2",
+          "nameEn": "Sooty-headed bulbul \u2013 phrase 2"
+        },
+        "cucak_kutilang-in111929-i3": {
+          "nameId": "Cucak kutilang \u2013 frasa 3",
+          "nameEn": "Sooty-headed bulbul \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "chao_mao-in1565588": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "chao_mao-in1565588-i1": {
+          "nameId": "Cucak jambul merah (ch\u00e0o m\u00e0o) \u2013 frasa 1",
+          "nameEn": "Red-whiskered bulbul \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "chao_mao-in1694697": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "chao_mao-in1694697-i1": {
+          "nameId": "Cucak jambul merah (ch\u00e0o m\u00e0o) \u2013 frasa 1",
+          "nameEn": "Red-whiskered bulbul \u2013 phrase 1"
+        },
+        "chao_mao-in1694697-i2": {
+          "nameId": "Cucak jambul merah (ch\u00e0o m\u00e0o) \u2013 frasa 2",
+          "nameEn": "Red-whiskered bulbul \u2013 phrase 2"
+        },
+        "chao_mao-in1694697-i3": {
+          "nameId": "Cucak jambul merah (ch\u00e0o m\u00e0o) \u2013 frasa 3",
+          "nameEn": "Red-whiskered bulbul \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "chao_mao-in397095": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "chao_mao-in397095-i1": {
+          "nameId": "Cucak jambul merah (ch\u00e0o m\u00e0o) \u2013 frasa 1",
+          "nameEn": "Red-whiskered bulbul \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "chao_mao-in319389": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "chao_mao-in319389-i1": {
+          "nameId": "Cucak jambul merah (ch\u00e0o m\u00e0o) \u2013 frasa 1",
+          "nameEn": "Red-whiskered bulbul \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "chao_mao-in1601889": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "chao_mao-in1601889-i1": {
+          "nameId": "Cucak jambul merah (ch\u00e0o m\u00e0o) \u2013 frasa 1",
+          "nameEn": "Red-whiskered bulbul \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "poksai_mandarin-in2108811": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "poksai_mandarin-in2116840": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "poksai_mandarin-in2116840-i1": {
+          "nameId": "Poksai mandarin \u2013 frasa 1",
+          "nameEn": "Red-billed leiothrix \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "poksai_mandarin-in1708772": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "poksai_mandarin-in1546491": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "poksai_mandarin-in1090820": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "poksai_mandarin-in1090820-i1": {
+          "nameId": "Poksai mandarin \u2013 frasa 1",
+          "nameEn": "Red-billed leiothrix \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "poksai_mandarin-in1092676": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "poksai_mandarin-in1092676-i1": {
+          "nameId": "Poksai mandarin \u2013 frasa 1",
+          "nameEn": "Red-billed leiothrix \u2013 phrase 1"
+        },
+        "poksai_mandarin-in1092676-i2": {
+          "nameId": "Poksai mandarin \u2013 frasa 2",
+          "nameEn": "Red-billed leiothrix \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "hwamei-in2033787": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "hwamei-in1242071": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "hwamei-in1242071-i1": {
+          "nameId": "Hwamei (wambi) \u2013 frasa 1",
+          "nameEn": "Chinese hwamei \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "hwamei-in858205": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "hwamei-in858205-i1": {
+          "nameId": "Hwamei (wambi) \u2013 frasa 1",
+          "nameEn": "Chinese hwamei \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "hwamei-in1234685": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "hwamei-in1755312": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "hwamei-in1755312-i1": {
+          "nameId": "Hwamei (wambi) \u2013 frasa 1",
+          "nameEn": "Chinese hwamei \u2013 phrase 1"
+        },
+        "hwamei-in1755312-i2": {
+          "nameId": "Hwamei (wambi) \u2013 frasa 2",
+          "nameEn": "Chinese hwamei \u2013 phrase 2"
+        },
+        "hwamei-in1755312-i3": {
+          "nameId": "Hwamei (wambi) \u2013 frasa 3",
+          "nameEn": "Chinese hwamei \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "hwamei-in1846756": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "gelatik_batu-wc174380311": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "gelatik_batu-wc174380311-i1": {
+          "nameId": "Gelatik batu \u2013 frasa 1",
+          "nameEn": "Cinereous tit \u2013 phrase 1"
+        },
+        "gelatik_batu-wc174380311-i2": {
+          "nameId": "Gelatik batu \u2013 frasa 2",
+          "nameEn": "Cinereous tit \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "gelatik_batu-in703219": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "gelatik_batu-in703219-i1": {
+          "nameId": "Gelatik batu \u2013 frasa 1",
+          "nameEn": "Cinereous tit \u2013 phrase 1"
+        },
+        "gelatik_batu-in703219-i2": {
+          "nameId": "Gelatik batu \u2013 frasa 2",
+          "nameEn": "Cinereous tit \u2013 phrase 2"
+        },
+        "gelatik_batu-in703219-i3": {
+          "nameId": "Gelatik batu \u2013 frasa 3",
+          "nameEn": "Cinereous tit \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "gelatik_batu-in2167551": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "gelatik_batu-in2167551-i1": {
+          "nameId": "Gelatik batu \u2013 frasa 1",
+          "nameEn": "Cinereous tit \u2013 phrase 1"
+        },
+        "gelatik_batu-in2167551-i2": {
+          "nameId": "Gelatik batu \u2013 frasa 2",
+          "nameEn": "Cinereous tit \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "gelatik_batu-in53844": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "gelatik_batu-in53844-i1": {
+          "nameId": "Gelatik batu \u2013 frasa 1",
+          "nameEn": "Cinereous tit \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "gelatik_batu-in2000619": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "gelatik_batu-in2000619-i1": {
+          "nameId": "Gelatik batu \u2013 frasa 1",
+          "nameEn": "Cinereous tit \u2013 phrase 1"
+        },
+        "gelatik_batu-in2000619-i2": {
+          "nameId": "Gelatik batu \u2013 frasa 2",
+          "nameEn": "Cinereous tit \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "gelatik_batu-in1684436": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "gelatik_batu-in1684436-i1": {
+          "nameId": "Gelatik batu \u2013 frasa 1",
+          "nameEn": "Cinereous tit \u2013 phrase 1"
+        },
+        "gelatik_batu-in1684436-i2": {
+          "nameId": "Gelatik batu \u2013 frasa 2",
+          "nameEn": "Cinereous tit \u2013 phrase 2"
+        },
+        "gelatik_batu-in1684436-i3": {
+          "nameId": "Gelatik batu \u2013 frasa 3",
+          "nameEn": "Cinereous tit \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "perkutut-in892603": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "perkutut-in892603-i1": {
+          "nameId": "Perkutut \u2013 frasa 1",
+          "nameEn": "Zebra dove \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "perkutut-in1928436": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "perkutut-in1928436-i1": {
+          "nameId": "Perkutut \u2013 frasa 1",
+          "nameEn": "Zebra dove \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "perkutut-in585074": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "perkutut-in572197": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "perkutut-in572197-i1": {
+          "nameId": "Perkutut \u2013 frasa 1",
+          "nameEn": "Zebra dove \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "perkutut-in122679": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "perkutut-in122679-i1": {
+          "nameId": "Perkutut \u2013 frasa 1",
+          "nameEn": "Zebra dove \u2013 phrase 1"
+        },
+        "perkutut-in122679-i2": {
+          "nameId": "Perkutut \u2013 frasa 2",
+          "nameEn": "Zebra dove \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "perkutut-in1305319": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "perkutut-in1305319-i1": {
+          "nameId": "Perkutut \u2013 frasa 1",
+          "nameEn": "Zebra dove \u2013 phrase 1"
+        },
+        "perkutut-in1305319-i2": {
+          "nameId": "Perkutut \u2013 frasa 2",
+          "nameEn": "Zebra dove \u2013 phrase 2"
+        },
+        "perkutut-in1305319-i3": {
+          "nameId": "Perkutut \u2013 frasa 3",
+          "nameEn": "Zebra dove \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "sanger-in1241662": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "sanger-in1241662-i1": {
+          "nameId": "Sanger \u2013 frasa 1",
+          "nameEn": "Yellow-fronted canary \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "sanger-in1738283": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cipoh-in906141": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "cipoh-in906141-i1": {
+          "nameId": "Cipoh \u2013 frasa 1",
+          "nameEn": "Common iora \u2013 phrase 1"
+        },
+        "cipoh-in906141-i2": {
+          "nameId": "Cipoh \u2013 frasa 2",
+          "nameEn": "Common iora \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cipoh-in1300310": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "cipoh-in1300310-i1": {
+          "nameId": "Cipoh \u2013 frasa 1",
+          "nameEn": "Common iora \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cipoh-in269230": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "cipoh-in269230-i1": {
+          "nameId": "Cipoh \u2013 frasa 1",
+          "nameEn": "Common iora \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cipoh-in180526": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "cipoh-in180526-i1": {
+          "nameId": "Cipoh \u2013 frasa 1",
+          "nameEn": "Common iora \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cipoh-in843657": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "cipoh-in843657-i1": {
+          "nameId": "Cipoh \u2013 frasa 1",
+          "nameEn": "Common iora \u2013 phrase 1"
+        },
+        "cipoh-in843657-i2": {
+          "nameId": "Cipoh \u2013 frasa 2",
+          "nameEn": "Common iora \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cipoh-in1084418": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "kepodang-in922861": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "kepodang-in922861-i1": {
+          "nameId": "Kepodang \u2013 frasa 1",
+          "nameEn": "Black-naped oriole \u2013 phrase 1"
+        },
+        "kepodang-in922861-i2": {
+          "nameId": "Kepodang \u2013 frasa 2",
+          "nameEn": "Black-naped oriole \u2013 phrase 2"
+        },
+        "kepodang-in922861-i3": {
+          "nameId": "Kepodang \u2013 frasa 3",
+          "nameEn": "Black-naped oriole \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "kepodang-in1315176": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "kepodang-in1315176-i1": {
+          "nameId": "Kepodang \u2013 frasa 1",
+          "nameEn": "Black-naped oriole \u2013 phrase 1"
+        },
+        "kepodang-in1315176-i2": {
+          "nameId": "Kepodang \u2013 frasa 2",
+          "nameEn": "Black-naped oriole \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "kepodang-in988848": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "kepodang-in988848-i1": {
+          "nameId": "Kepodang \u2013 frasa 1",
+          "nameEn": "Black-naped oriole \u2013 phrase 1"
+        },
+        "kepodang-in988848-i2": {
+          "nameId": "Kepodang \u2013 frasa 2",
+          "nameEn": "Black-naped oriole \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "kepodang-in1679500": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "kepodang-in1679500-i1": {
+          "nameId": "Kepodang \u2013 frasa 1",
+          "nameEn": "Black-naped oriole \u2013 phrase 1"
+        },
+        "kepodang-in1679500-i2": {
+          "nameId": "Kepodang \u2013 frasa 2",
+          "nameEn": "Black-naped oriole \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "kepodang-in2074255": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "kepodang-in2074255-i1": {
+          "nameId": "Kepodang \u2013 frasa 1",
+          "nameEn": "Black-naped oriole \u2013 phrase 1"
+        },
+        "kepodang-in2074255-i2": {
+          "nameId": "Kepodang \u2013 frasa 2",
+          "nameEn": "Black-naped oriole \u2013 phrase 2"
+        },
+        "kepodang-in2074255-i3": {
+          "nameId": "Kepodang \u2013 frasa 3",
+          "nameEn": "Black-naped oriole \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "kepodang-in562388": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "kepodang-in562388-i1": {
+          "nameId": "Kepodang \u2013 frasa 1",
+          "nameEn": "Black-naped oriole \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cililin-in1677190": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "cililin-in1677190-i1": {
+          "nameId": "Cililin \u2013 frasa 1",
+          "nameEn": "Crested jay \u2013 phrase 1"
+        },
+        "cililin-in1677190-i2": {
+          "nameId": "Cililin \u2013 frasa 2",
+          "nameEn": "Crested jay \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "ciblek-in1234017": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "ciblek-in1234017-i1": {
+          "nameId": "Ciblek \u2013 frasa 1",
+          "nameEn": "Bar-winged prinia \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "gereja-in2009238": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "gereja-in1519745": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "gereja-in1519745-i1": {
+          "nameId": "Gereja (tarung) \u2013 frasa 1",
+          "nameEn": "Eurasian tree sparrow \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "gereja-in382657": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "gereja-in382657-i1": {
+          "nameId": "Gereja (tarung) \u2013 frasa 1",
+          "nameEn": "Eurasian tree sparrow \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "gereja-in1116436": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "belibis-in306159": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "belibis-in306154": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "belibis-in306154-i1": {
+          "nameId": "Belibis \u2013 frasa 1",
+          "nameEn": "Lesser whistling duck \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "belibis-in1396428": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "belibis-in1158167": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "belibis-in1158167-i1": {
+          "nameId": "Belibis \u2013 frasa 1",
+          "nameEn": "Lesser whistling duck \u2013 phrase 1"
+        },
+        "belibis-in1158167-i2": {
+          "nameId": "Belibis \u2013 frasa 2",
+          "nameEn": "Lesser whistling duck \u2013 phrase 2"
+        },
+        "belibis-in1158167-i3": {
+          "nameId": "Belibis \u2013 frasa 3",
+          "nameEn": "Lesser whistling duck \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "belibis-in1394783": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "belibis-in1394783-i1": {
+          "nameId": "Belibis \u2013 frasa 1",
+          "nameEn": "Lesser whistling duck \u2013 phrase 1"
+        },
+        "belibis-in1394783-i2": {
+          "nameId": "Belibis \u2013 frasa 2",
+          "nameEn": "Lesser whistling duck \u2013 phrase 2"
+        },
+        "belibis-in1394783-i3": {
+          "nameId": "Belibis \u2013 frasa 3",
+          "nameEn": "Lesser whistling duck \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "tengkek_buto-in596432": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "tengkek_buto-in596432-i1": {
+          "nameId": "Tengkek buto \u2013 frasa 1",
+          "nameEn": "Collared kingfisher \u2013 phrase 1"
+        },
+        "tengkek_buto-in596432-i2": {
+          "nameId": "Tengkek buto \u2013 frasa 2",
+          "nameEn": "Collared kingfisher \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "tengkek_buto-in1682697": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "tengkek_buto-in1682697-i1": {
+          "nameId": "Tengkek buto \u2013 frasa 1",
+          "nameEn": "Collared kingfisher \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "tengkek_buto-in2010327": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "tengkek_buto-in2010327-i1": {
+          "nameId": "Tengkek buto \u2013 frasa 1",
+          "nameEn": "Collared kingfisher \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "tengkek_buto-in1831902": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "tengkek_buto-in1831902-i1": {
+          "nameId": "Tengkek buto \u2013 frasa 1",
+          "nameEn": "Collared kingfisher \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "tengkek_buto-in320402": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "tengkek_buto-in320402-i1": {
+          "nameId": "Tengkek buto \u2013 frasa 1",
+          "nameEn": "Collared kingfisher \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "tengkek_buto-in1288928": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "tengkek_buto-in1288928-i1": {
+          "nameId": "Tengkek buto \u2013 frasa 1",
+          "nameEn": "Collared kingfisher \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "trucukan-in827586": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "trucukan-in500087": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "trucukan-in847112": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "trucukan-in847112-i1": {
+          "nameId": "Trucukan \u2013 frasa 1",
+          "nameEn": "Yellow-vented bulbul \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "prenjak-in415069": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "prenjak-in415069-i1": {
+          "nameId": "Prenjak \u2013 frasa 1",
+          "nameEn": "Plain prinia \u2013 phrase 1"
+        },
+        "prenjak-in415069-i2": {
+          "nameId": "Prenjak \u2013 frasa 2",
+          "nameEn": "Plain prinia \u2013 phrase 2"
+        },
+        "prenjak-in415069-i3": {
+          "nameId": "Prenjak \u2013 frasa 3",
+          "nameEn": "Plain prinia \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "prenjak-in1950992": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "prenjak-in1399170": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "prenjak-in871108": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "prenjak-in871108-i1": {
+          "nameId": "Prenjak \u2013 frasa 1",
+          "nameEn": "Plain prinia \u2013 phrase 1"
+        },
+        "prenjak-in871108-i2": {
+          "nameId": "Prenjak \u2013 frasa 2",
+          "nameEn": "Plain prinia \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "prenjak-in922878": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "prenjak-in922878-i1": {
+          "nameId": "Prenjak \u2013 frasa 1",
+          "nameEn": "Plain prinia \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "prenjak-in871106": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "srigunting-in1224802": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "srigunting-in1960219": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "srigunting-in1960219-i1": {
+          "nameId": "Srigunting \u2013 frasa 1",
+          "nameEn": "Ashy drongo \u2013 phrase 1"
+        },
+        "srigunting-in1960219-i2": {
+          "nameId": "Srigunting \u2013 frasa 2",
+          "nameEn": "Ashy drongo \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "srigunting-in1300561": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "srigunting-in2210661": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "srigunting-in2210661-i1": {
+          "nameId": "Srigunting \u2013 frasa 1",
+          "nameEn": "Ashy drongo \u2013 phrase 1"
+        },
+        "srigunting-in2210661-i2": {
+          "nameId": "Srigunting \u2013 frasa 2",
+          "nameEn": "Ashy drongo \u2013 phrase 2"
+        },
+        "srigunting-in2210661-i3": {
+          "nameId": "Srigunting \u2013 frasa 3",
+          "nameEn": "Ashy drongo \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "srigunting-in2208626": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {},
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "srigunting-in1234678": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "srigunting-in1234678-i1": {
+          "nameId": "Srigunting \u2013 frasa 1",
+          "nameEn": "Ashy drongo \u2013 phrase 1"
+        },
+        "srigunting-in1234678-i2": {
+          "nameId": "Srigunting \u2013 frasa 2",
+          "nameEn": "Ashy drongo \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cinenen-in1246726": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "cinenen-in1246726-i1": {
+          "nameId": "Cinenen \u2013 frasa 1",
+          "nameEn": "Common tailorbird \u2013 phrase 1"
+        },
+        "cinenen-in1246726-i2": {
+          "nameId": "Cinenen \u2013 frasa 2",
+          "nameEn": "Common tailorbird \u2013 phrase 2"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cinenen-in317420": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "cinenen-in317420-i1": {
+          "nameId": "Cinenen \u2013 frasa 1",
+          "nameEn": "Common tailorbird \u2013 phrase 1"
+        },
+        "cinenen-in317420-i2": {
+          "nameId": "Cinenen \u2013 frasa 2",
+          "nameEn": "Common tailorbird \u2013 phrase 2"
+        },
+        "cinenen-in317420-i3": {
+          "nameId": "Cinenen \u2013 frasa 3",
+          "nameEn": "Common tailorbird \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cinenen-in21304": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "cinenen-in21304-i1": {
+          "nameId": "Cinenen \u2013 frasa 1",
+          "nameEn": "Common tailorbird \u2013 phrase 1"
+        },
+        "cinenen-in21304-i2": {
+          "nameId": "Cinenen \u2013 frasa 2",
+          "nameEn": "Common tailorbird \u2013 phrase 2"
+        },
+        "cinenen-in21304-i3": {
+          "nameId": "Cinenen \u2013 frasa 3",
+          "nameEn": "Common tailorbird \u2013 phrase 3"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cinenen-in312809": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "cinenen-in312809-i1": {
+          "nameId": "Cinenen \u2013 frasa 1",
+          "nameEn": "Common tailorbird \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    },
+    "cinenen-in1394815": {
+      "decision": "approve",
+      "curator": "Pemilik produk",
+      "role": "Kurator sementara (belum diverifikasi juri)",
+      "date": "2026-11-02",
+      "checks": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true,
+        "H6": true
+      },
+      "isian": {
+        "cinenen-in1394815-i1": {
+          "nameId": "Cinenen \u2013 frasa 1",
+          "nameEn": "Common tailorbird \u2013 phrase 1"
+        }
+      },
+      "notes": "Disetujui massal oleh pemilik produk; perlu review ulang oleh juri."
+    }
+  },
   "permissions": {}
 }
