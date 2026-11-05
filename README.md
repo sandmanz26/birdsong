@@ -1,5 +1,7 @@
 # Kicau Coach (birdsong)
 
+> 🤖 **AI agents / new engineers: start with [AGENTS.md](AGENTS.md)** (product rules, architecture, state, decision log).
+
 **Structured song tutoring (*masteran*) and objective isian progress checks for Asian song-bird keepers.**
 
 In Indonesia alone, about a third of Java's households keep cage birds (66–84 million birds), and owners train them by playing "master" songs so they learn *isian* (phrases copied from other species). Today that means looping YouTube or MP3 speakers, following contradictory advice, and waiting weeks with no way to know whether it's working. Kicau Coach is an MVP that tests two features with real owners:
